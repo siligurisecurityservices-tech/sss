@@ -1,0 +1,15 @@
+{
+  "_readme": "Client testimonials. While placeholder:true, the displayed card shows a small badge and the Review schema JSON-LD is suppressed. When real testimonials with written permission arrive, flip placeholder:false and the badge / honest disclosure disappears.",
+  "items": [
+    {
+      "quote": "Their team is exactly what they promise — disciplined, on time, and the supervisor actually picks up the phone. Compliance paperwork has been flawless across our last three audits.",
+      "name": "[Replace: client name]",
+      "designation": "[Replace: client designation]",
+      "company": "[Replace: client company]",
+      "sector": "Hospitality",
+      "location": "Dooars",
+      "date": "2026-01-01",
+      "placeholder": true
+    }
+  ]
+}

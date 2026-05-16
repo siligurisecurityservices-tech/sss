@@ -1,0 +1,82 @@
+{
+  "name": "Siliguri Security Services",
+  "legalName": "Siliguri Security Services Pvt. Ltd.",
+  "shortName": "SSS",
+  "tagline": "Security & Housekeeping — Under One Roof",
+  "description": "Security guards AND professional housekeeping under a single contract. PSARA-licensed since 2008. 450+ trained personnel. Corporate, hotel, hospital, industrial and HNI clients across North Bengal, Sikkim, Kolkata, Odisha and growing nationally.",
+  "founded": 2008,
+  "yearsActive": 17,
+  "director": {
+    "name": "B. K. Barman",
+    "title": "Director Cum CMD"
+  },
+  "url": "https://www.siligurisisecurity.com",
+  "phone": {
+    "display": "+91-70017-61679",
+    "intl": "+917001761679",
+    "tel": "tel:+917001761679",
+    "whatsapp": "https://wa.me/917001761679",
+    "whatsappBase": "https://wa.me/917001761679",
+    "raw": "7001761679"
+  },
+  "email": {
+    "primary": "siliguri.security.services@gmail.com",
+    "leads": "siliguri.security.services@gmail.com"
+  },
+  "address": {
+    "street": "Near Hospital More, Matigara",
+    "locality": "Siliguri",
+    "region": "West Bengal",
+    "postalCode": "734010",
+    "country": "IN",
+    "countryName": "India",
+    "formatted": "Near Hospital More, Matigara, Siliguri-734010, West Bengal, India"
+  },
+  "hours": {
+    "office": [
+      { "days": "Monday - Friday", "hours": "11:00 AM - 5:00 PM" },
+      { "days": "Saturday", "hours": "11:00 AM - 2:00 PM" }
+    ],
+    "operations": "24/7 emergency support and on-site operations"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/siligurisisecurity",
+    "linkedin": "https://www.linkedin.com/company/siligurisisecurity"
+  },
+  "stats": {
+    "personnel": "450+",
+    "yearsExperience": "15+",
+    "clientLocations": "50+",
+    "satisfactionRating": "4.8/5",
+    "sectorsServed": 8
+  },
+  "registrations": {
+    "pan": "AAQCS1693A",
+    "psara": "10/WB/PSA/2015",
+    "epf": "WB/SLG/50443",
+    "esi": "4100037373000101018",
+    "tds": "CALS34259B",
+    "iso": "ISO 9001:2015"
+  },
+  "guardTiers": [
+    { "name": "Premium Guard Tier", "priceRange": "₹15,000 – ₹18,000/month", "description": "Young, professional, certified guards for premium corporate posts" },
+    { "name": "Standard Guard Tier", "priceRange": "₹10,000 – ₹12,000/month", "description": "Experienced and cost-effective guards for routine deployments" },
+    { "name": "Armed Guards", "priceRange": "₹25,000 – ₹35,000/month", "description": "Licensed, weapons-trained personnel for high-value assets" },
+    { "name": "Female Security Guards", "priceRange": "₹12,000 – ₹15,000/month", "description": "Specially trained for hospitals, retail, schools and women's facilities" },
+    { "name": "Black Commando & Special Teams", "priceRange": "₹40,000 – ₹60,000/month", "description": "Elite tactical units for VIP, executive and special-risk assignments" }
+  ],
+  "areaServed": [
+    "Siliguri", "Matigara", "Bagdogra", "Darjeeling", "Kalimpong", "Kurseong",
+    "Jalpaiguri", "Alipurduar", "Cooch Behar", "Malda",
+    "Gangtok", "Namchi", "Rangpo",
+    "Lataguri", "Malbazar", "Dooars",
+    "Kolkata", "Bhubaneswar", "Cuttack", "Guwahati", "Delhi NCR", "Mumbai", "Bengaluru", "Hyderabad", "Chennai"
+  ],
+  "ogImage": "/assets/images/og-default.jpg",
+  "themeColor": "#003366",
+  "locale": "en-IN",
+  "turnstileSitekey": "",
+  "gtmId": "",
+  "ga4Id": "",
+  "clarityId": ""
+}

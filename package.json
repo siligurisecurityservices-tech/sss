@@ -1,17 +1,28 @@
 {
   "name": "siliguri-security-services",
-  "version": "1.0.0",
-  "description": "Professional security and facility management website",
-  "main": "server.js",
+  "version": "2.0.0",
+  "description": "Professional security and facility management website (Eleventy)",
+  "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "echo 'Build complete'"
+    "dev": "ELEVENTY_RUN_MODE=dev eleventy --serve --quiet",
+    "build": "ELEVENTY_RUN_MODE=build eleventy",
+    "clean": "rimraf _site",
+    "placeholders": "node scripts/make-placeholders.mjs",
+    "lint:lighthouse": "lhci autorun"
   },
   "keywords": ["security", "siliguri", "facility management"],
   "author": "Siliguri Security Services",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "engines": {
-    "node": "24.x"
+    "node": "20.x || 22.x || 24.x"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^4.0.0",
+    "html-minifier-terser": "^7.2.0"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0",
+    "rimraf": "^5.0.0"
   }
 }

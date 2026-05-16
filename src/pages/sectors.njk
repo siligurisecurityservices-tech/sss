@@ -1,0 +1,36 @@
+---
+layout: layouts/page.njk
+permalink: /pages/sectors/index.html
+title: Sectors We Serve
+description: Sector-specific security expertise — corporate, industrial, banking, healthcare, retail, hospitality, tea estates, education, government, warehousing and more.
+hero:
+  title: Sectors we serve
+  subtitle: Different sites need different security. A hospital is not a factory; a hotel is not a bank. Our deployments are built for your sector.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Sectors", url: "/pages/sectors/" }
+---
+
+<section>
+  <ul class="chip-grid chip-grid-wide">
+    {%- for sec in sectors.catalog -%}
+    <li class="chip-card">
+      <span class="chip-icon" aria-hidden="true">{{ sec.icon }}</span>
+      <strong>{{ sec.name }}</strong>
+      <span>{{ sec.description }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section>
+  <h2>Why sector specialisation matters</h2>
+  <p>A guard trained for a manufacturing gatehouse will not naturally know how to handle a distressed family at a hospital ICU. A retail-mall guard who's never worked a wedding doesn't know how to brief a bouncer team for a 2,000-guest function. We don't pretend a guard is interchangeable — we deploy people trained for the site they will work at.</p>
+  <p>For every sector listed above, we have:</p>
+  <ul class="check-list">
+    <li>A sector-specific induction module with role-play scenarios.</li>
+    <li>A supervisor with sector experience as the first escalation contact.</li>
+    <li>Equipment and SOP defaults tuned to that sector's risk profile.</li>
+    <li>Sample SLAs and incident-reporting templates aligned with sector norms.</li>
+  </ul>
+</section>

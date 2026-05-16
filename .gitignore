@@ -12,5 +12,15 @@ yarn-error.log*
 .idea/
 dist/
 build/
+_site/
+.cache/
+.eleventy-cache/
 package-lock.json
 yarn.lock
+
+# Claude Code — keep project-level config (.claude/launch.json) but
+# ignore per-machine personal state.
+.claude/settings.local.json
+.claude/projects/
+.claude/worktrees/
+.claude/skills/

@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+permalink: /bn/index.html
+pageLang: bn
+title: পেশাদার নিরাপত্তা ও সুবিধা ব্যবস্থাপনা সমাধান
+description: শিলিগুড়ি সিকিউরিটি সার্ভিসেস — পিএসএআরএ-লাইসেন্সধারী নিরাপত্তা প্রহরী, সশস্ত্র সুরক্ষা এবং সুবিধা ব্যবস্থাপনা।
+---
+
+{% set enUrl = "/" %}
+{% include "partials/translation-pending-banner.njk" %}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{ title }}</h1>
+      <p class="lead">{{ description }}</p>
+      <div class="hero-buttons">
+        <a href="/pages/quote/" class="cta-button cta-button-primary">কোটেশনের জন্য অনুরোধ করুন</a>
+        <a href="{{ site.phone.tel }}" class="cta-button-outline">কল করুন {{ site.phone.display }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# TODO(translator): Translate the rest of the homepage. Until then, English fallback. #}
+<section class="container">
+  <p><a href="/">Continue in English →</a></p>
+</section>

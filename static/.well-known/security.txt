@@ -1,0 +1,5 @@
+Contact: mailto:siliguri.security.services@gmail.com
+Contact: tel:+91-70017-61679
+Expires: 2027-12-31T00:00:00.000Z
+Preferred-Languages: en, hi, bn
+Canonical: https://www.siligurisisecurity.com/.well-known/security.txt

@@ -1,0 +1,30 @@
+{
+  "established": [
+    { "city": "Siliguri", "state": "West Bengal", "since": 2008, "model": "Direct HQ" },
+    { "city": "Matigara", "state": "West Bengal", "since": 2008, "model": "Direct HQ" },
+    { "city": "Dooars (Lataguri, Malbazar, Chalsa, Gorumara, Murti, Hasimara)", "state": "West Bengal", "since": 2010, "model": "Direct deployment" },
+    { "city": "Darjeeling", "state": "West Bengal", "since": 2011, "model": "Direct deployment" },
+    { "city": "Kurseong", "state": "West Bengal", "since": 2011, "model": "Direct deployment" },
+    { "city": "Mirik", "state": "West Bengal", "since": 2012, "model": "Direct deployment" },
+    { "city": "Jalpaiguri", "state": "West Bengal", "since": 2012, "model": "Direct deployment" },
+    { "city": "Kalimpong", "state": "West Bengal", "since": 2013, "model": "Direct deployment" },
+    { "city": "Gangtok", "state": "Sikkim", "since": 2014, "model": "Direct deployment + Sikkim PSARA partner" },
+    { "city": "Alipurduar", "state": "West Bengal", "since": 2015, "model": "Direct deployment" },
+    { "city": "Namchi & East Sikkim", "state": "Sikkim", "since": 2017, "model": "Direct deployment + Sikkim PSARA partner" },
+    { "city": "Kolkata", "state": "West Bengal", "since": 2024, "model": "Direct deployment" },
+    { "city": "Bhubaneswar & Cuttack", "state": "Odisha", "since": 2025, "model": "Direct deployment" }
+  ],
+  "capability": [
+    { "city": "Guwahati", "state": "Assam", "model": "Direct deployment on contract" },
+    { "city": "Delhi NCR", "state": "Delhi", "model": "Enterprise contracts; partnership with Delhi PSARA agency" },
+    { "city": "Mumbai", "state": "Maharashtra", "model": "Enterprise contracts; partnership with Maharashtra PSARA agency" },
+    { "city": "Bengaluru", "state": "Karnataka", "model": "Enterprise contracts; partnership with Karnataka PSARA agency" },
+    { "city": "Hyderabad", "state": "Telangana", "model": "Enterprise contracts only" },
+    { "city": "Chennai", "state": "Tamil Nadu", "model": "Enterprise contracts only" },
+    { "city": "Patna", "state": "Bihar", "model": "Enterprise contracts only" },
+    { "city": "Ranchi", "state": "Jharkhand", "model": "Enterprise contracts only" },
+    { "city": "Raipur", "state": "Chhattisgarh", "model": "Enterprise contracts only" },
+    { "city": "Pune", "state": "Maharashtra", "model": "Enterprise contracts only" }
+  ],
+  "expansionStatus": "Actively scaling nationally. New direct-deployment markets (Kolkata in 2024, Bhubaneswar in 2025) are added as client demand and trained-personnel pipeline justify. We will tell you honestly whether your city is direct-deployment or partner-deployment before any contract is signed."
+}

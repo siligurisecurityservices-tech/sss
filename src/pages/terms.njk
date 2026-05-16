@@ -1,0 +1,46 @@
+---
+layout: layouts/page.njk
+permalink: /pages/terms/index.html
+title: Terms of Service
+description: Terms of service for visitors to the Siliguri Security Services website. Contract terms are separately negotiated.
+hero:
+  title: Terms of service
+  subtitle: Last updated {{ "2026-05-15" | readableDate }}
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Terms", url: "/pages/terms/" }
+---
+
+<section>
+  <p>These terms govern your use of the {{ site.name }} website (the "Site"). Service-delivery terms for security and facility management are governed by a separate signed contract.</p>
+</section>
+
+<section>
+  <h2>Use of the Site</h2>
+  <p>The Site is provided for informational purposes. Content is accurate to the best of our knowledge at the time of publication, but specific pricing, availability and SLAs are confirmed in a written proposal for your site.</p>
+</section>
+
+<section>
+  <h2>Quotes and proposals</h2>
+  <p>Information submitted through the quote, contact or free-site-visit forms does not constitute a contract. A binding engagement requires a signed contract from an authorised representative of both parties.</p>
+</section>
+
+<section>
+  <h2>Trademarks and content</h2>
+  <p>The {{ site.name }} name, logo and content on this Site are the property of {{ site.legalName }}. Third-party trademarks and logos referenced on this Site are the property of their respective owners and are used with permission where applicable.</p>
+</section>
+
+<section>
+  <h2>Limitation of liability</h2>
+  <p>The Site is provided on an "as is" basis. We do not warrant uninterrupted availability. {{ site.legalName }} shall not be liable for any indirect or consequential loss arising from use of the Site or reliance on its content. This limitation does not apply to liabilities that cannot be limited by Indian law.</p>
+</section>
+
+<section>
+  <h2>Governing law</h2>
+  <p>These terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts of Siliguri, West Bengal.</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>{{ site.legalName }}<br>{{ site.address.formatted }}<br>Phone: <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a><br>Email: <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a></p>
+</section>

@@ -1,0 +1,91 @@
+{
+  "_readme": "Live job openings. Each entry: slug (used in form prefill), title, tier (guard/supervisor/office), locations array, eligibility short string, pay range, headcount, urgent flag (shows red badge). Add or edit rows directly — no code change needed.",
+  "stats": [
+    { "value": "450+", "label": "teammates today" },
+    { "value": "Year-round", "label": "openings" },
+    { "value": "21 days", "label": "paid PSARA training" },
+    { "value": "₹0", "label": "placement fees, ever" }
+  ],
+  "catalog": [
+    {
+      "slug": "security-guard-siliguri",
+      "title": "Security Guard — Siliguri & Matigara",
+      "tier": "guard",
+      "locations": ["Siliguri", "Matigara", "Bagdogra"],
+      "eligibility": "Male, Class 8 minimum, age 21–45, height 5'5\" or above. Two passport photos + Aadhaar.",
+      "payRange": "₹10,000 – ₹15,000 / month (all-inclusive)",
+      "headcount": "30+ openings",
+      "urgent": true
+    },
+    {
+      "slug": "female-security-guard",
+      "title": "Female Security Guard — Siliguri",
+      "tier": "guard",
+      "locations": ["Siliguri", "Matigara"],
+      "eligibility": "Female, Class 8 minimum, age 21–40. Hospital / school posting.",
+      "payRange": "₹12,000 – ₹15,000 / month (all-inclusive)",
+      "headcount": "10+ openings",
+      "urgent": true
+    },
+    {
+      "slug": "armed-guard",
+      "title": "Armed Security Guard",
+      "tier": "guard",
+      "locations": ["Siliguri", "Darjeeling", "Gangtok", "Jalpaiguri"],
+      "eligibility": "Ex-servicemen or retired police preferred. Valid weapons handling certificate.",
+      "payRange": "₹25,000 – ₹35,000 / month",
+      "headcount": "6 openings",
+      "urgent": false
+    },
+    {
+      "slug": "guard-dooars",
+      "title": "Security Guard — Dooars Belt",
+      "tier": "guard",
+      "locations": ["Lataguri", "Malbazar", "Chalsa", "Hasimara"],
+      "eligibility": "Local residents preferred. Class 8 minimum. Resort / tea-estate posting.",
+      "payRange": "₹10,000 – ₹13,000 / month",
+      "headcount": "20+ openings",
+      "urgent": true
+    },
+    {
+      "slug": "supervisor",
+      "title": "Field Supervisor",
+      "tier": "supervisor",
+      "locations": ["Siliguri", "Gangtok", "Darjeeling", "Alipurduar"],
+      "eligibility": "Class 12 minimum. 2-wheeler licence and own conveyance. 2+ years security supervision experience.",
+      "payRange": "₹18,000 – ₹28,000 / month + travel",
+      "headcount": "8 openings",
+      "urgent": false
+    },
+    {
+      "slug": "housekeeping-staff",
+      "title": "Housekeeping & Facility Staff",
+      "tier": "guard",
+      "locations": ["Siliguri", "Darjeeling", "Dooars"],
+      "eligibility": "Male / female. Hotel, hospital or corporate experience preferred.",
+      "payRange": "₹9,500 – ₹13,000 / month",
+      "headcount": "25+ openings",
+      "urgent": false
+    },
+    {
+      "slug": "driver",
+      "title": "Driver — Patrol Vehicle",
+      "tier": "guard",
+      "locations": ["Siliguri", "Matigara"],
+      "eligibility": "Valid LMV / HMV licence. 3+ years driving experience. Night-shift willing.",
+      "payRange": "₹14,000 – ₹18,000 / month",
+      "headcount": "3 openings",
+      "urgent": false
+    },
+    {
+      "slug": "operations-executive",
+      "title": "Operations Executive (Office)",
+      "tier": "office",
+      "locations": ["Siliguri HQ — Matigara"],
+      "eligibility": "Graduate. Strong Bengali + English communication. Excel + WhatsApp Business comfort.",
+      "payRange": "₹18,000 – ₹26,000 / month",
+      "headcount": "2 openings",
+      "urgent": false
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+---
+layout: layouts/page.njk
+permalink: /pages/contact/index.html
+title: Contact Us
+description: Call +91-70017-61679, WhatsApp or email Siliguri Security Services. Head office at Hospital More, Matigara, Siliguri. 24/7 operations support.
+hero:
+  title: Talk to us
+  subtitle: Phone, WhatsApp or email — usually answered within business hours. Director-level escalation available for enterprise clients.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Contact", url: "/pages/contact/" }
+---
+
+<section>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Call us</h3>
+      <p class="big-link"><a href="{{ site.phone.tel }}">{{ site.phone.display }}</a></p>
+      <p class="text-muted">Office hours: Mon–Fri 11 AM – 5 PM, Sat 11 AM – 2 PM.<br>Operations support 24/7 for live contracts.</p>
+    </div>
+    <div class="card">
+      <h3>WhatsApp us</h3>
+      <p class="big-link"><a href="{{ site.phone.whatsapp }}" target="_blank" rel="noopener">Chat on WhatsApp →</a></p>
+      <p class="text-muted">Fastest response. We typically reply within 30 minutes during office hours.</p>
+    </div>
+    <div class="card">
+      <h3>Email us</h3>
+      <p class="big-link"><a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a></p>
+      <p class="text-muted">Best for detailed enquiries and RFPs. We reply within one working day.</p>
+    </div>
+    <div class="card">
+      <h3>Visit our office</h3>
+      <p>{{ site.address.formatted }}</p>
+      <p class="text-muted">Walk-ins welcome during office hours — please call ahead.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Send a quick message</h2>
+  <p>Phone number is required so we can call back. WhatsApp will open with your message after submission — you can edit it before sending.</p>
+  {% include "partials/quote-form.njk" %}
+</section>

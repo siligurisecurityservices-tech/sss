@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Siliguri Security Services head office at Hospital More, Matigara" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g-about-hq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003366"/>
+      <stop offset="100%" stop-color="#0052a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#g-about-hq)"/>
+  <circle cx="600" cy="350" r="169.4" fill="rgba(255,255,255,0.08)"/>
+  <text x="600" y="350" font-size="154" text-anchor="middle" dominant-baseline="central">🏢</text>
+</svg>

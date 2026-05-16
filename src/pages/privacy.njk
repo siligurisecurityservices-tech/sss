@@ -1,0 +1,48 @@
+---
+layout: layouts/page.njk
+permalink: /pages/privacy/index.html
+title: Privacy Policy
+description: Privacy policy for Siliguri Security Services. How we collect, use and protect information from our website and contract clients.
+hero:
+  title: Privacy policy
+  subtitle: Last updated {{ "2026-05-15" | readableDate }}
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Privacy", url: "/pages/privacy/" }
+---
+
+<section>
+  <h2>What we collect</h2>
+  <p>Through our website forms (quote, contact and free site visit), we collect: your name, phone number, email address, company name, location, and any details you choose to share about your security or facility-management requirements.</p>
+  <p>Through our deployment contracts, we additionally collect identity documents and statutorily required information about your authorised representatives (limited to what is necessary for contract execution).</p>
+</section>
+
+<section>
+  <h2>How we use it</h2>
+  <ul class="check-list">
+    <li>To respond to your enquiry by phone, email or WhatsApp.</li>
+    <li>To prepare a written proposal and conduct a site assessment if requested.</li>
+    <li>To deliver and administer security or facility management services if you sign a contract.</li>
+    <li>To comply with statutory record-keeping obligations under PSARA, EPF, ESI and tax law.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Who we share it with</h2>
+  <p>We do not sell, rent or trade your information. We may share limited information with: statutory bodies as required by law; our background-verification partners (only the data necessary for that verification); and our payment / payroll service providers (for contract execution).</p>
+</section>
+
+<section>
+  <h2>Cookies and analytics</h2>
+  <p>Our website uses Google Analytics 4 and Microsoft Clarity to understand how visitors use the site, so we can improve it. These tools may set cookies. They do not have access to any information you submit through forms.</p>
+</section>
+
+<section>
+  <h2>Your rights</h2>
+  <p>You may at any time email <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a> to request a copy of information we hold about you, ask for corrections, or ask us to delete it (subject to our statutory retention obligations).</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>{{ site.legalName }}<br>{{ site.address.formatted }}<br>Phone: <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a><br>Email: <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a></p>
+</section>

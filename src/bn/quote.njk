@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+permalink: /bn/quote/index.html
+pageLang: bn
+title: কর্পোরেট কোটেশন
+description: শিলিগুড়ি সিকিউরিটি সার্ভিসেস থেকে কর্পোরেট কোটেশন পান।
+---
+
+{% set enUrl = "/pages/quote/" %}
+{% include "partials/translation-pending-banner.njk" %}
+
+<section class="container">
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+  {% include "partials/quote-form.njk" %}
+</section>

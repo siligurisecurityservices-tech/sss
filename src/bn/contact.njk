@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+permalink: /bn/contact/index.html
+pageLang: bn
+title: যোগাযোগ করুন
+description: ফোন, হোয়াটসঅ্যাপ বা ইমেলের মাধ্যমে শিলিগুড়ি সিকিউরিটি সার্ভিসেসের সাথে যোগাযোগ করুন।
+---
+
+{% set enUrl = "/pages/contact/" %}
+{% include "partials/translation-pending-banner.njk" %}
+
+<section class="container">
+  <h1>{{ title }}</h1>
+  <p>ফোন: <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a></p>
+  <p>হোয়াটসঅ্যাপ: <a href="{{ site.phone.whatsapp }}" target="_blank" rel="noopener">{{ site.phone.display }}</a></p>
+  <p>ইমেল: <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a></p>
+  <p>ঠিকানা: {{ site.address.formatted }}</p>
+</section>

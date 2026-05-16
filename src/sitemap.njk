@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for page in collections.all -%}
+{%- if page.url and (page.url == "/" or page.url.endsWith("/")) -%}
+{%- set isHome = page.url == "/" -%}
+{%- set isQuote = page.url == "/pages/quote/" -%}
+{%- set isSiliguri = page.url == "/locations/siliguri/" -%}
+{%- set isService = page.url.indexOf("/services/") == 0 -%}
+{%- set isLocation = page.url.indexOf("/locations/") == 0 -%}
+{%- set isBlog = page.url.indexOf("/blog/") == 0 -%}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{{ page.date | isoDate }}</lastmod>
+    <changefreq>{% if isHome %}weekly{% elif isBlog %}monthly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if isHome %}1.0{% elif isSiliguri %}0.95{% elif isQuote %}0.95{% elif isService or isLocation %}0.9{% else %}0.8{% endif %}</priority>
+  </url>
+{%- endif -%}
+{%- endfor -%}
+</urlset>

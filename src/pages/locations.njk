@@ -1,0 +1,34 @@
+---
+layout: layouts/page.njk
+permalink: /pages/locations/index.html
+title: Our Locations
+description: Established security and manpower presence across Siliguri, Darjeeling, Kalimpong, Gangtok, Jalpaiguri, Alipurduar and the Dooars belt. National deployment available on contract.
+hero:
+  title: Where we operate
+  subtitle: Established presence across North Bengal, the Hills, the Dooars and Sikkim. Deployment capability across India for enterprise contracts.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Locations", url: "/pages/locations/" }
+---
+
+<section>
+  <div class="card-grid card-grid-locations">
+    {%- for loc in locations.catalog -%}
+    <a class="card-link" href="/locations/{{ loc.slug }}/">
+      <div class="card card-location">
+        <h3>{{ loc.name }}</h3>
+        <p class="text-muted">{{ loc.state }} · Since {{ loc.established }}</p>
+        <p>{{ loc.shortDescription }}</p>
+        <p class="card-meta"><strong>{{ loc.activeClients }}</strong> active client sites · {{ loc.responseTimeSLA }}</p>
+        <span class="card-link-cta">See {{ loc.name }} details →</span>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section>
+  <h2>National deployment</h2>
+  <p>For enterprise clients with multi-state requirements, we deploy on contract across India — Delhi NCR, Mumbai, Bengaluru, Hyderabad, Chennai, Kolkata, Guwahati and other major markets. Our local hiring model means we recruit, train and supervise guards from the deployment region, not parachute them in from Siliguri.</p>
+  <p><a class="text-link" href="/pages/coverage/">See national deployment capability →</a></p>
+</section>

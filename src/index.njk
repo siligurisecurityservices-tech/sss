@@ -1,0 +1,195 @@
+---
+layout: layouts/base.njk
+permalink: /index.html
+title: "Security & Housekeeping Services — Siliguri, North Bengal, Sikkim, Kolkata & Odisha"
+description: Siliguri Security Services (PSARA-licensed since 2008) — security guards, armed protection, female guards, AND professional housekeeping, facility management, hospital sanitation, hotel housekeeping, industrial cleaning and manpower services. 450+ trained personnel across Siliguri, Darjeeling, Kalimpong, Gangtok, Jalpaiguri, Alipurduar, Dooars, Kolkata and Bhubaneswar. Free site visit and 24-hour quote.
+keywords: security agency siliguri, housekeeping services siliguri, facility management siliguri, security and housekeeping siliguri, office housekeeping siliguri, hotel housekeeping siliguri, hospital housekeeping siliguri, industrial cleaning siliguri, deep cleaning services siliguri, manpower agency siliguri, pantry staff siliguri, driver services siliguri, security guards siliguri, PSARA licensed agency west bengal, security and housekeeping kolkata, facility management kolkata, security and housekeeping darjeeling, hotel housekeeping dooars, housekeeping agency north bengal, security services gangtok, housekeeping services bhubaneswar, armed security siliguri, female security guards siliguri, hatchery security west bengal, single vendor security and facility management
+ogImage: /assets/images/og-default.jpg
+---
+
+<section class="hero hero-with-photo">
+  <div class="hero-photo-bg" aria-hidden="true">
+    {% pictureHero "hero-home" %}
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+      <p class="eyebrow">PSARA-Licensed · ISO 9001:2015 · Since {{ site.founded }}</p>
+      <h1>{{ site.tagline }}</h1>
+      <p class="lead">Security guards <em>and</em> housekeeping. One agency, one supervisor, one monthly invoice. {{ site.stats.yearsExperience }} years, {{ site.stats.personnel }} trained personnel across {{ site.stats.clientLocations }} sites in North Bengal, the Hills, Sikkim, Kolkata, Odisha — and scaling nationally.</p>
+      <div class="hero-buttons">
+        <a href="/pages/quote/" class="cta-button cta-button-primary">Request Corporate Quote</a>
+        <button type="button" class="cta-button cta-button-white js-open-site-visit">Book Free Site Visit</button>
+        <a href="{{ site.phone.tel }}" class="cta-button-outline">Call {{ site.phone.display }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-grid">
+      <div><strong>{{ site.stats.yearsExperience }}</strong><span>years in business</span></div>
+      <div><strong>{{ site.stats.personnel }}</strong><span>trained guards</span></div>
+      <div><strong>{{ site.stats.clientLocations }}</strong><span>active client sites</span></div>
+      <div><strong>{{ site.stats.satisfactionRating }}</strong><span>client satisfaction</span></div>
+      <div><strong>24/7</strong><span>operations support</span></div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/client-logos.njk" %}
+
+<section class="container section">
+  <header class="section-header">
+    <h2>Security <em>and</em> housekeeping — under one roof</h2>
+    <p>Two equal service lines. One PSARA-licensed agency. One supervisor for the whole site. One monthly invoice. Roughly 8–12% cheaper than hiring two agencies.</p>
+  </header>
+
+  <div class="two-lines-grid">
+    <article class="line-card line-card-security">
+      <div class="line-card-eyebrow"><span class="line-dot" aria-hidden="true"></span>Service line 1</div>
+      <h3>Security guards &amp; armed protection</h3>
+      <p>PSARA-trained guards for corporate, industrial, banking, hospital, retail, hotel, real-estate, warehouse, event and HNI residential sites. Female guards. Licensed armed teams. Quick-response patrols. Hatchery and aquaculture specialists.</p>
+      <ul class="check-list">
+        <li>13 specialist security service lines</li>
+        <li>Pricing from ₹10,000/month per guard</li>
+        <li>24/7 operations, 24-hour deployment in Siliguri</li>
+      </ul>
+      <a href="/pages/services/" class="text-link">See all security services →</a>
+    </article>
+
+    <article class="line-card line-card-housekeeping">
+      <div class="line-card-eyebrow"><span class="line-dot line-dot-warm" aria-hidden="true"></span>Service line 2</div>
+      <h3>Housekeeping &amp; facility management</h3>
+      <p>Office, hotel, hospital, mall, society and industrial housekeeping. Pantry, drivers, receptionists, electricians, AC liaison, plumbers, gardeners. Bio-medical waste protocol-trained hospital teams. Periodic and deep-clean contracts.</p>
+      <ul class="check-list">
+        <li>Daily housekeeping, deep-clean and specialist manpower</li>
+        <li>Pricing from ₹10,000/month per attendant</li>
+        <li>Single MSA covers both lines — one audit trail, one EPF/ESI code</li>
+      </ul>
+      <a href="/pages/facilities/" class="text-link">See facility management →</a>
+    </article>
+  </div>
+</section>
+
+<section class="container section">
+  <header class="section-header">
+    <h2>All security service lines</h2>
+    <p>From single-guard residential posts to multi-state enterprise deployments, we build the right team for your site.</p>
+  </header>
+  <div class="card-grid">
+    {%- for svc in services.catalog -%}
+    <a class="card-link" href="/services/{{ svc.slug }}/">
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">{{ svc.icon }}</div>
+        <h3>{{ svc.title }}</h3>
+        <p>{{ svc.shortDescription }}</p>
+        <p class="card-meta">From {{ svc.priceFrom }}</p>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% include "partials/join-us-callout.njk" %}
+
+<section class="container section">
+  <header class="section-header">
+    <h2>Where we operate</h2>
+    <p>Established presence across North Bengal, the Hills, Sikkim, the Dooars, Kolkata and Odisha — and actively scaling nationally.</p>
+  </header>
+  <div class="card-grid card-grid-locations">
+    {%- for loc in locations.catalog -%}
+    <a class="card-link" href="/locations/{{ loc.slug }}/">
+      <div class="card card-location">
+        <h3>{{ loc.name }}</h3>
+        <p class="text-muted">{{ loc.state }} · Since {{ loc.established }}</p>
+        <p>{{ loc.shortDescription }}</p>
+        <p class="card-meta">{{ loc.activeClients }} active client sites · {{ loc.responseTimeSLA }}</p>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+  <p class="text-center"><a class="text-link" href="/pages/coverage/">National deployment capability →</a></p>
+</section>
+
+{% include "partials/photo-gallery.njk" %}
+
+<section class="container section pricing-section">
+  <header class="section-header">
+    <h2>Transparent guard pricing</h2>
+    <p>Monthly all-inclusive rates per guard. EPF, ESI, bonus and gratuity provisioning included.</p>
+  </header>
+  <div class="card-grid">
+    {%- for tier in site.guardTiers -%}
+    <div class="card card-pricing">
+      <h3>{{ tier.name }}</h3>
+      <p class="pricing">{{ tier.priceRange }}</p>
+      <p>{{ tier.description }}</p>
+    </div>
+    {%- endfor -%}
+  </div>
+  <p class="text-small text-muted">Final pricing depends on shift pattern, site type and contract length. Weapons, vehicles, dogs and specialised equipment billed separately.</p>
+</section>
+
+<section class="container section">
+  <header class="section-header">
+    <h2>Industries we secure</h2>
+  </header>
+  <ul class="chip-grid">
+    {%- for sec in sectors.catalog -%}
+    <li class="chip-card">
+      <span class="chip-icon" aria-hidden="true">{{ sec.icon }}</span>
+      <strong>{{ sec.name }}</strong>
+      <span>{{ sec.description }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+{% include "partials/testimonials.njk" %}
+
+<section class="container section">
+  <header class="section-header">
+    <h2>Compliance you can verify</h2>
+    <p>We don't just claim compliance — we publish the registration numbers and produce documents on request.</p>
+  </header>
+  <ul class="compliance-grid">
+    <li><strong>PSARA Licence</strong><span>{{ site.registrations.psara }}</span></li>
+    <li><strong>PAN</strong><span>{{ site.registrations.pan }}</span></li>
+    <li><strong>EPF Code</strong><span>{{ site.registrations.epf }}</span></li>
+    <li><strong>ESI Code</strong><span>{{ site.registrations.esi }}</span></li>
+    <li><strong>TDS A/C</strong><span>{{ site.registrations.tds }}</span></li>
+    <li><strong>Quality</strong><span>{{ site.registrations.iso }}</span></li>
+  </ul>
+  <p class="text-center"><a class="text-link" href="/pages/compliance/">See our full compliance dossier →</a></p>
+</section>
+
+<section class="container section faq-section">
+  <header class="section-header">
+    <h2>Frequently asked questions</h2>
+  </header>
+  <dl class="faq">
+    {%- for item in faq.general -%}
+    <div class="faq-item">
+      <dt>{{ item.q }}</dt>
+      <dd>{{ item.a }}</dd>
+    </div>
+    {%- endfor -%}
+  </dl>
+</section>
+
+{% include "partials/site-visit-cta-strip.njk" %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in faq.general -%}
+    { "@type": "Question", "name": {{ item.q | jsonify | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify | safe }} } }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>

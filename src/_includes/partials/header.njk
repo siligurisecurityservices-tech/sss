@@ -1,0 +1,37 @@
+<a href="#main" class="skip-link">Skip to main content</a>
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-content">
+        <div class="header-top-left">
+          <span>📞 <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a></span>
+          <span>📧 <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a></span>
+        </div>
+        <div class="header-top-right">
+          <a href="{{ site.phone.whatsapp }}" rel="noopener" target="_blank">WhatsApp</a>
+          <button type="button" class="js-open-site-visit cta-pill" aria-haspopup="dialog" aria-controls="site-visit-modal">Free Site Visit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="/" aria-label="{{ site.name }} home">
+          <div class="logo-icon" aria-hidden="true">S</div>
+          <span>{{ site.name }}</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul>
+            {%- for item in navigation.primary -%}
+            <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+            {%- endfor -%}
+            <li><a href="/pages/quote/" class="cta-button">Get Quote</a></li>
+          </ul>
+          <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

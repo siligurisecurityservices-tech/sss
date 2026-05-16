@@ -1,0 +1,245 @@
+{
+  "_readme": "Single source of truth for image metadata. Each key maps to alt text + placeholder flag. When you drop a real photo at the file path AND set placeholder:false, the 'STOCK · REPLACE' badge disappears automatically. Width/height help prevent CLS for SVG placeholders only — raster photos use intrinsic dimensions.",
+
+  "catalog": {
+    "hero-home": {
+      "alt": "Uniformed security personnel on duty at a corporate site in Siliguri",
+      "placeholder": true,
+      "width": 1600,
+      "height": 720,
+      "replaceWith": "Photo of a real client site — guards at gate or lobby reception. Landscape, 1600×720 or larger."
+    },
+    "hero-careers": {
+      "alt": "Trainees in formation at the Siliguri Security Services training ground",
+      "placeholder": true,
+      "width": 1600,
+      "height": 720,
+      "replaceWith": "Training day photo — line of trainees in PT uniform with instructor. Landscape."
+    },
+
+    "service-corporate-security": {
+      "alt": "Corporate building security desk with uniformed guard checking visitors",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-industrial-security": {
+      "alt": "Factory gatehouse with uniformed guard managing materials check",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-banking-security": {
+      "alt": "Bank branch security with cash-handling escort",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-healthcare-security": {
+      "alt": "Hospital security guard at OPD reception",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-retail-security": {
+      "alt": "Retail mall security guard with anti-shoplifting protocol",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-realestate-security": {
+      "alt": "Gated residential society main gate with guard managing visitor entry",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-warehouse-security": {
+      "alt": "Warehouse perimeter security with shipment verification",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-residential-security": {
+      "alt": "Private residence with dedicated security guard at main gate",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-hotel-security": {
+      "alt": "Hotel lobby security guard in formal uniform",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-event-security": {
+      "alt": "Event security team managing crowd entry at a conference",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-armed-security": {
+      "alt": "Licensed armed guard on duty at a high-value asset site",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "service-quick-response": {
+      "alt": "Quick response team vehicle on patrol",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+
+    "location-siliguri": {
+      "alt": "Siliguri city — gateway to North Bengal",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-darjeeling": {
+      "alt": "Darjeeling town and tea estates",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-kalimpong": {
+      "alt": "Kalimpong town and Algarah hill region",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-gangtok": {
+      "alt": "Gangtok MG Marg, Sikkim",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-jalpaiguri": {
+      "alt": "Jalpaiguri district and tea-belt towns",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-alipurduar": {
+      "alt": "Alipurduar district near the West Bengal–Bhutan border",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-dooars": {
+      "alt": "Dooars belt with tea estates and forest reserves",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-kolkata": {
+      "alt": "Kolkata cityscape — Salt Lake, New Town, Park Street",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+    "location-bhubaneswar": {
+      "alt": "Bhubaneswar, Odisha — temple city and IT corridor",
+      "placeholder": true,
+      "width": 1200,
+      "height": 600
+    },
+
+    "about-director": {
+      "alt": "B. K. Barman, Director and Founder",
+      "placeholder": true,
+      "width": 600,
+      "height": 700,
+      "replaceWith": "Headshot of B. K. Barman in professional attire."
+    },
+    "about-hq": {
+      "alt": "Siliguri Security Services head office at Hospital More, Matigara",
+      "placeholder": true,
+      "width": 1200,
+      "height": 700,
+      "replaceWith": "Exterior of HQ at Matigara."
+    },
+
+    "join-us-collage-1": {
+      "alt": "Guard on post",
+      "placeholder": true,
+      "width": 480,
+      "height": 360
+    },
+    "join-us-collage-2": {
+      "alt": "Training session",
+      "placeholder": true,
+      "width": 480,
+      "height": 360
+    },
+    "join-us-collage-3": {
+      "alt": "Supervisor briefing",
+      "placeholder": true,
+      "width": 480,
+      "height": 360
+    },
+
+    "gallery-1": {
+      "alt": "Gatehouse access control",
+      "placeholder": true,
+      "width": 800,
+      "height": 600
+    },
+    "gallery-2": {
+      "alt": "Hotel lobby uniformed reception",
+      "placeholder": true,
+      "width": 800,
+      "height": 600
+    },
+    "gallery-3": {
+      "alt": "Training session in progress",
+      "placeholder": true,
+      "width": 800,
+      "height": 600
+    },
+    "gallery-4": {
+      "alt": "Control room and monitoring station",
+      "placeholder": true,
+      "width": 800,
+      "height": 600
+    },
+    "gallery-5": {
+      "alt": "Patrol vehicle on the move",
+      "placeholder": true,
+      "width": 800,
+      "height": 600
+    },
+    "gallery-6": {
+      "alt": "Female security guard at hospital frisking station",
+      "placeholder": true,
+      "width": 800,
+      "height": 600
+    },
+
+    "psara-cert": {
+      "alt": "Scanned PSARA Licence — 10/WB/PSA/2015",
+      "placeholder": true,
+      "width": 1000,
+      "height": 1400,
+      "replaceWith": "Scan of PSARA licence at static/docs/psara-licence.pdf or equivalent JPG."
+    },
+    "gst-cert": {
+      "alt": "GST Registration Certificate",
+      "placeholder": true,
+      "width": 1000,
+      "height": 1400
+    },
+    "udyam-cert": {
+      "alt": "UDYAM / MSME Registration Certificate",
+      "placeholder": true,
+      "width": 1000,
+      "height": 1400
+    },
+    "iso-cert": {
+      "alt": "ISO 9001:2015 Certificate",
+      "placeholder": true,
+      "width": 1000,
+      "height": 1400
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360" role="img" aria-label="Guard on post" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g-join-us-collage-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052a3"/>
+      <stop offset="100%" stop-color="#003366"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#g-join-us-collage-1)"/>
+  <circle cx="240" cy="180" r="86.9" fill="rgba(255,255,255,0.08)"/>
+  <text x="240" y="180" font-size="79" text-anchor="middle" dominant-baseline="central">📸</text>
+</svg>

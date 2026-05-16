@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+---
+<article class="blog-post">
+  <header class="container blog-post-header">
+    <p class="eyebrow"><a href="/pages/blog/">Blog</a> &nbsp;·&nbsp; {{ date | readableDate }}</p>
+    <h1>{{ title }}</h1>
+    {% if subtitle %}<p class="lead">{{ subtitle }}</p>{% endif %}
+    <p class="byline">By {{ author or site.director.name }}</p>
+  </header>
+
+  <div class="container blog-post-body">
+    {{ content | safe }}
+  </div>
+
+  <footer class="container blog-post-footer">
+    <p>Need help applying this to your site? <a href="/pages/quote/">Get a corporate quote</a> or <button type="button" class="link-button js-open-site-visit">book a free site visit</button>.</p>
+  </footer>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | jsonify | safe }},
+  "datePublished": "{{ date | isoDate }}",
+  "dateModified": "{{ (modified or date) | isoDate }}",
+  "author": { "@type": "Person", "name": "{{ author or site.director.name }}" },
+  "publisher": { "@type": "Organization", "name": "{{ site.legalName }}", "logo": { "@type": "ImageObject", "url": "{{ site.url }}/assets/images/logo.png" } },
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}"
+}
+</script>

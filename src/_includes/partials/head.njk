@@ -1,0 +1,175 @@
+{%- set pageTitle = title or site.tagline -%}
+{%- set pageDesc = description or site.description -%}
+{%- set pageUrl = site.url + (page.url or '/') -%}
+{%- set pageOgImage = ogImage or site.ogImage -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="theme-color" content="{{ site.themeColor }}">
+<meta name="description" content="{{ pageDesc }}">
+{%- if keywords %}
+<meta name="keywords" content="{{ keywords }}">
+{%- endif %}
+<meta name="author" content="{{ site.legalName }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="{{ pageUrl }}">
+<link rel="alternate" hreflang="en-IN" href="{{ pageUrl }}">
+<link rel="alternate" hreflang="x-default" href="{{ pageUrl }}">
+
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="{{ site.shortName }} Security">
+
+<meta property="og:title" content="{{ pageTitle }} | {{ site.name }}">
+<meta property="og:description" content="{{ pageDesc }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:url" content="{{ pageUrl }}">
+<meta property="og:image" content="{{ site.url }}{{ pageOgImage }}">
+<meta property="og:image:alt" content="{{ site.name }}">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="{{ site.name }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ pageTitle }} | {{ site.name }}">
+<meta name="twitter:description" content="{{ pageDesc }}">
+<meta name="twitter:image" content="{{ site.url }}{{ pageOgImage }}">
+
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="preload" href="/assets/css/style.css" as="style">
+
+<title>{{ pageTitle }} | {{ site.name }}</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="manifest" href="/manifest.json">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "SecurityAgency"],
+  "@id": "{{ site.url }}#localbusiness",
+  "name": "{{ site.name }}",
+  "alternateName": ["SSS", "Siliguri Security Services Pvt. Ltd."],
+  "legalName": "{{ site.legalName }}",
+  "image": "{{ site.url }}{{ site.ogImage }}",
+  "logo": "{{ site.url }}/assets/images/logo.png",
+  "description": "{{ site.description }}",
+  "slogan": "{{ site.tagline }}",
+  "url": "{{ site.url }}",
+  "telephone": "{{ site.phone.display }}",
+  "email": "{{ site.email.primary }}",
+  "priceRange": "₹₹",
+  "foundingDate": "{{ site.founded }}",
+  "founder": { "@type": "Person", "name": "{{ site.director.name }}", "jobTitle": "{{ site.director.title }}" },
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 450, "unitText": "trained personnel" },
+  "knowsAbout": [
+    "Private security guards", "Armed security", "Female security guards", "Corporate security",
+    "Industrial security", "Banking security", "ATM security", "Hospital security",
+    "Hotel and hospitality security", "Tea-estate and plantation security",
+    "Real-estate and society security", "Warehouse security", "Event security",
+    "Quick-response patrol", "Facility management", "Housekeeping services",
+    "Manpower outsourcing", "Hatchery and aquaculture security",
+    "PSARA-licensed deployment", "Statutory compliance (EPF, ESI, bonus, gratuity)"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.address.street }}",
+    "addressLocality": "{{ site.address.locality }}",
+    "addressRegion": "{{ site.address.region }}",
+    "postalCode": "{{ site.address.postalCode }}",
+    "addressCountry": "{{ site.address.country }}"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 26.7104, "longitude": 88.3923 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "14:00" }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.phone.display }}",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Bengali", "Hindi"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91-95472-53232",
+      "contactType": "executive escalation",
+      "name": "{{ site.director.name }}",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Bengali", "Hindi"]
+    }
+  ],
+  "areaServed": [
+    { "@type": "State", "name": "West Bengal" },
+    { "@type": "State", "name": "Sikkim" },
+    { "@type": "State", "name": "Odisha" },
+    { "@type": "Country", "name": "India" }
+    {%- for loc in locations.catalog -%}
+    ,{ "@type": "City", "name": "{{ loc.name }}", "containedInPlace": { "@type": "State", "name": "{{ loc.state }}" } }
+    {%- endfor -%}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Security Guard Tiers",
+    "itemListElement": [
+      {%- for tier in site.guardTiers -%}
+      {
+        "@type": "Offer",
+        "name": {{ tier.name | jsonify | safe }},
+        "description": {{ tier.description | jsonify | safe }},
+        "priceCurrency": "INR",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "{{ tier.priceRange }}",
+          "priceCurrency": "INR",
+          "unitText": "per guard per month"
+        }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor -%}
+    ]
+  },
+  "identifier": [
+    { "@type": "PropertyValue", "propertyID": "PSARA Licence (West Bengal)", "value": "{{ site.registrations.psara }}" },
+    { "@type": "PropertyValue", "propertyID": "PAN", "value": "{{ site.registrations.pan }}" },
+    { "@type": "PropertyValue", "propertyID": "EPF", "value": "{{ site.registrations.epf }}" },
+    { "@type": "PropertyValue", "propertyID": "ESI", "value": "{{ site.registrations.esi }}" },
+    { "@type": "PropertyValue", "propertyID": "ISO", "value": "{{ site.registrations.iso }}" }
+  ],
+  "sameAs": [
+    "{{ site.social.facebook }}",
+    "{{ site.social.linkedin }}"
+  ]
+}
+</script>
+
+{%- if breadcrumbs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {%- for crumb in breadcrumbs %}
+    { "@type": "ListItem", "position": {{ loop.index }}, "name": "{{ crumb.label }}", "item": "{{ site.url }}{{ crumb.url }}" }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
+
+{%- if schemaJsonLd %}
+<script type="application/ld+json">{{ schemaJsonLd | safe }}</script>
+{%- endif %}
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
+
+{%- if site.turnstileSitekey -%}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{%- endif -%}

@@ -1,0 +1,8 @@
+{
+  "languages": [
+    { "code": "en", "label": "English", "hrefLang": "en-IN", "default": true },
+    { "code": "bn", "label": "বাংলা", "hrefLang": "bn-IN" },
+    { "code": "hi", "label": "हिन्दी", "hrefLang": "hi-IN" }
+  ],
+  "_translationStrategy": "Only 5 highest-converting pages are translated: home, quote, services index, locations index, contact. Translations must be done by a native human translator (NOT machine translation). Until real translations are in place, these pages are marked with a banner asking the visitor to switch to English."
+}

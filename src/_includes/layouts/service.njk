@@ -1,0 +1,73 @@
+---
+layout: layouts/base.njk
+---
+{%- set svc = service -%}
+<section class="page-hero page-hero-service page-hero-photo">
+  <div class="hero-photo-bg" aria-hidden="true">
+    {% pictureHero "service-" + svc.slug %}
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <p class="eyebrow">Security Service</p>
+    <h1>{{ svc.title }}</h1>
+    <p class="lead">{{ svc.heroDescription or svc.shortDescription }}</p>
+    <div class="hero-buttons">
+      <a href="/pages/quote/?service={{ svc.slug }}" class="cta-button cta-button-primary">Get Quote</a>
+      <button type="button" class="cta-button-outline js-open-site-visit" data-prefill-service="{{ svc.slug }}">Free Site Visit</button>
+    </div>
+    <p class="hero-meta"><strong>Pricing starts from:</strong> {{ svc.priceFrom }}</p>
+  </div>
+</section>
+
+{{ content | safe }}
+
+<section class="container faq-section">
+  <h2>Frequently asked questions</h2>
+  <dl class="faq">
+    {%- for item in svc.faq or faq.general -%}
+    <div class="faq-item">
+      <dt>{{ item.q }}</dt>
+      <dd>{{ item.a }}</dd>
+    </div>
+    {%- endfor -%}
+  </dl>
+</section>
+
+<section class="container quote-block">
+  <h2>Request a {{ svc.title }} proposal</h2>
+  {% include "partials/quote-form.njk" %}
+</section>
+
+{% include "partials/site-visit-cta-strip.njk" %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ svc.title }}",
+  "provider": { "@type": "LocalBusiness", "@id": "{{ site.url }}#localbusiness" },
+  "areaServed": [
+    {%- for loc in locations.catalog -%}
+    { "@type": "City", "name": "{{ loc.name }}" }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ],
+  "name": "{{ svc.title }}",
+  "description": "{{ svc.shortDescription }}",
+  "offers": { "@type": "Offer", "priceCurrency": "INR", "description": "{{ svc.priceFrom }}" },
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+
+{%- if svc.faq or faq.general -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in svc.faq or faq.general -%}
+    { "@type": "Question", "name": {{ item.q | jsonify | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify | safe }} } }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}

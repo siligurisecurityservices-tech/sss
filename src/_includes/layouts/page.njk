@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+{% if hero %}
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ hero.title or title }}</h1>
+    {% if hero.subtitle %}<p class="lead">{{ hero.subtitle }}</p>{% endif %}
+    {% if hero.cta %}
+    <div class="hero-buttons">
+      <a href="{{ hero.cta.url }}" class="cta-button cta-button-primary">{{ hero.cta.label }}</a>
+      <button type="button" class="cta-button-outline js-open-site-visit">Free Site Visit</button>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
+<div class="page-content">
+  <div class="container">
+    {{ content | safe }}
+  </div>
+</div>
+
+{% include "partials/site-visit-cta-strip.njk" %}

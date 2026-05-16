@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="Hospital security guard at OPD reception" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g-service-healthcare-security" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052a3"/>
+      <stop offset="100%" stop-color="#003366"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g-service-healthcare-security)"/>
+  <circle cx="600" cy="300" r="145.20000000000002" fill="rgba(255,255,255,0.08)"/>
+  <text x="600" y="300" font-size="132" text-anchor="middle" dominant-baseline="central">👮</text>
+</svg>

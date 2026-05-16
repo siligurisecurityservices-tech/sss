@@ -1,0 +1,80 @@
+<form id="job-application-form" class="lead-form" data-endpoint="/api/lead" data-form-type="career" novalidate>
+  <input type="hidden" name="formType" value="career">
+
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="ja-name">Your Name <span class="required">*</span></label>
+      <input type="text" id="ja-name" name="name" required autocomplete="name" minlength="2" maxlength="80">
+    </div>
+    <div>
+      <label for="ja-phone">Phone Number <span class="required">*</span></label>
+      <input type="tel" id="ja-phone" name="phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s()]{10,15}" placeholder="+91 98765 43210">
+    </div>
+  </div>
+
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="ja-role">Role you're applying for <span class="required">*</span></label>
+      <select id="ja-role" name="role" required>
+        <option value="">Select a role</option>
+        {%- for job in jobs.catalog -%}
+        <option value="{{ job.title }}" data-slug="{{ job.slug }}">{{ job.title }}</option>
+        {%- endfor -%}
+        <option value="Other">Other / not sure</option>
+      </select>
+    </div>
+    <div>
+      <label for="ja-location">Preferred posting location</label>
+      <select id="ja-location" name="location">
+        <option value="">No preference</option>
+        {%- for loc in locations.catalog -%}
+        <option value="{{ loc.name }}">{{ loc.name }}</option>
+        {%- endfor -%}
+        <option value="Other">Other</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="ja-experience">Relevant experience</label>
+      <select id="ja-experience" name="experience">
+        <option value="">Select</option>
+        <option value="None">None — fresher (training provided)</option>
+        <option value="<1 year">Under 1 year</option>
+        <option value="1-3 years">1–3 years</option>
+        <option value="3-5 years">3–5 years</option>
+        <option value="5+ years">5+ years</option>
+        <option value="Ex-servicemen">Ex-servicemen / retired police</option>
+      </select>
+    </div>
+    <div>
+      <label for="ja-relocate">Willing to relocate?</label>
+      <select id="ja-relocate" name="willingToRelocate">
+        <option value="">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No — local posting only">No — local posting only</option>
+        <option value="Maybe">Maybe — depending on terms</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <label for="ja-email">Email (optional)</label>
+    <input type="email" id="ja-email" name="email" autocomplete="email" maxlength="120">
+  </div>
+
+  <div class="form-row">
+    <label for="ja-notes">Anything else we should know? (optional)</label>
+    <textarea id="ja-notes" name="notes" rows="3" maxlength="500" placeholder="Languages spoken, last employer, availability date, references"></textarea>
+  </div>
+
+  <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+  {%- if site.turnstileSitekey -%}<div class="cf-turnstile" data-sitekey="{{ site.turnstileSitekey }}"></div>{%- endif -%}
+
+  <div class="form-actions">
+    <button type="submit" class="cta-button cta-button-primary">Submit Application</button>
+    <p class="form-help">Phone is required. After submitting, WhatsApp opens with your details — you can edit before sending.</p>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </div>
+</form>

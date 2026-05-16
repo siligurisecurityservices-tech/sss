@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ pageLang or 'en' }}">
+<head>
+<script>document.documentElement.classList.add('js')</script>
+{% include "partials/head.njk" %}
+</head>
+<body>
+
+{% include "partials/header.njk" %}
+
+{% if breadcrumbs %}
+{% include "partials/breadcrumbs.njk" %}
+{% endif %}
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}
+{% include "partials/whatsapp-fab.njk" %}
+{% include "partials/site-visit-modal.njk" %}
+{% include "partials/analytics.njk" %}
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

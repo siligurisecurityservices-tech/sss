@@ -1,0 +1,46 @@
+<form id="site-visit-form" class="lead-form" data-endpoint="/api/site-visit" novalidate>
+  <div class="form-row">
+    <label for="sv-name">Your Name <span class="required">*</span></label>
+    <input type="text" id="sv-name" name="name" required autocomplete="name" minlength="2" maxlength="80">
+  </div>
+  <div class="form-row">
+    <label for="sv-phone">Phone Number <span class="required">*</span></label>
+    <input type="tel" id="sv-phone" name="phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s()]{10,15}" placeholder="+91 98765 43210">
+    <small class="form-hint">We will call to confirm the visit. WhatsApp will open after you submit.</small>
+  </div>
+  <div class="form-row">
+    <label for="sv-location">Site Location <span class="required">*</span></label>
+    <select id="sv-location" name="location" required>
+      <option value="">Select a city / region</option>
+      {%- for loc in locations.catalog -%}
+      <option value="{{ loc.name }}">{{ loc.name }}</option>
+      {%- endfor -%}
+      <option value="Other">Other (mention in notes)</option>
+    </select>
+  </div>
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="sv-date">Preferred Date</label>
+      <input type="date" id="sv-date" name="preferredDate">
+    </div>
+    <div>
+      <label for="sv-time">Preferred Time</label>
+      <select id="sv-time" name="preferredTime">
+        <option value="">Any time</option>
+        <option value="11:00-13:00">Late morning (11 AM – 1 PM)</option>
+        <option value="13:00-15:00">Afternoon (1 PM – 3 PM)</option>
+        <option value="15:00-17:00">Evening (3 PM – 5 PM)</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <label for="sv-notes">Notes (optional)</label>
+    <textarea id="sv-notes" name="notes" rows="3" maxlength="500" placeholder="Number of guards needed, type of site, anything we should know"></textarea>
+  </div>
+  <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+  {%- if site.turnstileSitekey -%}<div class="cf-turnstile" data-sitekey="{{ site.turnstileSitekey }}"></div>{%- endif -%}
+  <div class="form-actions">
+    <button type="submit" class="cta-button cta-button-primary">Book Free Site Visit</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </div>
+</form>

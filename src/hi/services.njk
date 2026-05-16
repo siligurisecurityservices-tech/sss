@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+permalink: /hi/services/index.html
+pageLang: hi
+title: हमारी सेवाएँ
+description: सुरक्षा गार्ड, सशस्त्र सुरक्षा, हाउसकीपिंग और सुविधा प्रबंधन।
+---
+
+{% set enUrl = "/pages/services/" %}
+{% include "partials/translation-pending-banner.njk" %}
+
+<section class="container">
+  <h1>{{ title }}</h1>
+  <div class="card-grid">
+    {%- for svc in services.catalog -%}
+    <a class="card-link" href="/services/{{ svc.slug }}/">
+      <div class="card">
+        <div class="card-icon">{{ svc.icon }}</div>
+        <h3>{{ svc.title }}</h3>
+        <p>{{ svc.shortDescription }}</p>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>

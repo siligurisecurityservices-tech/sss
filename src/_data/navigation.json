@@ -1,0 +1,45 @@
+{
+  "primary": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "/pages/about/" },
+    { "label": "Services", "url": "/pages/services/" },
+    { "label": "Locations", "url": "/pages/locations/" },
+    { "label": "Sectors", "url": "/pages/sectors/" },
+    { "label": "Compliance", "url": "/pages/compliance/" },
+    { "label": "Careers", "url": "/pages/careers/" },
+    { "label": "Blog", "url": "/pages/blog/" },
+    { "label": "Contact", "url": "/pages/contact/" }
+  ],
+  "footer": {
+    "services": [
+      { "label": "Corporate Security", "url": "/services/corporate-security/" },
+      { "label": "Industrial Security", "url": "/services/industrial-security/" },
+      { "label": "Armed Guards", "url": "/services/armed-security/" },
+      { "label": "Hotel & Hospitality", "url": "/services/hotel-security/" },
+      { "label": "Facility Management", "url": "/pages/facilities/" },
+      { "label": "Quick Response Team", "url": "/services/quick-response/" }
+    ],
+    "locations": [
+      { "label": "Siliguri", "url": "/locations/siliguri/" },
+      { "label": "Darjeeling", "url": "/locations/darjeeling/" },
+      { "label": "Kalimpong", "url": "/locations/kalimpong/" },
+      { "label": "Gangtok", "url": "/locations/gangtok/" },
+      { "label": "Dooars Region", "url": "/locations/dooars/" },
+      { "label": "Kolkata", "url": "/locations/kolkata/" },
+      { "label": "Bhubaneswar (Odisha)", "url": "/locations/bhubaneswar/" },
+      { "label": "Other cities", "url": "/pages/coverage/" }
+    ],
+    "company": [
+      { "label": "About Us", "url": "/pages/about/" },
+      { "label": "Compliance & Licences", "url": "/pages/compliance/" },
+      { "label": "Coverage", "url": "/pages/coverage/" },
+      { "label": "Careers", "url": "/pages/careers/" },
+      { "label": "Case Studies", "url": "/pages/case-studies/" },
+      { "label": "Blog", "url": "/pages/blog/" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "url": "/pages/privacy/" },
+      { "label": "Terms of Service", "url": "/pages/terms/" }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{%- if clients.items.length > 0 -%}
+<section class="client-logos">
+  <div class="container">
+    <h2>Trusted by {{ clients.totalCount }} organisations across North Bengal and beyond</h2>
+    <ul class="logo-grid">
+      {%- for c in clients.items -%}
+      <li><img src="{{ c.logo }}" alt="{{ c.name }}" loading="lazy" width="160" height="80"></li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{%- endif -%}

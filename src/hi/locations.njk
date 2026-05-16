@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /hi/locations/index.html
+pageLang: hi
+title: हमारे क्षेत्र
+description: सिलीगुड़ी, दार्जिलिंग, कालिम्पोंग, गंगटोक, जलपाईगुड़ी, अलीपुरद्वार और डुआर्स।
+---
+
+{% set enUrl = "/pages/locations/" %}
+{% include "partials/translation-pending-banner.njk" %}
+
+<section class="container">
+  <h1>{{ title }}</h1>
+  <ul class="chips">
+    {%- for loc in locations.catalog -%}
+    <li class="chip"><a href="/locations/{{ loc.slug }}/">{{ loc.name }}</a></li>
+    {%- endfor -%}
+  </ul>
+</section>

@@ -1,0 +1,10 @@
+<div id="site-visit-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="site-visit-modal-title" hidden>
+  <div class="modal-backdrop js-close-modal" aria-hidden="true"></div>
+  <div class="modal-panel" role="document">
+    <button class="modal-close js-close-modal" type="button" aria-label="Close">×</button>
+    <h2 id="site-visit-modal-title">Book Your Free Site Visit</h2>
+    <p>A supervisor will visit your site, assess security needs and email a no-obligation proposal — usually within 24 hours.</p>
+    {% include "partials/site-visit-form.njk" %}
+    <p class="text-small text-muted">Prefer to talk? Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}" target="_blank" rel="noopener">message on WhatsApp</a>.</p>
+  </div>
+</div>

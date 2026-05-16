@@ -1,0 +1,53 @@
+---
+layout: layouts/page.njk
+permalink: /pages/coverage/index.html
+title: National Coverage & Deployment Capability
+description: Established security and manpower presence across North Bengal, Sikkim and the Hills. Deployment capability across India for enterprise contracts. Honest distinction between "we have boots on the ground" and "we can mobilise".
+hero:
+  title: National coverage & deployment capability
+  subtitle: We don't pretend to have offices we don't have. Here's the honest picture of where we operate today and where we can deploy on contract.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Coverage", url: "/pages/coverage/" }
+---
+
+<section>
+  <h2>Established presence ({{ coverage.established.length }} cities)</h2>
+  <p>Cities and regions where we have active client sites today, with locally hired and trained guards, a supervisor presence, and a real response time.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>City</th><th>State</th><th>Operating since</th><th>Model</th></tr>
+    </thead>
+    <tbody>
+      {%- for row in coverage.established -%}
+      <tr><td>{{ row.city }}</td><td>{{ row.state }}</td><td>{{ row.since }}</td><td>{{ row.model }}</td></tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Deployment capability ({{ coverage.capability.length }} cities)</h2>
+  <p>Cities where we have the operational capability — through direct deployment on contract, or in partnership with a PSARA-licensed agency in that state — to staff and supervise an enterprise contract. Not the same as established presence. We will be transparent about which model applies if you ask.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>City</th><th>State</th><th>Model</th></tr>
+    </thead>
+    <tbody>
+      {%- for row in coverage.capability -%}
+      <tr><td>{{ row.city }}</td><td>{{ row.state }}</td><td>{{ row.model }}</td></tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Why this distinction matters</h2>
+  <p>A lot of agencies advertise "PAN India coverage" with no meaningful presence outside their home state. When the contract is signed, they sub-vendor to a local agency, pocket the margin, and disappear when there's a problem. We've seen it happen, we've cleaned up after it, and we won't do it.</p>
+  <p>If your contract is in our <strong>Established Presence</strong> list, we deploy directly with our own personnel and infrastructure. If your contract is in our <strong>Deployment Capability</strong> list, we work in transparent partnership with a named local PSARA-licensed agency — you know who is on the ground, we own the SLA and the relationship, and our supervisor flies in for site visits at our cost.</p>
+</section>
+
+<section>
+  <h2>Adding a city</h2>
+  <p>If your enterprise contract requires deployment in a city not on this page, we'll evaluate honestly. If we can do it well, we'll add it (and update this page). If we can't, we'll tell you and suggest an alternative — sometimes that's a recommendation to use a strong local agency we know in that city, even if it means we don't get the contract.</p>
+</section>

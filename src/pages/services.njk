@@ -1,0 +1,82 @@
+---
+layout: layouts/page.njk
+permalink: /pages/services/index.html
+title: Security & Facility Management Services
+description: Complete catalogue of security guard, armed protection, facility management and housekeeping services from Siliguri Security Services. PSARA-licensed, ISO 9001:2015 certified.
+hero:
+  title: Our security & manpower services
+  subtitle: Every service is PSARA-compliant, statutorily insured, and supervised by a named supervisor reachable on a real phone number.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Services", url: "/pages/services/" }
+---
+
+<section>
+  <h2>Security services</h2>
+  <div class="card-grid">
+    {%- for svc in services.catalog -%}
+    <a class="card-link" href="/services/{{ svc.slug }}/">
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">{{ svc.icon }}</div>
+        <h3>{{ svc.title }}</h3>
+        <p>{{ svc.shortDescription }}</p>
+        <p class="card-meta">From {{ svc.priceFrom }}</p>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section>
+  <h2>Facility management</h2>
+  <p>Beyond security, we run full facility-management contracts — single-vendor solutions for corporate offices, hospitals, hotels, malls and industrial sites.</p>
+  <ul class="check-list">
+    <li>Corporate and industrial housekeeping</li>
+    <li>Deep cleaning, sanitisation and pest-control coordination</li>
+    <li>Hotel and resort housekeeping with grooming standards</li>
+    <li>Pantry, F&amp;B support and catering staff</li>
+    <li>Maintenance support teams (electrical, plumbing, HVAC liaison)</li>
+    <li>Fire-safety and emergency-response support</li>
+    <li>Gardening and landscape maintenance</li>
+    <li>Driver and transport-pool management</li>
+  </ul>
+  <p><a class="text-link" href="/pages/facilities/">See the full facility management catalogue →</a></p>
+</section>
+
+<section>
+  <h2>How pricing works</h2>
+  <div class="card-grid">
+    {%- for tier in site.guardTiers -%}
+    <div class="card card-pricing">
+      <h3>{{ tier.name }}</h3>
+      <p class="pricing">{{ tier.priceRange }}</p>
+      <p>{{ tier.description }}</p>
+    </div>
+    {%- endfor -%}
+  </div>
+  <p class="text-small text-muted">Rates are all-inclusive of statutory contributions (EPF, ESI, bonus, gratuity provisioning) and basic equipment. Weapons, vehicles, dogs and specialised equipment are billed separately. Final pricing depends on shift pattern, site type and contract length.</p>
+</section>
+
+<section class="faq-section">
+  <h2>FAQ</h2>
+  <dl class="faq">
+    {%- for item in faq.general -%}
+    <div class="faq-item">
+      <dt>{{ item.q }}</dt>
+      <dd>{{ item.a }}</dd>
+    </div>
+    {%- endfor -%}
+  </dl>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in faq.general -%}
+    { "@type": "Question", "name": {{ item.q | jsonify | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify | safe }} } }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>

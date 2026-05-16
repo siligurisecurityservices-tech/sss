@@ -1,0 +1,100 @@
+{
+  "catalog": [
+    {
+      "slug": "corporate-security",
+      "title": "Corporate & Commercial Security",
+      "icon": "🏢",
+      "order": 1,
+      "shortDescription": "Trained guards for offices, IT parks, corporate campuses and commercial complexes.",
+      "priceFrom": "₹10,000/month per guard"
+    },
+    {
+      "slug": "industrial-security",
+      "title": "Industrial & Manufacturing Security",
+      "icon": "🏭",
+      "order": 2,
+      "shortDescription": "Heavy-industry guards, gatehouse management, materials check and shift coverage.",
+      "priceFrom": "₹12,000/month per guard"
+    },
+    {
+      "slug": "banking-security",
+      "title": "Banking & ATM Security",
+      "icon": "🏦",
+      "order": 3,
+      "shortDescription": "Branch security, armed cash escort, ATM guarding and bullion protection.",
+      "priceFrom": "₹15,000/month per guard"
+    },
+    {
+      "slug": "healthcare-security",
+      "title": "Hospital & Healthcare Security",
+      "icon": "🏥",
+      "order": 4,
+      "shortDescription": "Patient-facing guards trained in de-escalation, OPD flow control and emergency support.",
+      "priceFrom": "₹12,000/month per guard"
+    },
+    {
+      "slug": "retail-security",
+      "title": "Retail & Mall Security",
+      "icon": "🛍️",
+      "order": 5,
+      "shortDescription": "Anti-shoplifting, crowd control, female frisking and CCTV-supported retail security.",
+      "priceFrom": "₹11,000/month per guard"
+    },
+    {
+      "slug": "realestate-security",
+      "title": "Real Estate & Residential Security",
+      "icon": "🏘️",
+      "order": 6,
+      "shortDescription": "Gated-society guards, visitor management, parking control and patrolling.",
+      "priceFrom": "₹10,000/month per guard"
+    },
+    {
+      "slug": "warehouse-security",
+      "title": "Warehouse & Logistics Security",
+      "icon": "📦",
+      "order": 7,
+      "shortDescription": "FMCG, e-commerce and logistics-hub security with shipment verification.",
+      "priceFrom": "₹11,000/month per guard"
+    },
+    {
+      "slug": "residential-security",
+      "title": "Private Residential Security",
+      "icon": "🏠",
+      "order": 8,
+      "shortDescription": "Personal residence guards, gatehouse and household-staff management.",
+      "priceFrom": "₹12,000/month per guard"
+    },
+    {
+      "slug": "hotel-security",
+      "title": "Hotel & Hospitality Security",
+      "icon": "🏨",
+      "order": 9,
+      "shortDescription": "Discreet, well-groomed guards trained for guest interaction and luxury properties.",
+      "priceFrom": "₹13,000/month per guard"
+    },
+    {
+      "slug": "event-security",
+      "title": "Event & Ceremonial Security",
+      "icon": "🎪",
+      "order": 10,
+      "shortDescription": "Concerts, weddings, conferences and political rallies — bouncer to executive level.",
+      "priceFrom": "₹2,500/day per guard"
+    },
+    {
+      "slug": "armed-security",
+      "title": "Armed & Special Security Teams",
+      "icon": "🛡️",
+      "order": 11,
+      "shortDescription": "Licensed weapons-trained guards for high-value assets and VIP protection.",
+      "priceFrom": "₹25,000/month per guard"
+    },
+    {
+      "slug": "quick-response",
+      "title": "Quick Response & Patrol Units",
+      "icon": "🚨",
+      "order": 12,
+      "shortDescription": "Mobile patrol vehicles, on-call backup and rapid-deployment response teams.",
+      "priceFrom": "Custom contract pricing"
+    }
+  ]
+}

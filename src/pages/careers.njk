@@ -1,0 +1,126 @@
+---
+layout: layouts/base.njk
+permalink: /pages/careers/index.html
+title: Careers — Join Our Team
+description: We're hiring across North Bengal, Sikkim, the Hills, Dooars, Kolkata and Odisha — and scaling nationally. Statutory benefits from day one. Free training. Salary on time, every month. Apply in under a minute.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Careers", url: "/pages/careers/" }
+---
+
+<section class="page-hero page-hero-careers page-hero-photo">
+  <div class="hero-photo-bg" aria-hidden="true">
+    {% pictureHero "hero-careers" %}
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="container">
+    <p class="eyebrow">We're hiring</p>
+    <h1>Join our team across North Bengal, Sikkim, Kolkata and Odisha</h1>
+    <p class="lead">Statutory benefits from day one. Free PSARA-certified training. Salary on time, every month. Apply in under a minute.</p>
+    <div class="hero-buttons">
+      <a href="#apply" class="cta-button cta-button-primary">Apply Now</a>
+      <a href="{{ site.phone.whatsapp }}?text=Hi%2C%20I%27d%20like%20to%20apply%20for%20a%20job%20at%20Siliguri%20Security%20Services" target="_blank" rel="noopener" class="cta-button-outline">WhatsApp HR</a>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-grid trust-grid-careers">
+      {%- for stat in jobs.stats -%}
+      <div><strong>{{ stat.value }}</strong><span>{{ stat.label }}</span></div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <header class="section-header">
+    <h2>Open positions</h2>
+    <p>Hiring continuously. Walk in any working day or apply below — we typically call back within one working day.</p>
+  </header>
+
+  <ul class="job-grid">
+    {%- for job in jobs.catalog -%}
+    <li class="job-card{% if job.urgent %} job-card-urgent{% endif %}">
+      <div class="job-card-top">
+        {%- if job.urgent -%}<span class="job-badge job-badge-urgent">Hiring now</span>{%- endif -%}
+        <span class="job-badge job-badge-{{ job.tier }}">{{ job.tier | capitalize }}</span>
+      </div>
+      <h3>{{ job.title }}</h3>
+      <p class="text-muted">{% for l in job.locations %}{{ l }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      <p class="job-pay">{{ job.payRange }}</p>
+      <p>{{ job.eligibility }}</p>
+      <p class="text-small text-muted">{{ job.headcount }}</p>
+      <a href="#apply" class="cta-button-outline job-apply" data-prefill-role="{{ job.title }}">Apply for this role</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="container section section-alt">
+  <header class="section-header">
+    <h2>Why work with us</h2>
+  </header>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon" aria-hidden="true">✅</div>
+      <h3>Statutory benefits from day one</h3>
+      <p>EPF, ESI, statutory bonus and gratuity provisioning from the day you're posted. No probation games.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" aria-hidden="true">💸</div>
+      <h3>Salary on time, every month</h3>
+      <p>Direct bank transfer, by the 7th of every month. No cash-only payments. No "next month" excuses.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" aria-hidden="true">🎓</div>
+      <h3>Free PSARA training</h3>
+      <p>21-day mandatory training plus role-specific induction — all free. ID card and basic equipment included.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" aria-hidden="true">📈</div>
+      <h3>Real promotion ladder</h3>
+      <p>Guard → Senior Guard → Assistant Supervisor → Supervisor → Area Officer. Many of our supervisors started as guards.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" aria-hidden="true">🏠</div>
+      <h3>Posting near home</h3>
+      <p>We try to deploy you within reasonable commute of where you live. Less travel time, more pay in your pocket.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" aria-hidden="true">🚫</div>
+      <h3>Zero placement fees</h3>
+      <p>We never charge candidates for a job. If anyone claiming to represent us asks for money, report it to the director.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <header class="section-header">
+    <h2>How to apply</h2>
+    <p>Three ways. Pick whichever is easiest.</p>
+  </header>
+  <ol class="steps steps-grid">
+    <li><strong>Apply below.</strong> Fill the short form — we'll call within one working day to schedule an interview.</li>
+    <li><strong>WhatsApp HR.</strong> Message your name, location and role to <a href="{{ site.phone.whatsapp }}" target="_blank" rel="noopener">{{ site.phone.display }}</a>.</li>
+    <li><strong>Walk in.</strong> Visit our Matigara office (Mon–Fri 11 AM – 5 PM, Sat 11 AM – 2 PM) with school certificate, Aadhaar and two passport photos.</li>
+  </ol>
+</section>
+
+<section id="apply" class="container section">
+  <header class="section-header">
+    <h2>Apply now</h2>
+    <p>Phone number is required so we can call back. WhatsApp opens with your details after submitting — you can edit before sending.</p>
+  </header>
+  {% include "partials/job-application-form.njk" %}
+</section>
+
+<section class="container section">
+  <div class="callout callout-warning">
+    <h3>⚠️ We never charge candidates</h3>
+    <p>Siliguri Security Services and its representatives <strong>never ask candidates for money</strong> — not for "registration", not for "uniform deposit", not for "training". If anyone claiming to represent us asks for payment, please report it directly to the director on <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a>. Genuine job offers are issued only after a walk-in interview and on company letterhead.</p>
+  </div>
+</section>
+
+{% include "partials/careers-cta-strip.njk" %}

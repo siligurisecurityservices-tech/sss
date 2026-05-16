@@ -1,0 +1,20 @@
+{%- if testimonials.items.length > 0 -%}
+<section class="container section testimonials-section">
+  <header class="section-header">
+    <h2>What our clients say</h2>
+  </header>
+  <div class="testimonial-grid">
+    {%- for t in testimonials.items -%}
+    <figure class="testimonial-card{% if t.placeholder %} testimonial-card-placeholder{% endif %}">
+      {% if t.placeholder %}<span class="img-placeholder-badge">PLACEHOLDER · REPLACE WITH PERMISSION</span>{% endif %}
+      <blockquote>“{{ t.quote }}”</blockquote>
+      <figcaption>
+        <strong>{{ t.name }}</strong>
+        <span>{{ t.designation }}{% if t.company %}, {{ t.company }}{% endif %}</span>
+        {% if t.location %}<span class="text-muted">{{ t.location }}</span>{% endif %}
+      </figcaption>
+    </figure>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}

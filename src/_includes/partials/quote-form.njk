@@ -1,0 +1,83 @@
+<form id="quote-form" class="lead-form" data-endpoint="/api/lead" novalidate>
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="q-name">Contact Person <span class="required">*</span></label>
+      <input type="text" id="q-name" name="name" required autocomplete="name" minlength="2" maxlength="80">
+    </div>
+    <div>
+      <label for="q-company">Company Name</label>
+      <input type="text" id="q-company" name="company" autocomplete="organization" maxlength="120">
+    </div>
+  </div>
+
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="q-phone">Phone Number <span class="required">*</span></label>
+      <input type="tel" id="q-phone" name="phone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\-\s()]{10,15}" placeholder="+91 98765 43210">
+    </div>
+    <div>
+      <label for="q-email">Email Address</label>
+      <input type="email" id="q-email" name="email" autocomplete="email" maxlength="120">
+    </div>
+  </div>
+
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="q-location">Deployment Location <span class="required">*</span></label>
+      <select id="q-location" name="location" required>
+        <option value="">Select city / region</option>
+        {%- for loc in locations.catalog -%}
+        <option value="{{ loc.name }}"{% if prefillLocation == loc.name %} selected{% endif %}>{{ loc.name }}</option>
+        {%- endfor -%}
+        <option value="Other">Other (mention in notes)</option>
+      </select>
+    </div>
+    <div>
+      <label for="q-service">Service Required</label>
+      <select id="q-service" name="serviceType">
+        <option value="">Select a service</option>
+        {%- for svc in services.catalog -%}
+        <option value="{{ svc.title }}"{% if prefillService == svc.slug %} selected{% endif %}>{{ svc.title }}</option>
+        {%- endfor -%}
+        <option value="Multiple">Multiple / not sure</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row form-row-2col">
+    <div>
+      <label for="q-guards">Number of Guards Needed</label>
+      <select id="q-guards" name="guardCount">
+        <option value="">Estimate</option>
+        <option value="1-5">1–5</option>
+        <option value="6-15">6–15</option>
+        <option value="16-50">16–50</option>
+        <option value="51-100">51–100</option>
+        <option value="100+">100+</option>
+      </select>
+    </div>
+    <div>
+      <label for="q-tier">Guard Tier</label>
+      <select id="q-tier" name="guardTier">
+        <option value="">No preference</option>
+        {%- for tier in site.guardTiers -%}
+        <option value="{{ tier.name }}">{{ tier.name }} — {{ tier.priceRange }}</option>
+        {%- endfor -%}
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <label for="q-notes">Requirements / Notes</label>
+    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="Type of site, shifts, special requirements (armed / female / dog handler), expected start date"></textarea>
+  </div>
+
+  <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+  {%- if site.turnstileSitekey -%}<div class="cf-turnstile" data-sitekey="{{ site.turnstileSitekey }}"></div>{%- endif -%}
+
+  <div class="form-actions">
+    <button type="submit" class="cta-button cta-button-primary">Request Corporate Quote</button>
+    <p class="form-help">Phone is required. After submitting, WhatsApp will open with a summary you can edit before sending.</p>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </div>
+</form>

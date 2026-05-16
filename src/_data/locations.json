@@ -1,0 +1,104 @@
+{
+  "catalog": [
+    {
+      "slug": "siliguri",
+      "name": "Siliguri",
+      "state": "West Bengal",
+      "order": 1,
+      "established": 2008,
+      "headquarters": true,
+      "shortDescription": "Our home market. Siliguri Security Services has been the trusted choice for tea estates, corporate offices, hospitals, banks and hotels across Siliguri and Matigara since 2008.",
+      "landmarks": ["Sevoke Road", "Hill Cart Road", "Matigara", "Bagdogra", "Salugara", "Hospital More", "Sukna", "Kawakhali"],
+      "responseTimeSLA": "Under 30 minutes anywhere in Siliguri municipality",
+      "activeClients": "200+"
+    },
+    {
+      "slug": "darjeeling",
+      "name": "Darjeeling",
+      "state": "West Bengal",
+      "order": 2,
+      "established": 2011,
+      "shortDescription": "Tea-estate security, heritage-hotel guarding and tourist-season deployments across Darjeeling, Kurseong and Mirik.",
+      "landmarks": ["Darjeeling town", "Ghum", "Kurseong", "Mirik", "Sukhia Pokhri", "Tiger Hill"],
+      "responseTimeSLA": "Under 90 minutes from Siliguri base",
+      "activeClients": "40+"
+    },
+    {
+      "slug": "kalimpong",
+      "name": "Kalimpong",
+      "state": "West Bengal",
+      "order": 3,
+      "established": 2013,
+      "shortDescription": "Resort security, boarding-school guarding and warehouse cover across Kalimpong district.",
+      "landmarks": ["Kalimpong town", "Algarah", "Pedong", "Lava", "Lolegaon"],
+      "responseTimeSLA": "Under 2 hours from Siliguri base",
+      "activeClients": "20+"
+    },
+    {
+      "slug": "gangtok",
+      "name": "Gangtok",
+      "state": "Sikkim",
+      "order": 4,
+      "established": 2014,
+      "shortDescription": "Sikkim's commercial capital — corporate, hotel and government-contract security across East Sikkim.",
+      "landmarks": ["MG Marg", "Tadong", "Rangpo", "Singtam", "Pakyong", "Ranipool"],
+      "responseTimeSLA": "Under 3 hours from Siliguri base",
+      "activeClients": "30+"
+    },
+    {
+      "slug": "jalpaiguri",
+      "name": "Jalpaiguri",
+      "state": "West Bengal",
+      "order": 5,
+      "established": 2012,
+      "shortDescription": "Tea-estate, factory and bank security across Jalpaiguri town and surrounding tea belt.",
+      "landmarks": ["Jalpaiguri town", "Mainaguri", "Dhupguri", "Maynaguri", "Banarhat"],
+      "responseTimeSLA": "Under 90 minutes from Siliguri base",
+      "activeClients": "25+"
+    },
+    {
+      "slug": "alipurduar",
+      "name": "Alipurduar",
+      "state": "West Bengal",
+      "order": 6,
+      "established": 2015,
+      "shortDescription": "Border-district security, transport-hub guarding and tea-garden cover.",
+      "landmarks": ["Alipurduar town", "Falakata", "Birpara", "Kalchini", "Jaigaon"],
+      "responseTimeSLA": "Under 3 hours from Siliguri base",
+      "activeClients": "15+"
+    },
+    {
+      "slug": "dooars",
+      "name": "Dooars Region",
+      "state": "West Bengal",
+      "order": 7,
+      "established": 2010,
+      "shortDescription": "Resorts, tea estates, eco-lodges and factory security across the Dooars belt — Lataguri to Hasimara.",
+      "landmarks": ["Lataguri", "Malbazar", "Chalsa", "Gorumara", "Murti", "Hasimara", "Madarihat"],
+      "responseTimeSLA": "Under 2.5 hours from Siliguri base",
+      "activeClients": "35+"
+    },
+    {
+      "slug": "kolkata",
+      "name": "Kolkata",
+      "state": "West Bengal",
+      "order": 8,
+      "established": 2024,
+      "shortDescription": "Corporate, hospital, retail, bank, and poultry-hatchery security across Kolkata — Salt Lake, New Town, Park Street and Howrah corridor.",
+      "landmarks": ["Salt Lake (Sector V)", "New Town", "Park Street", "Howrah", "Esplanade", "Behala", "Garia", "Rajarhat", "Hatcheries (South 24 Parganas, Hooghly)"],
+      "responseTimeSLA": "Under 60 minutes within Kolkata city",
+      "activeClients": "10+"
+    },
+    {
+      "slug": "bhubaneswar",
+      "name": "Bhubaneswar",
+      "state": "Odisha",
+      "order": 9,
+      "established": 2025,
+      "shortDescription": "Our first base in Odisha. Corporate, hotel, warehouse and aquaculture-hatchery security across Bhubaneswar, Cuttack and the IT corridor.",
+      "landmarks": ["Bhubaneswar city", "Cuttack", "Patia / KIIT belt", "Jaydev Vihar", "Saheed Nagar", "Khurda", "Aquaculture belt (Chilika, Kendrapara)"],
+      "responseTimeSLA": "Under 90 minutes within Bhubaneswar–Cuttack corridor",
+      "activeClients": "5+"
+    }
+  ]
+}

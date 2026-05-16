@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+permalink: /hi/quote/index.html
+pageLang: hi
+title: कॉर्पोरेट कोटेशन
+description: सिलीगुड़ी सिक्योरिटी सर्विसेस से कॉर्पोरेट कोटेशन प्राप्त करें।
+---
+
+{% set enUrl = "/pages/quote/" %}
+{% include "partials/translation-pending-banner.njk" %}
+
+<section class="container">
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+  {% include "partials/quote-form.njk" %}
+</section>

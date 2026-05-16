@@ -1,0 +1,21 @@
+{
+  "catalog": [
+    { "name": "Corporate & IT Parks", "icon": "🏢", "description": "Office building access control, visitor management, after-hours patrolling." },
+    { "name": "Manufacturing & Industrial", "icon": "🏭", "description": "Factory perimeter, gatehouse, materials in/out, shift coverage, fire-safety support." },
+    { "name": "Banking & Financial", "icon": "🏦", "description": "Branch security, cash escort, ATM guarding, vault protection (PSARA-licensed armed staff)." },
+    { "name": "Healthcare & Hospitals", "icon": "🏥", "description": "OPD flow control, ICU security, mortuary watch, patient family de-escalation." },
+    { "name": "Retail & Malls", "icon": "🛍️", "description": "Anti-shoplifting, crowd flow, parking control, female frisking, lost-child SOPs." },
+    { "name": "Hotels & Hospitality", "icon": "🏨", "description": "Lobby, banquet, valet and back-of-house security for luxury and mid-segment hotels." },
+    { "name": "Tea Estates & Plantations", "icon": "🍃", "description": "Bungalow security, factory cover, seasonal labour management, perimeter patrol." },
+    { "name": "Real Estate & Townships", "icon": "🏘️", "description": "Gated-society guards, club-house staff, parking and visitor management." },
+    { "name": "Educational Institutions", "icon": "🎓", "description": "Boarding-school, college campus and hostel security with female staff option." },
+    { "name": "Government & PSU", "icon": "🏛️", "description": "Government office, statutory body and public-sector unit contract security." },
+    { "name": "Warehouses & Logistics", "icon": "📦", "description": "FMCG warehouses, e-commerce hubs and shipment verification security." },
+    { "name": "Hatcheries & Aquaculture", "icon": "🐟", "description": "Poultry, fish and prawn hatcheries — biosecurity-aware guards, feed-stock protection, perimeter and night-shift patrols across West Bengal and Odisha." },
+    { "name": "Construction Sites", "icon": "🏗️", "description": "Project-site material security, labour management and contractor liaison." },
+    { "name": "Telecom & Infrastructure", "icon": "📡", "description": "Tower-site security, diesel-theft prevention, equipment-room guarding." },
+    { "name": "Events & Conferences", "icon": "🎪", "description": "Concerts, weddings, exhibitions, political rallies — bouncer to executive teams." },
+    { "name": "Residences (HNI)", "icon": "🏠", "description": "Private residence guards for high-net-worth individuals and visiting executives." },
+    { "name": "Religious & Cultural", "icon": "🕌", "description": "Temple, monastery, gurudwara and festival-occasion security." }
+  ]
+}

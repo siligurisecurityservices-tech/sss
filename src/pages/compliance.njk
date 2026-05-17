@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 permalink: /pages/compliance/index.html
 title: Compliance & Licences
-description: PSARA-licensed (10/WB/PSA/2015), GST registered, ISO 9001:2015 certified. Full statutory compliance with EPF, ESI, Professional Tax and Labour License. Documents available on request.
+description: PSARA-licensed (10/WB/PSA/2015), ISO 9001:2015 certified. CIN U74920WB2011PTC160125. Full statutory compliance with EPF, ESI, TDS and PSARA. Documents available on request.
 hero:
   title: Compliance & licences
   subtitle: We publish the registration numbers. We produce challans on request. Compliance isn't a checkbox — it's how we stay in business for 17 years.
@@ -14,11 +14,13 @@ breadcrumbs:
 <section>
   <h2>Statutory registrations</h2>
   <ul class="registration-list">
+    <li><strong>CIN (MCA):</strong> {{ site.registrations.cin }}</li>
     <li><strong>PSARA Licence (West Bengal):</strong> {{ site.registrations.psara }}</li>
     <li><strong>PAN:</strong> {{ site.registrations.pan }}</li>
     <li><strong>EPF Code:</strong> {{ site.registrations.epf }}</li>
     <li><strong>ESI Code:</strong> {{ site.registrations.esi }}</li>
     <li><strong>TDS A/C No.:</strong> {{ site.registrations.tds }}</li>
+    <li><strong>Service Tax No.:</strong> {{ site.registrations.serviceTax }}</li>
     <li><strong>Quality Management:</strong> {{ site.registrations.iso }}</li>
   </ul>
   <p class="text-small text-muted">Scanned copies of registration certificates and recent monthly compliance challans are available to verified enterprise prospects on request. Email <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a> from your company domain.</p>

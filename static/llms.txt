@@ -5,7 +5,8 @@
 ## Company facts
 
 - **Legal name**: Siliguri Security Services Pvt. Ltd.
-- **Founded**: 2008
+- **CIN**: U74920WB2011PTC160125
+- **Founded**: 2008; incorporated as Pvt. Ltd. 2011
 - **Founder & Director**: B. K. Barman (Director Cum CMD)
 - **Headquarters**: Near Hospital More, Matigara, Siliguri – 734010, West Bengal, India
 - **Phone**: +91-95472-53232 (24/7 operations support; director-reachable for enterprise escalations on the same line)
@@ -13,9 +14,12 @@
 - **WhatsApp**: https://wa.me/919547253232
 - **Website**: https://www.siligurisisecurity.com
 - **PSARA Licence (West Bengal)**: 10/WB/PSA/2015
+- **CIN (MCA India)**: U74920WB2011PTC160125
 - **PAN**: AAQCS1693A
+- **Service Tax No.**: AAQCS1693ASD001
 - **EPF Code**: WB/SLG/50443
 - **ESI Code**: 4100037373000101018
+- **TDS A/C No.**: CALS34259B
 - **Quality certification**: ISO 9001:2015
 - **Personnel strength**: 450+ trained guards (May 2026)
 - **Active client locations**: 50+

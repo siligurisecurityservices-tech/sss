@@ -19,8 +19,8 @@ Every piece of business information used in marketing must match
 | Field | Value |
 |---|---|
 | Legal name | Siliguri Security Services Pvt. Ltd. |
-| Public name | Siliguri Security Services |
-| Phone | +91-70017-61679 |
+| Public name | Siliguri Security Services Pvt. Ltd. |
+| Phone | +91-95472-53232 |
 | Email | siliguri.security.services@gmail.com |
 | Address | Near Hospital More, Matigara, Siliguri-734010, West Bengal, India |
 | Director | B. K. Barman |
@@ -47,7 +47,7 @@ maintain it weekly.**
   - Additional: Janitorial service, Facility management company, Housekeeping service
 - **Address:** Near Hospital More, Matigara, Siliguri-734010 (verified by postcard)
 - **Service area:** Add Siliguri, Matigara, Bagdogra, Salugara, Sukna, Naxalbari
-- **Phone:** +91-70017-61679 (must match site)
+- **Phone:** +91-95472-53232 (must match site)
 - **Hours:** Mon–Fri 11 AM – 5 PM, Sat 11 AM – 2 PM, "24/7 operations support" in description
 - **Description:** Use the `description` field from `site.json` verbatim
 - **Photos:** Upload the photography day output from Phase 2 — at least 10 photos
@@ -132,7 +132,7 @@ Recommended: **MyOperator** (India-native, supports IVR + tracking) or
 Setup:
 - Buy 4 tracking numbers — one each for: Organic, Google Ads, JustDial,
   Direct/Walk-in
-- Forward all to +91-70017-61679 in priority order
+- Forward all to +91-95472-53232 in priority order
 - Use the numbers in the right context: tracking number for that source on
   GBP / JustDial / Google Ads campaigns. Brand number on the website
   header for everyone else.

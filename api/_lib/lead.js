@@ -1,13 +1,13 @@
 // Shared helpers for /api/lead and /api/site-visit
 // No external runtime deps — uses native fetch (Node 18+).
 
-const PHONE_RAW = "917001761679";
-const PHONE_DISPLAY = "+91-70017-61679";
+const PHONE_RAW = "919547253232";
+const PHONE_DISPLAY = "+91-95472-53232";
 const PHONE_REGEX = /^\+?[0-9\-\s()]{10,18}$/;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const FROM_EMAIL = process.env.LEAD_FROM_EMAIL || "leads@siligurisisecurity.com";
-const FROM_NAME = "Siliguri Security Services";
+const FROM_NAME = "Siliguri Security Services Pvt. Ltd.";
 const NOTIFY_EMAIL = process.env.LEAD_NOTIFY_EMAIL || "siliguri.security.services@gmail.com";
 const CAREER_NOTIFY_EMAIL = process.env.LEAD_CAREER_NOTIFY_EMAIL || NOTIFY_EMAIL;
 
@@ -110,7 +110,7 @@ function buildWhatsAppUrl(payload, kind) {
   let opener;
   let map;
   if (kind === "career") {
-    opener = `Hello, I'd like to apply for a job at Siliguri Security Services.`;
+    opener = `Hello, I'd like to apply for a job at Siliguri Security Services Pvt. Ltd.`;
     map = [
       ["name", "Name"], ["phone", "Phone"], ["email", "Email"],
       ["role", "Role applied for"], ["location", "Preferred location"],
@@ -172,8 +172,8 @@ function buildAutoReply(payload, kind) {
   const safe = (s) => String(s || "").replace(/[<>&]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]));
   const isCareer = kind === "career";
   const bodyLine = isCareer
-    ? `Thank you for applying to <strong>Siliguri Security Services</strong>. We've received your application${payload.role ? ` for <strong>${safe(payload.role)}</strong>` : ""} and our HR team will call you within 2 working days to schedule a walk-in interview.`
-    : `Thank you for contacting <strong>Siliguri Security Services</strong>. We've received your enquiry and a supervisor will be in touch ${payload.preferredDate ? "to confirm your preferred date" : "shortly"}.`;
+    ? `Thank you for applying to <strong>Siliguri Security Services Pvt. Ltd.</strong>. We've received your application${payload.role ? ` for <strong>${safe(payload.role)}</strong>` : ""} and our HR team will call you within 2 working days to schedule a walk-in interview.`
+    : `Thank you for contacting <strong>Siliguri Security Services Pvt. Ltd.</strong>. We've received your enquiry and a supervisor will be in touch ${payload.preferredDate ? "to confirm your preferred date" : "shortly"}.`;
   const remindLine = isCareer
     ? `<p><strong>Remember:</strong> we never charge candidates for jobs. If anyone asks for money on our behalf, please report it to the director on the number below.</p>`
     : "";
@@ -181,7 +181,7 @@ function buildAutoReply(payload, kind) {
     <p>Hi ${safe(payload.name) || "there"},</p>
     <p>${bodyLine}</p>
     ${remindLine}
-    <p>If urgent, please call <a href="tel:+917001761679">+91-70017-61679</a> or message us on <a href="https://wa.me/917001761679">WhatsApp</a>.</p>
+    <p>If urgent, please call <a href="tel:+919547253232">+91-95472-53232</a> or message us on <a href="https://wa.me/919547253232">WhatsApp</a>.</p>
     <p style="color:#666">— Siliguri Security Services Pvt. Ltd.<br>PSARA Licence 10/WB/PSA/2015 · ISO 9001:2015</p>
   </body></html>`;
 }
@@ -284,8 +284,8 @@ async function handleLead(req, res, opts = {}) {
 
   if (payload.email && EMAIL_REGEX.test(payload.email)) {
     const autoSubject = kind === "career"
-      ? "We received your application — Siliguri Security Services"
-      : "We received your enquiry — Siliguri Security Services";
+      ? "We received your application — Siliguri Security Services Pvt. Ltd."
+      : "We received your enquiry — Siliguri Security Services Pvt. Ltd.";
     await sendResend({
       to: payload.email,
       subject: autoSubject,

@@ -1,4 +1,4 @@
-# Siliguri Security Services - Website Documentation
+# Siliguri Security Services Pvt. Ltd. - Website Documentation
 
 ## Project Overview
 
@@ -126,7 +126,7 @@ sss/
     - B. K. Barman - Director & Founder
     - 15+ years industry expertise
     - Company growth story (20 → 450+ personnel, 5 → 50+ clients)
-    - Direct contact: +91-70017-61679
+    - Direct contact: +91-95472-53232
     - Specializations: Operations, Compliance, Multi-location Deployment
     - Management team (Operations, Security & Compliance, Training & Development)
   - Certifications & Recognition breakdown
@@ -168,7 +168,7 @@ sss/
 ### 8. **Contact Us (contact.html)**
 - **[NEW] Director's Direct Line section:**
   - B. K. Barman - Director & Founder
-  - Direct phone: +91-70017-61679
+  - Direct phone: +91-95472-53232
   - For strategic partnerships, bulk deployments, enterprise solutions
   - Specializations highlighted (large-scale deployment, multi-location contracts, etc.)
 - 4 direct contact methods (Call, WhatsApp, Email, Office)
@@ -194,7 +194,7 @@ sss/
 
 ### Founder & Leadership
 **B. K. Barman - Director Cum CMD**
-- Founded Siliguri Security Services in 2008
+- Founded Siliguri Security Services Pvt. Ltd. in 2008
 - 15+ years of proven expertise in:
   - Large-scale security operations management
   - Statutory compliance & regulatory frameworks
@@ -202,10 +202,10 @@ sss/
   - Strategic business expansion & growth
 - Successfully scaled company from 20 personnel (2008) to 450+ trained professionals (2024)
 - Serves 50+ corporate clients across North Bengal, Sikkim, and expanding PAN India reach
-- Direct contact: +91-70017-61679
+- Direct contact: +91-95472-53232
 
 ### Company Legal Information
-- **Company Name:** Siliguri Security Services (P) Ltd.
+- **Company Name:** Siliguri Security Services Pvt. Ltd.
 - **Establishment Year:** 2008
 - **Headquarters:** Near Hospital More, Matigara, Siliguri-734010, West Bengal
 - **Certifications:** ISO 9001:2008
@@ -423,7 +423,7 @@ app.post('/api/quote', (req, res) => {
 ### Step 5: Update Content
 Replace placeholder content:
 - Company email: siliguri.security.services@gmail.com
-- Company phone: +91-70017-61679
+- Company phone: +91-95472-53232
 - Director: B. K. Barman
 - Office address: Near Hospital More, Matigara, Siliguri-734010, West Bengal
 - Office hours: Mon-Fri 11:00 AM - 5:00 PM, Saturday 11:00 AM - 2:00 PM, Emergency 24/7
@@ -563,7 +563,7 @@ Replace placeholder content:
 - Or integrate with third-party form service
 
 **Leadership & Strategic Inquiries:**
-- Contact Director B. K. Barman: +91-70017-61679
+- Contact Director B. K. Barman: +91-95472-53232
 - Email: siliguri.security.services@gmail.com
 
 ---
@@ -697,7 +697,7 @@ vercel
   - Comprehensive security headers: CSP, HSTS, X-Frame-Options, Permissions-Policy
   - Image lazy loading with IntersectionObserver (50px rootMargin)
   - Throttled scroll events and optimized JavaScript initialization
-  - Email: +917001761679 updated across all pages
+  - Email: +919547253232 updated across all pages
 - 📱 **Enhanced Mobile Experience:**
   - Responsive meta viewport with maximum-scale=5.0
   - Touch-friendly navigation and form inputs

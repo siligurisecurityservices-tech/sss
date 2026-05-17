@@ -110,7 +110,7 @@ Requirements: [Special Notes]
 ```
 
 #### Your Response Steps
-1. **Within 1 hour** - Reply with: "Thank you for contacting Siliguri Security Services. Acknowledged your request. Our team will call you shortly with a detailed proposal."
+1. **Within 1 hour** - Reply with: "Thank you for contacting Siliguri Security Services Pvt. Ltd. Acknowledged your request. Our team will call you shortly with a detailed proposal."
 2. **Within 24 hours** - Call them with:
    - Service options & pricing
    - Deployment timeline
@@ -145,7 +145,7 @@ Visitors submit `/pages/contact.html` form
     <meta name="description" content="Brief 155-character description here">
     <meta name="keywords" content="keyword1, keyword2, keyword3">
     
-    <title>Article Title | Siliguri Security Services</title>
+    <title>Article Title | Siliguri Security Services Pvt. Ltd.</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
@@ -313,7 +313,7 @@ Add entry:
 
 **Quick Responses Template:**
 ```
-Thank you for contacting Siliguri Security Services. 
+Thank you for contacting Siliguri Security Services Pvt. Ltd. 
 We've received your request for [Site Type] security in [Location].
 
 Our team will call you within 1 hour at [Their Number] with a detailed proposal.

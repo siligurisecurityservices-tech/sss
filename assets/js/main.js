@@ -4,8 +4,8 @@
 (function () {
   "use strict";
 
-  const PHONE_DIGITS = "917001761679";
-  const PHONE_DISPLAY = "+91-70017-61679";
+  const PHONE_DIGITS = "919547253232";
+  const PHONE_DISPLAY = "+91-95472-53232";
   const PHONE_REGEX = /^[0-9+\-\s()]{10,15}$/;
 
   ready(init);

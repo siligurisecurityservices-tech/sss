@@ -3,18 +3,16 @@
 
   "catalog": {
     "hero-home": {
-      "alt": "Uniformed security personnel on duty at a corporate site in Siliguri",
-      "placeholder": true,
+      "alt": "Two security guards on night duty at a corporate campus — Siliguri Security Services Pvt. Ltd.",
+      "placeholder": false,
       "width": 1600,
-      "height": 720,
-      "replaceWith": "Photo of a real client site — guards at gate or lobby reception. Landscape, 1600×720 or larger."
+      "height": 720
     },
     "hero-careers": {
-      "alt": "Trainees in formation at the Siliguri Security Services training ground",
-      "placeholder": true,
+      "alt": "Security and housekeeping professionals on duty — join the Siliguri Security Services team",
+      "placeholder": false,
       "width": 1600,
-      "height": 720,
-      "replaceWith": "Training day photo — line of trainees in PT uniform with instructor. Landscape."
+      "height": 900
     },
 
     "service-corporate-security": {
@@ -161,59 +159,59 @@
     },
 
     "join-us-collage-1": {
-      "alt": "Guard on post",
-      "placeholder": true,
-      "width": 480,
-      "height": 360
+      "alt": "Uniformed security guard on night post at a corporate building entrance",
+      "placeholder": false,
+      "width": 800,
+      "height": 600
     },
     "join-us-collage-2": {
-      "alt": "Training session",
-      "placeholder": true,
-      "width": 480,
-      "height": 360
+      "alt": "Security guard controlling vehicle access at a boom barrier gate",
+      "placeholder": false,
+      "width": 800,
+      "height": 600
     },
     "join-us-collage-3": {
-      "alt": "Supervisor briefing",
-      "placeholder": true,
-      "width": 480,
-      "height": 360
+      "alt": "Professional housekeeping attendant cleaning a glass lobby door",
+      "placeholder": false,
+      "width": 800,
+      "height": 600
     },
 
     "gallery-1": {
-      "alt": "Gatehouse access control",
-      "placeholder": true,
-      "width": 800,
-      "height": 600
+      "alt": "Security guard on night duty at a corporate office entrance",
+      "placeholder": false,
+      "width": 1200,
+      "height": 800
     },
     "gallery-2": {
-      "alt": "Hotel lobby uniformed reception",
-      "placeholder": true,
-      "width": 800,
-      "height": 600
+      "alt": "Guard at vehicle boom barrier controlling site entry",
+      "placeholder": false,
+      "width": 1200,
+      "height": 800
     },
     "gallery-3": {
-      "alt": "Training session in progress",
-      "placeholder": true,
-      "width": 800,
-      "height": 600
+      "alt": "Housekeeping professional cleaning a glass corporate lobby door",
+      "placeholder": false,
+      "width": 1200,
+      "height": 800
     },
     "gallery-4": {
-      "alt": "Control room and monitoring station",
-      "placeholder": true,
-      "width": 800,
-      "height": 600
+      "alt": "Close-up of SECURITY badge on a guard's uniform",
+      "placeholder": false,
+      "width": 1200,
+      "height": 800
     },
     "gallery-5": {
-      "alt": "Patrol vehicle on the move",
-      "placeholder": true,
-      "width": 800,
-      "height": 600
+      "alt": "Radio handset clipped to a security officer's uniform shoulder",
+      "placeholder": false,
+      "width": 1200,
+      "height": 800
     },
     "gallery-6": {
-      "alt": "Female security guard at hospital frisking station",
-      "placeholder": true,
-      "width": 800,
-      "height": 600
+      "alt": "CCTV surveillance camera monitoring a lit corporate campus at night",
+      "placeholder": false,
+      "width": 1200,
+      "height": 800
     },
 
     "psara-cert": {

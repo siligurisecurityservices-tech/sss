@@ -49,7 +49,7 @@ Roughly half our enterprise clients in Siliguri now buy security and facility ma
 | Hotel (mid-segment / resort) | Combined model often makes sense — guest experience benefits from one supervisor owning both |
 | Mall / retail complex | Separate vendors — scale and specialisation both favour it |
 | Industrial / manufacturing | Combined model works well; security and housekeeping overlap heavily on the shop floor |
-| Bank / financial | Security must be from a PSARA-licensed armed-capable agency; housekeeping can be separate |
+| Bank / financial | Security must be from a licensed armed-capable agency; housekeeping can be separate |
 | Educational institution | Either; combined often easier for the institution to manage |
 
 ## The integration trap

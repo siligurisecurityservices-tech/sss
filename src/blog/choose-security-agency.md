@@ -5,8 +5,8 @@ title: How to choose a security agency in North Bengal — a buyer's checklist
 subtitle: The 12 things to verify before you sign a security services contract — most of which the agency won't volunteer.
 date: 2026-02-04
 author: B. K. Barman
-description: Buyer's checklist for hiring a security agency in Siliguri, Darjeeling, Gangtok or anywhere in North Bengal. PSARA, EPF, ESI, training, supervisor model, SLA, all the verification you should do.
-keywords: how to choose security agency, hire security guards siliguri, security contract checklist, PSARA verification, north bengal security
+description: Buyer's checklist for hiring a security agency in Siliguri, Darjeeling, Gangtok or anywhere in North Bengal. Licensing, EPF, ESI, training, supervisor model, SLA, all the verification you should do.
+keywords: how to choose security agency, hire security guards siliguri, security contract checklist, verify security agency licence, north bengal security
 breadcrumbs:
   - { label: "Home", url: "/" }
   - { label: "Blog", url: "/pages/blog/" }
@@ -15,9 +15,9 @@ breadcrumbs:
 
 There are over 200 private security agencies registered in West Bengal alone, and probably as many unregistered ones operating informally. Most of them will quote you a competitive price. A few of them will actually deliver what they promise. Here's the checklist we use ourselves when we evaluate sub-vendors for areas outside our direct deployment — and which we'd recommend to any procurement team in North Bengal.
 
-## 1. PSARA licence — non-negotiable
+## 1. Licensing — non-negotiable
 
-Ask for the licence number. Verify it on the state Home Department portal. The licence must be **current** (not expired, not in renewal limbo) and issued for the state where the deployment is happening. A West Bengal PSARA licence does not authorise deployment in Sikkim — that's a separate Sikkim licence.
+Ask for the licence number. Verify it on the state Home Department portal. The licence must be **current** (not expired, not in renewal limbo) and issued for the state where the deployment is happening. A West Bengal licence does not authorise deployment in Sikkim — that's a separate Sikkim licence.
 
 ## 2. GST and statutory registrations
 
@@ -41,7 +41,7 @@ Workmen's compensation policy and public liability insurance — both should be 
 
 ## 5. Training records
 
-How long is induction training? What does it cover? A real training programme has a syllabus, an instructor name, a duration (the PSARA mandated minimum is 21 days), and a certification issued at the end. Ours has all four. Ask to see a sample certificate.
+How long is induction training? What does it cover? A real training programme has a syllabus, an instructor name, a duration (the regulated minimum is 21 days), and a certification issued at the end. Ours has all four. Ask to see a sample certificate.
 
 ## 6. Police verification, before deployment
 
@@ -73,6 +73,6 @@ Ask for a free site visit before contracting. Watch how the agency representativ
 
 ## What to do next
 
-If you'd like to apply this checklist to **us**, request a free site visit. We'll bring our PSARA certificate, a sample challan, an insurance copy and a draft SLA — to your office, not ours.
+If you'd like to apply this checklist to **us**, request a free site visit. We'll bring our licence certificate, a sample challan, an insurance copy and a draft SLA — to your office, not ours.
 
 [Book a free site visit →](/pages/quote/)

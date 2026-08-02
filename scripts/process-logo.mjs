@@ -125,7 +125,7 @@ async function makeOgImage(logoPngBuffer, outPath) {
     <!-- Accent red bar left of text -->
     <rect x="400" y="185" width="4" height="260" fill="#C0392B" rx="2"/>
     <!-- Tagline top -->
-    <text x="425" y="240" font-family="Inter, Arial, sans-serif" font-size="22" fill="#C9A961" font-weight="600" letter-spacing="2">PSARA LICENSED · ISO 9001:2015</text>
+    <text x="425" y="240" font-family="Inter, Arial, sans-serif" font-size="22" fill="#C9A961" font-weight="600" letter-spacing="2">FULLY LICENSED · ISO 9001:2015</text>
     <!-- Company name -->
     <text x="425" y="305" font-family="Inter, Arial, sans-serif" font-size="42" fill="#FFFFFF" font-weight="800">Siliguri Security</text>
     <text x="425" y="358" font-family="Inter, Arial, sans-serif" font-size="42" fill="#FFFFFF" font-weight="800">Services Pvt. Ltd.</text>

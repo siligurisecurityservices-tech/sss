@@ -182,7 +182,7 @@ function buildAutoReply(payload, kind) {
     <p>${bodyLine}</p>
     ${remindLine}
     <p>If urgent, please call <a href="tel:+919547253232">+91-95472-53232</a> or message us on <a href="https://wa.me/919547253232">WhatsApp</a>.</p>
-    <p style="color:#666">— Siliguri Security Services Pvt. Ltd.<br>PSARA Licence 10/WB/PSA/2015 · ISO 9001:2015</p>
+    <p style="color:#666">— Siliguri Security Services Pvt. Ltd.<br>Licensed since 2008 · ISO 9001:2015</p>
   </body></html>`;
 }
 

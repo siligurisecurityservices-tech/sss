@@ -2,7 +2,7 @@
   "catalog": [
     { "name": "Corporate & IT Parks", "icon": "🏢", "description": "Office building access control, visitor management, after-hours patrolling." },
     { "name": "Manufacturing & Industrial", "icon": "🏭", "description": "Factory perimeter, gatehouse, materials in/out, shift coverage, fire-safety support." },
-    { "name": "Banking & Financial", "icon": "🏦", "description": "Branch security, cash escort, ATM guarding, vault protection (PSARA-licensed armed staff)." },
+    { "name": "Banking & Financial", "icon": "🏦", "description": "Branch security, cash escort, ATM guarding, vault protection (licensed armed staff)." },
     { "name": "Healthcare & Hospitals", "icon": "🏥", "description": "OPD flow control, ICU security, mortuary watch, patient family de-escalation." },
     { "name": "Retail & Malls", "icon": "🛍️", "description": "Anti-shoplifting, crowd flow, parking control, female frisking, lost-child SOPs." },
     { "name": "Hotels & Hospitality", "icon": "🏨", "description": "Lobby, banquet, valet and back-of-house security for luxury and mid-segment hotels." },

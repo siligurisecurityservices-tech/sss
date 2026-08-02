@@ -65,7 +65,7 @@ For a typical small-corporate or hotel client, the line items above usually aren
 
 1. **"Can I see a sample EPF challan from a recent month?"** A real agency will produce one with the client's name redacted. An agency that goes silent isn't paying EPF.
 2. **"Is the guard on your payroll or on contract?"** They should be on the **agency's** payroll. If the agency says "we'll set him up as a contractor", you've just become the principal employer for an unregistered worker. Don't sign.
-3. **"What's your PSARA licence number?"** Every legitimate private security agency in West Bengal has one. Ours is **10/WB/PSA/2015**. You can verify it on the state Home Department site. If they don't have a PSARA licence, they cannot legally deploy a security guard in this state. Walk away.
+3. **"Can you produce your licence and registration papers?"** Every legitimate agency will show you its licence numbers and verification details. You can verify them on the relevant government sites. If they can't show current, verifiable licences, they cannot legally deploy a security guard in this state. Walk away.
 
 ## What to do next
 

@@ -214,12 +214,12 @@
       "height": 800
     },
 
-    "psara-cert": {
-      "alt": "Scanned PSARA Licence — 10/WB/PSA/2015",
+    "security-licence-cert": {
+      "alt": "Private Security Agency Licence",
       "placeholder": true,
       "width": 1000,
       "height": 1400,
-      "replaceWith": "Scan of PSARA licence at static/docs/psara-licence.pdf or equivalent JPG."
+      "replaceWith": "Scan of agency licence at static/docs/licence.pdf or equivalent JPG."
     },
     "gst-cert": {
       "alt": "GST Registration Certificate",

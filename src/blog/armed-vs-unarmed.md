@@ -6,7 +6,7 @@ subtitle: Armed guards cost roughly 2.5× an unarmed deployment. Here's the hone
 date: 2026-02-25
 author: B. K. Barman
 description: Armed vs unarmed security guards — cost, legal requirements, deployment scenarios, and when armed protection is actually justified vs. unnecessary.
-keywords: armed guards siliguri, armed vs unarmed security, when to hire armed guard, armed security cost, PSARA armed
+keywords: armed guards siliguri, armed vs unarmed security, when to hire armed guard, armed security cost
 breadcrumbs:
   - { label: "Home", url: "/" }
   - { label: "Blog", url: "/pages/blog/" }
@@ -63,7 +63,7 @@ In our experience, the following enquiries usually start with "we want armed gua
 If your site genuinely is in the "armed needed" category, here's what you should expect from your agency:
 
 - Licensed weapons — agency licence is not enough; each weapon has its own licence
-- Trained personnel — typically ex-servicemen or retired police. PSARA prescribes additional training for armed personnel.
+- Trained personnel — typically ex-servicemen or retired police. Our armed personnel also complete the additional certification required by regulation.
 - Quarterly weapons handling and qualification drills
 - A clear escalation chain — armed personnel must never be the only line of response; they're a deterrent and a last resort
 - Insurance specifically covering armed deployment

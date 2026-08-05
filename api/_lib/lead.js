@@ -213,8 +213,8 @@ async function sendResend({ to, replyTo, subject, html }) {
     let errMsg = "";
     try {
       const errBody = await r.json();
-      errCode = errBody && errBody.name ? String(errBody.name).slice(0, 80) : "";
-      errMsg = errBody && errBody.message ? String(errBody.message).slice(0, 200) : "";
+      errCode = errBody && (errBody.name || errBody.code) ? String(errBody.name || errBody.code).slice(0, 80) : "";
+      errMsg = errBody && (errBody.message || errBody.error) ? String(errBody.message || errBody.error).slice(0, 200) : "";
     } catch (_) { /* ignore */ }
     console.error("[lead] resend error", { status: r.status, code: errCode, message: errMsg });
     return { ok: false, status: r.status };

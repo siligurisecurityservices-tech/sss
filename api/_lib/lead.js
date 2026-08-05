@@ -206,14 +206,17 @@ async function sendResend({ to, replyTo, subject, html }) {
     body: JSON.stringify(body),
   });
   if (!r.ok) {
-    // Log only status code + safe Resend error code if present. Never log full response body —
-    // it may include the from/to addresses or echo headers we don't want in persistent logs.
+    // Log only status code + safe Resend error code/message if present. Never log the full
+    // response body or the `to`/`from`/`replyTo` fields — those may contain PII or email
+    // addresses we don't want in persistent logs.
     let errCode = "";
+    let errMsg = "";
     try {
       const errBody = await r.json();
       errCode = errBody && errBody.name ? String(errBody.name).slice(0, 80) : "";
+      errMsg = errBody && errBody.message ? String(errBody.message).slice(0, 200) : "";
     } catch (_) { /* ignore */ }
-    console.error("[lead] resend error", { status: r.status, code: errCode });
+    console.error("[lead] resend error", { status: r.status, code: errCode, message: errMsg });
     return { ok: false, status: r.status };
   }
   return { ok: true };

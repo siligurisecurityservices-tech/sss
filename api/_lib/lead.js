@@ -6,7 +6,7 @@ const PHONE_DISPLAY = "+91-95472-53232";
 const PHONE_REGEX = /^\+?[0-9\-\s()]{10,18}$/;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const FROM_EMAIL = process.env.LEAD_FROM_EMAIL || "leads@siligurisisecurity.com";
+const FROM_EMAIL = process.env.LEAD_FROM_EMAIL || "leads@siligurisecurityservices.com";
 const FROM_NAME = "Siliguri Security Services Pvt. Ltd.";
 const NOTIFY_EMAIL = process.env.LEAD_NOTIFY_EMAIL || "siliguri.security.services@gmail.com";
 const CAREER_NOTIFY_EMAIL = process.env.LEAD_CAREER_NOTIFY_EMAIL || NOTIFY_EMAIL;

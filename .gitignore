@@ -15,7 +15,6 @@ build/
 _site/
 .cache/
 .eleventy-cache/
-package-lock.json
 yarn.lock
 
 # Claude Code — keep project-level config (.claude/launch.json) but

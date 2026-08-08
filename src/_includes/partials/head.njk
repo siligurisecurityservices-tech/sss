@@ -10,7 +10,7 @@
 <meta name="keywords" content="{{ keywords }}">
 {%- endif %}
 <meta name="author" content="{{ site.legalName }}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{% endif %}">
 <link rel="canonical" href="{{ pageUrl }}">
 <link rel="alternate" hreflang="en-IN" href="{{ pageUrl }}">
 <link rel="alternate" hreflang="x-default" href="{{ pageUrl }}">

@@ -58,7 +58,7 @@ function setCors(res) {
   // SECURITY: never default to "*" — that lets any site POST and email-flood our HR inbox.
   // Production must set ALLOWED_ORIGIN (the canonical site origin). In dev, set ALLOWED_ORIGIN=*
   // explicitly when testing from another origin.
-  const origin = process.env.ALLOWED_ORIGIN || "https://www.siligurisisecurity.com";
+  const origin = process.env.ALLOWED_ORIGIN || "https://www.siligurisecurityservices.com";
   res.setHeader("Access-Control-Allow-Origin", origin);
   res.setHeader("Vary", "Origin");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");

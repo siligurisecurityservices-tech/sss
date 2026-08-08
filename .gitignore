@@ -15,6 +15,7 @@ build/
 _site/
 .cache/
 .eleventy-cache/
+.lighthouseci/
 yarn.lock
 
 # Claude Code — keep project-level config (.claude/launch.json) but

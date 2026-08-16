@@ -325,7 +325,7 @@ nav a:hover {
     color: white;
     font-size: 3rem;
     margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.45);
 }
 
 .hero p {
@@ -335,6 +335,7 @@ nav a:hover {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.55);
 }
 
 .hero-buttons {
@@ -1762,7 +1763,7 @@ body.modal-open { overflow: hidden; }
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0.94) 0%, rgba(0, 82, 163, 0.90) 100%);
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.55) 0%, rgba(0, 82, 163, 0.30) 100%);
 }
 .hero-with-photo > .container {
     position: relative;
@@ -1793,7 +1794,7 @@ body.modal-open { overflow: hidden; }
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0.92) 0%, rgba(0, 82, 163, 0.88) 100%);
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.60) 0%, rgba(0, 82, 163, 0.40) 100%);
 }
 .page-hero-photo > .container {
     position: relative;
@@ -2270,7 +2271,7 @@ nav a[aria-current="page"]::after {
     margin-top: var(--space-5);
 }
 .hero-with-photo .hero-overlay {
-    background: linear-gradient(135deg, rgba(10, 37, 64, 0.96) 0%, rgba(20, 86, 200, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.55) 0%, rgba(20, 86, 200, 0.28) 100%);
 }
 .hero-with-photo::before {
     /* subtle tactical grid overlay */

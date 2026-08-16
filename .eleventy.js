@@ -136,7 +136,7 @@ module.exports = function (eleventyConfig) {
       key,
       alt: meta.alt || key || "",
       sizes: sizes || "100vw",
-      classes: classes ? `${classes} hero` : "hero",
+      classes: classes ? `${classes} hero-img` : "hero-img",
       placeholder: !!meta.placeholder,
       hero: true,
       width: meta.width,

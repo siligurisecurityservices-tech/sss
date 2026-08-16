@@ -1741,6 +1741,7 @@ body.modal-open { overflow: hidden; }
 .hero-with-photo {
     position: relative;
     overflow: hidden;
+    min-height: 520px;
 }
 .hero-with-photo .hero-photo-bg {
     position: absolute;
@@ -1748,11 +1749,15 @@ body.modal-open { overflow: hidden; }
     z-index: 0;
     line-height: 0;
 }
-.hero-with-photo .hero-photo-bg img,
-.hero-with-photo .hero-photo-bg picture,
-.hero-with-photo .hero-photo-bg picture img,
 .hero-with-photo .hero-photo-bg .img-wrap,
 .hero-with-photo .hero-photo-bg .img-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hero-with-photo .hero-photo-bg .hero-img,
+.hero-with-photo .hero-photo-bg picture img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;

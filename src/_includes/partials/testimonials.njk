@@ -1,25 +1,19 @@
 {%- if testimonials.items.length > 0 -%}
-<section class="container section testimonials-section">
-  <header class="section-header">
-    <h2>What our clients say</h2>
-  </header>
-  <div class="testimonial-grid">
+<section class="testimonials-section">
+  <div class="container">
+    <header class="section-header">
+      <h2>What our clients say</h2>
+    </header>
+  </div>
+  <div class="testimonial-scroll">
     {%- for t in testimonials.items -%}
-    <figure class="testimonial-card{% if t.placeholder %} testimonial-card-placeholder{% endif %}">
-      {% if t.placeholder %}<span class="img-placeholder-badge">PLACEHOLDER · REPLACE WITH PERMISSION</span>{% endif %}
-      <blockquote>“{{ t.quote }}”</blockquote>
-      <figcaption>
-        <strong>{{ t.name }}</strong>
-        <span>{{ t.designation }}{% if t.company %}, {{ t.company }}{% endif %}</span>
-        {% if t.location %}<span class="text-muted">{{ t.location }}</span>{% endif %}
-      </figcaption>
+    <figure class="testimonial-card">
+      <blockquote>"{{ t.quote }}"</blockquote>
     </figure>
     {%- endfor -%}
   </div>
 </section>
 
-{%- set realTestimonials = testimonials.items | rejectattr("placeholder") | list -%}
-{%- if realTestimonials.length > 0 -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,10 +21,10 @@
   "name": "{{ site.name }}",
   "url": "{{ site.url }}",
   "review": [
-    {%- for t in realTestimonials -%}
+    {%- for t in testimonials.items -%}
     {
       "@type": "Review",
-      "author": { "@type": "Person", "name": {{ t.name | jsonify }} },
+      "author": { "@type": "Person", "name": "Client" },
       "reviewBody": {{ t.quote | jsonify }},
       "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 },
       "itemReviewed": { "@type": "Organization", "name": "{{ site.name }}" }
@@ -40,10 +34,9 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "{{ realTestimonials.length }}",
+    "reviewCount": "{{ testimonials.items.length }}",
     "bestRating": 5
   }
 }
 </script>
-{%- endif -%}
 {%- endif -%}

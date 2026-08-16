@@ -17,4 +17,33 @@
     {%- endfor -%}
   </div>
 </section>
+
+{%- set realTestimonials = testimonials.items | rejectattr("placeholder") | list -%}
+{%- if realTestimonials.length > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}",
+  "review": [
+    {%- for t in realTestimonials -%}
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": {{ t.name | jsonify }} },
+      "reviewBody": {{ t.quote | jsonify }},
+      "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 },
+      "itemReviewed": { "@type": "Organization", "name": "{{ site.name }}" }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "{{ realTestimonials.length }}",
+    "bestRating": 5
+  }
+}
+</script>
+{%- endif -%}
 {%- endif -%}

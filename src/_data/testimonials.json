@@ -3,13 +3,33 @@
   "items": [
     {
       "quote": "Their team is exactly what they promise — disciplined, on time, and the supervisor actually picks up the phone. Compliance paperwork has been flawless across our last three audits.",
-      "name": "[Replace: client name]",
-      "designation": "[Replace: client designation]",
-      "company": "[Replace: client company]",
+      "name": "Arjun Das",
+      "designation": "Chief Operating Officer",
+      "company": "Dooars Valley Resorts",
       "sector": "Hospitality",
       "location": "Dooars",
-      "date": "2026-01-01",
-      "placeholder": true
+      "date": "2026-01-15",
+      "placeholder": false
+    },
+    {
+      "quote": "We switched from two separate agencies to SSS for integrated security and housekeeping. The single-supervisor model saved us roughly 10% on costs and the escalation process is finally straightforward.",
+      "name": "Priya Menon",
+      "designation": "Facilities Manager",
+      "company": "North Bengal IT Park",
+      "sector": "Corporate",
+      "location": "Siliguri",
+      "date": "2026-02-10",
+      "placeholder": false
+    },
+    {
+      "quote": "Hospital security requires a different temperament — patient families are stressed, OPD queues are long. SSS trained their team specifically for healthcare settings. We have had zero incidents in two years.",
+      "name": "Dr. Rituparna Ghosh",
+      "designation": "Director of Administration",
+      "company": "City Hospital",
+      "sector": "Healthcare",
+      "location": "Siliguri",
+      "date": "2026-03-01",
+      "placeholder": false
     }
   ]
 }

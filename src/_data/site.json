@@ -32,6 +32,10 @@
     "countryName": "India",
     "formatted": "Near Hospital More, Matigara, Siliguri-734010, West Bengal, India"
   },
+  "kolkataBranch": {
+    "name": "Branch Office — Kolkata",
+    "mapUrl": "https://maps.google.com/maps?q=22.7286145%2C88.4739709&z=17&hl=en"
+  },
   "hours": {
     "office": [
       { "days": "Monday - Friday", "hours": "11:00 AM - 5:00 PM" },

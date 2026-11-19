@@ -24,13 +24,14 @@
     "leads": "siliguri.security.services@gmail.com"
   },
   "address": {
-    "street": "Near Hospital More, Matigara",
+    "street": "Surya Sikha Complex, Near Hospital More, Matigara",
     "locality": "Siliguri",
     "region": "West Bengal",
     "postalCode": "734010",
     "country": "IN",
     "countryName": "India",
-    "formatted": "Near Hospital More, Matigara, Siliguri-734010, West Bengal, India"
+    "formatted": "Surya Sikha Complex, Near Hospital More, Matigara, Siliguri-734010, West Bengal, India",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Surya%20Sikha%20Complex%2C%20Matigara%2C%20Siliguri%2C%20West%20Bengal%20734010"
   },
   "kolkataBranch": {
     "name": "Branch Office — Kolkata",

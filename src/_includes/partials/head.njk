@@ -84,6 +84,11 @@
   "department": {
     "@type": "LocalBusiness",
     "@id": "{{ site.url }}#kolkata-branch",
+    "url": "{{ site.url }}/locations/kolkata/",
+    "image": "{{ site.url }}{{ site.ogImage }}",
+    "description": "Security guards, housekeeping and facility management enquiries through our Barasat branch on Barrackpore Road, Kolkata.",
+    "geo": { "@type": "GeoCoordinates", "latitude": 22.7286145, "longitude": 88.4739709 },
+    "areaServed": [{ "@type": "City", "name": "Kolkata" }, { "@type": "Place", "name": "Barasat" }],
     "name": {{ (site.name + " — Kolkata Branch Office") | jsonify | safe }},
     "address": {
       "@type": "PostalAddress",

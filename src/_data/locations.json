@@ -84,10 +84,13 @@
       "state": "West Bengal",
       "order": 8,
       "established": 2024,
-      "shortDescription": "Corporate, hospital, retail, bank, and poultry-hatchery security across Kolkata — Salt Lake, New Town, Park Street and Howrah corridor.",
-      "landmarks": ["Salt Lake (Sector V)", "New Town", "Park Street", "Howrah", "Esplanade", "Behala", "Garia", "Rajarhat", "Hatcheries (South 24 Parganas, Hooghly)"],
+      "shortDescription": "Security guards, housekeeping and facility management for Kolkata businesses, with a branch at Panna Jhill, Barasat, on Barrackpore Road near Satya Bharati School.",
+      "landmarks": ["Barasat", "Barrackpore Road", "Panna Jhill", "Salt Lake (Sector V)", "New Town", "Park Street", "Howrah", "Esplanade", "Behala", "Garia", "Rajarhat", "Hatcheries (South 24 Parganas, Hooghly)"],
       "responseTimeSLA": "Under 60 minutes within Kolkata city",
-      "activeClients": "10+"
+      "activeClients": "10+",
+      "seoTitle": "Security Guards and Housekeeping in Kolkata, Barasat",
+      "seoDescription": "Security guards and housekeeping in Kolkata and Barasat. Visit our Panna Jhill branch on Barrackpore Road near Satya Bharati School, Kolkata 700125. Call SSS.",
+      "heroTitle": "Security guards & housekeeping in Kolkata and Barasat"
     },
     {
       "slug": "bhubaneswar",

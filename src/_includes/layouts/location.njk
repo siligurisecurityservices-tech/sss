@@ -11,7 +11,7 @@ layout: layouts/base.njk
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="container">
     <p class="eyebrow">Security & Manpower Services in</p>
-    <h1>{{ loc.name }}, {{ loc.state }}</h1>
+    <h1>{{ loc.heroTitle or (loc.name + ", " + loc.state) }}</h1>
     <p class="lead">{{ loc.shortDescription }}</p>
     <div class="hero-buttons">
       <button type="button" class="cta-button cta-button-primary js-open-site-visit" data-prefill-location="{{ loc.name }}">Book Free Site Visit in {{ loc.name }}</button>
@@ -22,11 +22,7 @@ layout: layouts/base.njk
 </section>
 
 {% if loc.slug == "kolkata" %}
-<section class="container">
-  <h2>{{ site.kolkataBranch.name }}</h2>
-  <p>{{ site.kolkataBranch.address }}</p>
-  <p><a class="text-link" href="{{ site.kolkataBranch.mapUrl }}" target="_blank" rel="noopener">View Kolkata branch on Google Maps →</a></p>
-</section>
+{% include "partials/location-content/kolkata.njk" %}
 {% endif %}
 
 <section class="container">
@@ -76,7 +72,7 @@ layout: layouts/base.njk
   "@context": "https://schema.org",
   "@type": "Service",
   "serviceType": "Security and manpower services",
-  "provider": { "@type": "LocalBusiness", "@id": "{{ site.url }}#localbusiness" },
+  "provider": { "@type": "LocalBusiness", "@id": "{{ site.url }}#{% if loc.slug == 'kolkata' %}kolkata-branch{% else %}localbusiness{% endif %}" },
   "areaServed": { "@type": "City", "name": "{{ loc.name }}", "address": { "@type": "PostalAddress", "addressLocality": "{{ loc.name }}", "addressRegion": "{{ loc.state }}", "addressCountry": "IN" } },
   "name": "Security Services in {{ loc.name }}",
   "description": "{{ loc.shortDescription }}",

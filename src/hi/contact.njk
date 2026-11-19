@@ -15,5 +15,10 @@ description: फोन, व्हाट्सएप या ईमेल के �
   <p>फोन: <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a></p>
   <p>व्हाट्सएप: <a href="{{ site.phone.whatsapp }}" target="_blank" rel="noopener">{{ site.phone.display }}</a></p>
   <p>ईमेल: <a href="mailto:{{ site.email.primary }}">{{ site.email.primary }}</a></p>
-  <p>पता: {{ site.address.formatted }}</p>
+  <h2>प्रधान कार्यालय — माटीगाड़ा</h2>
+  <p>{{ site.address.formatted }}</p>
+  <p><a href="{{ site.address.mapUrl }}" target="_blank" rel="noopener">Google Maps पर देखें</a></p>
+  <h2>शाखा कार्यालय — कोलकाता</h2>
+  <p>{{ site.kolkataBranch.address }}</p>
+  <p><a href="{{ site.kolkataBranch.mapUrl }}" target="_blank" rel="noopener">Google Maps पर देखें</a></p>
 </section>

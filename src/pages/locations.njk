@@ -11,6 +11,8 @@ breadcrumbs:
   - { label: "Locations", url: "/pages/locations/" }
 ---
 
+{% include "partials/office-addresses.njk" %}
+
 <section>
   <div class="card-grid card-grid-locations">
     {%- for loc in locations.catalog -%}

@@ -1,0 +1,81 @@
+---
+layout: layouts/page.njk
+permalink: /careers/security-guard-jobs-barasat/index.html
+title: Security Guard Jobs in Barasat — Apply at SSS Kolkata Branch
+description: Looking for security guard jobs in Barasat? Apply through the SSS Kolkata branch at Panna Jhill, Barrackpore Road, near Satya Bharati School. No placement fees.
+hero:
+  title: Security guard jobs in Barasat
+  subtitle: Apply through our Kolkata branch on Barrackpore Road. Tell us your experience and preferred posting area, and speak with HR about current opportunities.
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Careers", url: "/pages/careers/" }
+  - { label: "Security guard jobs in Barasat", url: "/careers/security-guard-jobs-barasat/" }
+---
+
+<section>
+  <h2>Apply for security guard work near Barasat</h2>
+  <p>Live in Barasat, Panna Jhill or along Barrackpore Road and looking for security guard work? Register your interest with {{ site.name }} through our Kolkata branch. Tell us where you live, your experience and how far you can travel for a posting.</p>
+  <p>Current vacancies, eligibility, duty location, shifts and pay are confirmed by HR for each assignment. Applying does not guarantee a vacancy or a posting near your home.</p>
+  <p><a href="#apply" class="cta-button cta-button-primary">Apply for security guard work in Barasat</a></p>
+  <p><a href="{{ site.phone.whatsapp }}?text={{ 'Hello, I would like to apply for security guard work in Barasat through the Kolkata branch. Please tell me about current vacancies and how to arrange an interview.' | urlencode }}" target="_blank" rel="noopener">WhatsApp HR about Barasat security guard opportunities</a> or call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a>.</p>
+</section>
+
+<section lang="bn">
+  <h2>বারাসাতে সিকিউরিটি গার্ডের কাজের জন্য আবেদন করুন</h2>
+  <p>বারাসাত, পান্না ঝিল বা ব্যারাকপুর রোডের কাছে থাকেন? সিকিউরিটি গার্ডের কাজের জন্য নিচের ফর্মে আবেদন করুন অথবা ফোন করুন <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> নম্বরে। আপনার অভিজ্ঞতা এবং পছন্দের কাজের এলাকা জানান।</p>
+  <p>বর্তমান শূন্যপদ, যোগ্যতা, বেতন ও ডিউটির সময় HR-এর সঙ্গে নিশ্চিত করুন। আবেদন বা চাকরির জন্য আমরা কোনো প্লেসমেন্ট ফি নিই না। অফিসে যাওয়ার আগে ফোন করে সাক্ষাতের সময় ঠিক করুন।</p>
+</section>
+
+<section>
+  <h2>How to apply through the Barasat branch</h2>
+  <ol>
+    <li>Fill in the application below with your name, phone number, experience and preferred posting location. Email is optional.</li>
+    <li>For a local posting, select Barasat and mention your locality and travel preference in the notes. You can also contact HR directly by phone or WhatsApp.</li>
+    <li>Ask HR about available roles, eligibility, pay, shift timings and interview arrangements before travelling to the branch.</li>
+  </ol>
+  <p><strong>No placement fees:</strong> We do not charge candidates for a job. Report anyone asking for a recruitment payment to <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a>.</p>
+</section>
+
+<section>
+  <h2>Find the Kolkata branch in Barasat</h2>
+  <address>{{ site.kolkataBranch.address }}</address>
+  <p>The branch is near Satya Bharati School on Barasat–Barrackpore Road. Call ahead to arrange a recruitment enquiry or interview; branch interview times must be confirmed with HR.</p>
+  <p><a href="{{ site.kolkataBranch.mapUrl }}" target="_blank" rel="noopener">Get directions to the Barasat branch on Google Maps →</a></p>
+  <p><a href="/locations/kolkata/">About our Kolkata branch and services</a> · <a href="/pages/careers/">See company careers and other roles</a></p>
+</section>
+
+<section id="apply">
+  <h2>Apply for security guard work in Barasat</h2>
+  <p>Barasat and the security guard role are selected below. You can change them. Phone is required so HR can contact you. After submission, WhatsApp opens with your details for you to review and send.</p>
+  {% set applicationRole = "Security Guard — Barasat / Kolkata branch" %}
+  {% set applicationLocation = "Barasat" %}
+  {% include "partials/job-application-form.njk" %}
+  <p>See our <a href="/pages/privacy/">Privacy Policy</a> for how application details are used.</p>
+</section>
+
+<section>
+  <h2>Questions about applying in Barasat</h2>
+  <dl>
+    <dt>Can freshers apply?</dt>
+    <dd>You can submit your interest and select “None — fresher” under experience. HR will confirm the eligibility and training requirements for any available assignment.</dd>
+    <dt>What is the salary for a security guard job in Barasat?</dt>
+    <dd>Ask HR for the pay and benefits for the specific assignment, along with duty hours, weekly rest and the posting location, before accepting an offer.</dd>
+    <dt>Is the branch address the job location?</dt>
+    <dd>The Barasat address is our branch for recruitment enquiries. Guard duties are at client sites; HR will confirm the actual work location and whether a suitable local posting is available.</dd>
+    <dt>Can I apply without email?</dt>
+    <dd>Yes. Email is optional. Give a working phone number or contact HR on WhatsApp.</dd>
+  </dl>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}{{ page.url }}#webpage",
+  "url": "{{ site.url }}{{ page.url }}",
+  "name": {{ title | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "about": { "@id": "{{ site.url }}#kolkata-branch" },
+  "inLanguage": ["en-IN", "bn-IN"]
+}
+</script>

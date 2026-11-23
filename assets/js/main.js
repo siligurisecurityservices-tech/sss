@@ -146,7 +146,9 @@
 
     const endpoint = form.getAttribute("data-endpoint") || "/api/lead";
     const isQuote = endpoint.indexOf("/api/lead") !== -1;
-    payload.formType = isQuote ? "quote" : "site-visit";
+    payload.formType = form.getAttribute("data-form-type") === "career"
+      ? "career"
+      : (isQuote ? "quote" : "site-visit");
 
     submitBtn.disabled = true;
     setStatus(status, "Sending… please wait.", "pending");
@@ -193,9 +195,16 @@
 
   function buildWhatsAppFallback(payload) {
     const lines = [];
-    lines.push("Hello " + PHONE_DISPLAY + ", I'd like to enquire about your services.");
+    lines.push(payload.formType === "career"
+      ? "Hello, I would like to apply for a job at Siliguri Security Services."
+      : "Hello " + PHONE_DISPLAY + ", I'd like to enquire about your services.");
     lines.push("");
     if (payload.name) lines.push("Name: " + payload.name);
+    if (payload.formType === "career") {
+      if (payload.role) lines.push("Role applied for: " + payload.role);
+      if (payload.experience) lines.push("Experience: " + payload.experience);
+      if (payload.willingToRelocate) lines.push("Willing to relocate: " + payload.willingToRelocate);
+    }
     if (payload.company) lines.push("Company: " + payload.company);
     if (payload.phone) lines.push("Phone: " + payload.phone);
     if (payload.email) lines.push("Email: " + payload.email);

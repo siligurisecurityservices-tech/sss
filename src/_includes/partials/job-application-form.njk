@@ -17,6 +17,7 @@
       <label for="ja-role">Role you're applying for <span class="required">*</span></label>
       <select id="ja-role" name="role" required>
         <option value="">Select a role</option>
+        <option value="Security Guard — Barasat / Kolkata branch"{% if applicationRole == "Security Guard — Barasat / Kolkata branch" %} selected{% endif %}>Security Guard — Barasat / Kolkata branch (enquire about vacancies)</option>
         {%- for job in jobs.catalog -%}
         <option value="{{ job.title }}" data-slug="{{ job.slug }}">{{ job.title }}</option>
         {%- endfor -%}
@@ -27,6 +28,7 @@
       <label for="ja-location">Preferred posting location</label>
       <select id="ja-location" name="location">
         <option value="">No preference</option>
+        <option value="Barasat"{% if applicationLocation == "Barasat" %} selected{% endif %}>Barasat</option>
         {%- for loc in locations.catalog -%}
         <option value="{{ loc.name }}">{{ loc.name }}</option>
         {%- endfor -%}

@@ -7,6 +7,7 @@
     { "label": "Sectors", "url": "/pages/sectors/" },
     { "label": "Compliance", "url": "/pages/compliance/" },
     { "label": "Careers", "url": "/pages/careers/" },
+      { "label": "Security Guard Jobs — Barasat", "url": "/careers/security-guard-jobs-barasat/" },
     { "label": "Blog", "url": "/pages/blog/" },
     { "label": "Contact", "url": "/pages/contact/" }
   ],
@@ -34,6 +35,7 @@
       { "label": "Compliance & Licences", "url": "/pages/compliance/" },
       { "label": "Coverage", "url": "/pages/coverage/" },
       { "label": "Careers", "url": "/pages/careers/" },
+      { "label": "Security Guard Jobs — Barasat", "url": "/careers/security-guard-jobs-barasat/" },
       { "label": "Case Studies", "url": "/pages/case-studies/" },
       { "label": "Blog", "url": "/pages/blog/" }
     ],

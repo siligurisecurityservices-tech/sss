@@ -3,6 +3,7 @@ pagination:
   data: services.catalog
   size: 1
   alias: service
+  addAllPagesToCollections: true
 permalink: "/services/{{ service.slug }}/"
 layout: layouts/service.njk
 eleventyComputed:
@@ -10,6 +11,13 @@ eleventyComputed:
   description: "{{ service.shortDescription }} Starting from {{ service.priceFrom }}. Fully licensed agency serving Siliguri, North Bengal, Sikkim and PAN India."
 ---
 {# Breadcrumbs computed in services.11tydata.js to work correctly with pagination #}
+
+{% if service.slug == "event-security" %}
+<section class="container">
+  <h2>Wedding guards and bouncers for one-day or multi-day bookings</h2>
+  <p>For wedding ceremonies, receptions and family functions, see our <a href="/services/wedding-security/">temporary wedding security service</a>. Request darwan, guards or bouncers for 1, 2, 3, 4 or a few days in Siliguri, Matigara, Barasat and Kolkata.</p>
+</section>
+{% endif %}
 
 <section class="container">
   <h2>What's included</h2>

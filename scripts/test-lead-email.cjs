@@ -39,6 +39,14 @@ async function submit(extra, opts = { kind: 'quote', requireLocation: true }) {
   assert.match(quote.messages[0].html, /Client Enquiry — Quote Request/);
   assert.deepEqual(quote.messages[0].to, ['clients@example.test']);
   assert.match(quote.messages[1].subject, /received your enquiry/);
+  const wedding = await submit({ formType: 'quote', serviceType: 'Wedding Security — Guards, Darwan and Bouncers', location: 'Kolkata', guardCount: '2', guardTier: 'Wedding bouncers', notes: 'Event dates: 2026-12-05 to 2026-12-08. Duration: 4 days. Venue: Barasat. Daily start and finish times: 5pm to 11pm.' });
+  assert.equal(wedding.res.statusCode, 200);
+  assert.match(wedding.messages[0].subject, /^\[Client Quote\]/);
+  assert.deepEqual(wedding.messages[0].to, ['clients@example.test']);
+  for (const value of ['Wedding Security', 'Wedding bouncers', '4 days', 'Barasat', '5pm to 11pm']) {
+    assert(wedding.messages[0].html.includes(value));
+    assert(decodeURIComponent(wedding.res.body.whatsappUrl).includes(value));
+  }
   const visit = await submit({ location: 'Kolkata', preferredDate: '2026-12-01' }, { kind: 'site-visit', requireLocation: true });
   assert.match(visit.messages[0].subject, /^\[Client Site Visit\]/);
   assert.match(visit.messages[0].html, /Client Enquiry — Site Visit Request/);

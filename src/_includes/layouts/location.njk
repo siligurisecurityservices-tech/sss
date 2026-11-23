@@ -57,6 +57,13 @@ layout: layouts/base.njk
 {% include "partials/location-content/siliguri.njk" %}
 {%- endif -%}
 
+{% if loc.slug == "siliguri" or loc.slug == "kolkata" %}
+<section class="container">
+  <h2>Temporary wedding guards and bouncers in {{ loc.name }}</h2>
+  <p>Planning a wedding or reception? <a href="/services/wedding-security/">Enquire about wedding guards, darwan and bouncers for 1, 2, 3, 4 or a few days</a>. Send your dates, venue and daily duty hours so we can check availability and provide a written quote.</p>
+</section>
+{% endif %}
+
 {{ content | safe }}
 
 <section class="container quote-block">

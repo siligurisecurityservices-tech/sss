@@ -13,6 +13,7 @@
   ],
   "footer": {
     "services": [
+      { "label": "Wedding Guards & Bouncers", "url": "/services/wedding-security/" },
       { "label": "Corporate Security", "url": "/services/corporate-security/" },
       { "label": "Industrial Security", "url": "/services/industrial-security/" },
       { "label": "Armed Guards", "url": "/services/armed-security/" },

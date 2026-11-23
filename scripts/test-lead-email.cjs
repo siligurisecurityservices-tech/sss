@@ -31,6 +31,24 @@ async function submit(extra, opts = { kind: 'quote', requireLocation: true }) {
     assert.match(messages[1].subject, /received your application/);
     assert.match(decodeURIComponent(res.body.whatsappUrl), /Role applied for/);
   }
+  for (const candidate of [
+    { role: 'Security Guard — Matigara / Siliguri head office', location: 'Matigara' },
+    { role: 'Security Guard — Matigara / Siliguri head office', location: 'Naxalbari' },
+    { role: 'Security Guard — Barasat / Kolkata branch', location: 'Barrackpore' },
+  ]) {
+    for (const formType of ['career', 'quote']) {
+      const { res, messages } = await submit({ ...candidate, formType, notes: 'Local posting only. Can commute for night shift.' });
+      assert.equal(res.statusCode, 200);
+      assert.match(messages[0].subject, /^\[Job Application\]/);
+      assert(messages[0].subject.includes(candidate.location));
+      assert.deepEqual(messages[0].to, ['hr@example.test']);
+      for (const value of [candidate.role, candidate.location, 'Local posting only']) {
+        assert(messages[0].html.includes(value));
+        assert(decodeURIComponent(res.body.whatsappUrl).includes(value));
+      }
+      assert.match(messages[1].subject, /received your application/);
+    }
+  }
   const optionalLocation = await submit({ formType: 'quote', role: 'Guard' });
   assert.equal(optionalLocation.res.statusCode, 200);
   const quote = await submit({ formType: 'quote', serviceType: 'Security guards', location: 'Kolkata', guardCount: '5' });

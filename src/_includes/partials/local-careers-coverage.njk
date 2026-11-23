@@ -1,0 +1,17 @@
+{% if applicationRegion == "barasat" %}
+{% set candidateCoverage = barasatSecurity %}
+{% set candidateOffice = "Barasat branch" %}
+{% else %}
+{% set candidateCoverage = localSecurity %}
+{% set candidateOffice = "Matigara head office" %}
+{% endif %}
+<section>
+  <h2>Security guard applicants around the {{ candidateOffice }} — approximately {{ candidateCoverage.radiusKm }} km</h2>
+  <p>Candidates from the following local areas can apply through this office and tell HR their preferred posting locality. The approximate {{ candidateCoverage.radiusKm }} km radius helps nearby candidates find the right office; it is not a guarantee of vacancies or a posting within that distance.</p>
+  {% for group in candidateCoverage.areaGroups %}
+  <h3>{{ group.name }}</h3>
+  <p>{% for area in group.areas %}{{ area }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  {% endfor %}
+  <p>Select your preferred locality in the application and mention how far you can commute, the shifts you can work and whether you can relocate. Actual work locations are client sites, confirmed by HR. Road travel can be longer than the straight-line radius, especially across rivers or on indirect routes.</p>
+  <p>Not listed or outside this area? You can still contact HR about opportunities and relocation. Call before visiting the office to arrange an interview.</p>
+</section>

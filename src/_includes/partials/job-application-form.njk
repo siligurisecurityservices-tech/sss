@@ -17,6 +17,7 @@
       <label for="ja-role">Role you're applying for <span class="required">*</span></label>
       <select id="ja-role" name="role" required>
         <option value="">Select a role</option>
+        <option value="Security Guard — Matigara / Siliguri head office"{% if applicationRole == "Security Guard — Matigara / Siliguri head office" %} selected{% endif %}>Security Guard — Matigara / Siliguri head office (enquire about vacancies)</option>
         <option value="Security Guard — Barasat / Kolkata branch"{% if applicationRole == "Security Guard — Barasat / Kolkata branch" %} selected{% endif %}>Security Guard — Barasat / Kolkata branch (enquire about vacancies)</option>
         {%- for job in jobs.catalog -%}
         <option value="{{ job.title }}" data-slug="{{ job.slug }}">{{ job.title }}</option>
@@ -28,10 +29,17 @@
       <label for="ja-location">Preferred posting location</label>
       <select id="ja-location" name="location">
         <option value="">No preference</option>
+        {% if applicationRegion == "barasat" %}
+        {% for area in barasatSecurity.areas %}<option value="{{ area }}"{% if applicationLocation == area %} selected{% endif %}>{{ area }}</option>{% endfor %}
+        {% elif applicationRegion == "matigara" %}
+        {% for area in localSecurity.areas %}<option value="{{ area }}"{% if applicationLocation == area %} selected{% endif %}>{{ area }}</option>{% endfor %}
+        {% else %}
         <option value="Barasat"{% if applicationLocation == "Barasat" %} selected{% endif %}>Barasat</option>
+        <option value="Matigara"{% if applicationLocation == "Matigara" %} selected{% endif %}>Matigara</option>
         {%- for loc in locations.catalog -%}
         <option value="{{ loc.name }}">{{ loc.name }}</option>
         {%- endfor -%}
+        {% endif %}
         <option value="Other">Other</option>
       </select>
     </div>
@@ -68,7 +76,7 @@
 
   <div class="form-row">
     <label for="ja-notes">Anything else we should know? (optional)</label>
-    <textarea id="ja-notes" name="notes" rows="3" maxlength="500" placeholder="Languages spoken, last employer, availability date, references"></textarea>
+    <textarea id="ja-notes" name="notes" rows="3" maxlength="500" placeholder="{% if applicationRegion %}Your locality, preferred shifts, commuting distance, languages spoken and earliest start date{% else %}Languages spoken, last employer, availability date, references{% endif %}"></textarea>
   </div>
 
   <input type="text" name="company_website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">

@@ -9,4 +9,5 @@
   <address><strong>{{ site.kolkataBranch.name }}:</strong> {{ site.kolkataBranch.address }}</address>
   <p><a href="{{ site.kolkataBranch.mapUrl }}" target="_blank" rel="noopener">Barasat branch directions</a> · <a href="{{ site.phone.tel }}">Call {{ site.phone.display }}</a>. Please arrange a branch visit by phone.</p>
   <ul>{% for item in barasatSecurity.services %}{% if page.url != item.url %}<li><a href="{{ item.url }}">{{ item.name }}</a></li>{% endif %}{% endfor %}</ul>
+  <p>Looking for work? <a href="/careers/security-guard-jobs-barasat/">Apply for security guard work through the Barasat branch</a>.</p>
 </section>

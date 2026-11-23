@@ -137,10 +137,10 @@ function buildEmailHtml(payload, kind) {
   const safe = (s) => String(s || "").replace(/[<>&]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]));
   const row = (k, v) => v ? `<tr><td style="padding:6px 10px;background:#f5f5f5;font-weight:600;border-right:1px solid #e7eaef">${k}</td><td style="padding:6px 10px">${safe(v)}</td></tr>` : "";
   const titles = {
-    "site-visit": "Free Site Visit Request",
-    "career": "New Job Application",
+    "site-visit": "Client Enquiry — Site Visit Request",
+    "career": "Job Application — Candidate Enquiry",
   };
-  const title = titles[kind] || "New Quote Request";
+  const title = titles[kind] || "Client Enquiry — Quote Request";
   const replyNote = kind === "career"
     ? "Reply to this email to follow up with the candidate (their email, if provided)."
     : "Reply to this email to respond to the prospect.";
@@ -148,11 +148,12 @@ function buildEmailHtml(payload, kind) {
     <h2 style="color:#003366">${title}</h2>
     <p>Received via the website on ${safe(payload.submittedAt || new Date().toISOString())}.</p>
     <table style="border-collapse:collapse;border:1px solid #e7eaef">
-      ${row("Name", payload.name)}
+      ${row("Enquiry type", kind === "career" ? "Job application / candidate" : (kind === "site-visit" ? "Client site visit" : "Client quote"))}
+      ${row(kind === "career" ? "Candidate name" : "Client name", payload.name)}
       ${row("Company", payload.company)}
       ${row("Phone", payload.phone)}
       ${row("Email", payload.email)}
-      ${row("Location", payload.location)}
+      ${row(kind === "career" ? "Preferred posting location" : "Client site location", payload.location)}
       ${row("Service", payload.serviceType)}
       ${row("Role applied for", payload.role)}
       ${row("Experience", payload.experience)}
@@ -249,9 +250,13 @@ async function handleLead(req, res, opts = {}) {
   try { payload = await parseBody(req); }
   catch (_) { return badRequest(res, "Could not read request body."); }
 
-  // formType in the payload can override the endpoint default (allows /api/lead to
-  // serve both quote and career forms through a single endpoint).
-  const kind = payload.formType || opts.kind || "quote";
+  // Career forms have an applicant role; client forms do not. Older cached
+  // scripts overwrote formType with "quote", so preserve applicant routing
+  // server-side even when those scripts submit to the shared lead endpoint.
+  const hasApplicantRole = typeof payload.role === "string" && payload.role.trim().length > 0;
+  const kind = payload.formType === "career" || hasApplicantRole
+    ? "career"
+    : (payload.formType === "site-visit" || opts.kind === "site-visit" ? "site-visit" : "quote");
   const effectiveOpts = { ...opts };
   if (kind === "career") {
     effectiveOpts.requireRole = true;
@@ -270,9 +275,9 @@ async function handleLead(req, res, opts = {}) {
   }
 
   const subjectPrefix = {
-    "career": "[Career]",
-    "site-visit": "[Site Visit]",
-    "quote": "[Quote]",
+    "career": "[Job Application]",
+    "site-visit": "[Client Site Visit]",
+    "quote": "[Client Quote]",
   }[kind] || "[Lead]";
   const subject = `${subjectPrefix} ${payload.name || "Unknown"}${payload.role ? " — " + payload.role : ""}${payload.location ? " — " + payload.location : ""}`;
   const notifyTo = kind === "career" ? CAREER_NOTIFY_EMAIL : NOTIFY_EMAIL;

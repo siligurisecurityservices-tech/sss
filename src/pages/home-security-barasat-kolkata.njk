@@ -1,0 +1,71 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/home-security-barasat-kolkata/index.html",
+  "title": "Home Guards During Family Trips in Barasat and Kolkata",
+  "description": "Going on a trip? Request temporary home guards or darwan around Barasat, Madhyamgram, Barrackpore, New Town and nearby Kolkata areas. Confirm dates and shifts.",
+  "temporaryQuote": true,
+  "barasatQuote": true,
+  "temporaryService": "Barasat Branch — Home Guarding During Travel",
+  "hero": {
+    "title": "Home guards while your family travels — Barasat and Kolkata",
+    "subtitle": "Arrange a temporary guard post and shift plan while you are away on a holiday, tour, pilgrimage or outstation visit.",
+    "cta": {
+      "label": "Request a Barasat branch quote",
+      "url": "#barasat-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Kolkata branch",
+      "url": "/locations/kolkata/"
+    },
+    {
+      "label": "Home Guarding During Travel",
+      "url": "/services/home-security-barasat-kolkata/"
+    }
+  ]
+}
+---
+
+<section>
+  <h2>Temporary home guarding for a few days away</h2>
+  <p>Families around Barasat, Hridaypur, Madhyamgram, New Barrackpore, Barrackpore and the wider Kolkata enquiry area can request a guard or darwan while travelling. Enquire for 1, 2, 3, 4 or a few days, or a custom period, through the Barasat branch.</p>
+  <p>Choose the day or night duty you need and share the property location. For an apartment building or gated community, discuss the extra guard arrangement with the association or management so the post fits its existing access rules.</p>
+</section>
+<section>
+  <h2>Agree the guarding arrangement before departure</h2>
+  <ul><li><strong>Post and hours:</strong> identify the gate, entrance or agreed guarding area and the required shifts.</li><li><strong>Authorised access:</strong> agree how approved visitors are checked and who can authorise entry.</li><li><strong>Reporting:</strong> nominate a family representative or local contact for attendance and incident escalation.</li><li><strong>Handover:</strong> confirm who meets the first guard, explains the duties and accepts the final handover.</li><li><strong>Relief:</strong> agree breaks and replacement shifts if you need continuous cover.</li></ul>
+  <p>One person does not provide uninterrupted day-and-night duty. Ask for a roster for the actual hours required. Domestic work, pet care, maintenance and responsibility for valuables are not automatically included in a guarding booking.</p>
+</section>
+<section>
+  <h2>Locality and route checks</h2>
+  <p>Tell us whether the guard post is at an independent house, a shared gate or within a managed property. In New Town or Salt Lake, include the block or action area; in outer areas such as Habra, Kalyani or Basirhat, include the property pin and road access details.</p>
+  <p>The team will confirm staffing, travel and costs for the actual address. Before departure, review the written duty scope, roster and supervisor contact rather than treating an initial enquiry as a confirmed booking.</p>
+</section>
+<section lang="bn"><h2>বারাসাত শাখা থেকে অস্থায়ী নিরাপত্তার বিষয়ে যোগাযোগ</h2><p>পরিবার নিয়ে ভ্রমণ, ছুটি বা তীর্থযাত্রায় গেলে বারাসাত, মধ্যমগ্রাম, ব্যারাকপুর, নিউ টাউন ও আশেপাশে অস্থায়ী বাড়ি পাহারার বিষয়ে যোগাযোগ করুন। প্রয়োজনীয় তারিখ, দিন বা রাতের শিফট, গার্ডের নির্ধারিত জায়গা ও পরিবারের যোগাযোগ আগে ঠিক করুন। একটানা দিন-রাতের পাহারার জন্য আলাদা শিফট ও রিলিফের ব্যবস্থা নিশ্চিত করুন।</p></section>
+
+{% include "partials/barasat-security-coverage.njk" %}
+
+<section id="barasat-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Barasat and this service are selected below; change the deployment locality if your site is elsewhere. Include the actual guard dates, locality, entrance pin and daily duty hours in the notes. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + '. Locality: __. Venue/property entrance pin: __. Guarding dates and number of days: __. Daily duty times: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">WhatsApp the Barasat branch requirement</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>Service enquiries are handled as client quote requests. For jobs, use <a href="/careers/security-guard-jobs-barasat/">Barasat careers</a>. Read our <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#kolkata-branch" },
+  "areaServed": [{ "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": {{ barasatSecurity.center.latitude }}, "longitude": {{ barasatSecurity.center.longitude }} }, "geoRadius": {{ barasatSecurity.radiusKm * 1000 }} },{% for area in barasatSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

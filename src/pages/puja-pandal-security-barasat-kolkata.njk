@@ -1,0 +1,71 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/puja-pandal-security-barasat-kolkata/index.html",
+  "title": "Puja and Pandal Guards in Barasat, Madhyamgram and Kolkata",
+  "description": "Request day or night puja pandal guards around Barasat, Madhyamgram, Barrackpore, Salt Lake and nearby areas within approximately 50 km. Get a short-term quote.",
+  "temporaryQuote": true,
+  "barasatQuote": true,
+  "temporaryService": "Barasat Branch — Puja and Pandal Security",
+  "hero": {
+    "title": "Puja and pandal guards around Barasat and Kolkata",
+    "subtitle": "Day, evening and overnight guarding enquiries for puja committees, community grounds and family pujas.",
+    "cta": {
+      "label": "Request a Barasat branch quote",
+      "url": "#barasat-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Kolkata branch",
+      "url": "/locations/kolkata/"
+    },
+    {
+      "label": "Puja and Pandal Security",
+      "url": "/services/puja-pandal-security-barasat-kolkata/"
+    }
+  ]
+}
+---
+
+<section>
+  <h2>Guards for Kali Puja, Durga Puja and community functions</h2>
+  <p>Barasat and Madhyamgram committees can request pandal guards for visitor-entry duties, committee access checks and overnight posts. We accept enquiries for Kali Puja, Durga Puja, Saraswati Puja, Lakshmi Puja and other agreed community or family programmes.</p>
+  <p>Request a single shift or 1, 2, 3, 4 or a few days of guarding. Include setup and pack-down cover separately if needed. Peak visiting hours, night duty and quieter daytime periods may require different rosters.</p>
+</section>
+<section>
+  <h2>Prepare a pandal-specific security brief</h2>
+  <ul><li>Mark visitor entrances and exits, queue routes and any separate vendor access.</li><li>Identify committee-only rooms or storage areas and the people authorised to enter.</li><li>Provide public visiting hours, busiest programme times and a day-by-day duty schedule.</li><li>Nominate the committee contact and agree guard reporting, supervisor escalation and handovers.</li><li>For overnight guarding, state which area remains under guard and when the next shift takes over.</li></ul>
+  <p>For grounds around Nabapally, Hridaypur, Madhyamgram, New Barrackpore, Sodepur or Salt Lake, send the exact pandal entrance pin. A club or park name alone may cover several entrances or a large site.</p>
+</section>
+<section>
+  <h2>Ground access and organiser coordination</h2>
+  <p>The <a href="/services/banquet-event-security-barasat-kolkata/">regional venue guide</a> includes public ground and pandal map references, while the <a href="https://www.kalipujabarasat.in/dashboards/guidemap" target="_blank" rel="noopener">Barasat Police District puja guide</a> can help organisers identify listed pandals. Confirm the current programme and authorised use with the committee.</p>
+  <p>Private guards follow the agreed brief. Police permissions, procession or public-road arrangements, fire safety, electrical checks and the committee's overall crowd plan remain separate responsibilities.</p>
+</section>
+<section lang="bn"><h2>বারাসাত শাখা থেকে অস্থায়ী নিরাপত্তার বিষয়ে যোগাযোগ</h2><p>বারাসাত ও মধ্যমগ্রামসহ আশেপাশে কালীপুজো, দুর্গাপুজো বা অন্য পুজোর প্যান্ডেলে গার্ডের জন্য যোগাযোগ করুন। দর্শনার্থীর প্রবেশপথ, কমিটির যোগাযোগ, রাতের পাহারা এবং প্রতিদিনের ডিউটির সময় জানান। মাঠ বা পার্কের নামের সঙ্গে প্যান্ডেলের প্রকৃত প্রবেশপথের ম্যাপ পিন দিন।</p></section>
+
+{% include "partials/barasat-security-coverage.njk" %}
+
+<section id="barasat-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Barasat and this service are selected below; change the deployment locality if your site is elsewhere. Include the actual guard dates, locality, entrance pin and daily duty hours in the notes. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + '. Locality: __. Venue/property entrance pin: __. Guarding dates and number of days: __. Daily duty times: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">WhatsApp the Barasat branch requirement</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>Service enquiries are handled as client quote requests. For jobs, use <a href="/careers/security-guard-jobs-barasat/">Barasat careers</a>. Read our <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#kolkata-branch" },
+  "areaServed": [{ "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": {{ barasatSecurity.center.latitude }}, "longitude": {{ barasatSecurity.center.longitude }} }, "geoRadius": {{ barasatSecurity.radiusKm * 1000 }} },{% for area in barasatSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

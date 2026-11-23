@@ -1,0 +1,474 @@
+{
+  "radiusKm": 50,
+  "checkedOn": "2026-11-23",
+  "center": {
+    "latitude": 22.7286145,
+    "longitude": 88.4739709
+  },
+  "areaGroups": [
+    {
+      "name": "Barasat branch and nearby neighbourhoods",
+      "areas": [
+        "Barasat",
+        "Panna Jhill",
+        "Nabapally",
+        "Noapara",
+        "Hridaypur",
+        "Champadali",
+        "Nandagarh",
+        "Digberia",
+        "Barbaria"
+      ]
+    },
+    {
+      "name": "Madhyamgram and New Barrackpore",
+      "areas": [
+        "Madhyamgram",
+        "Basunagar",
+        "Kora",
+        "Badu Road",
+        "Michael Nagar",
+        "Sajirhat",
+        "Bidhanpally",
+        "South Bankimpally",
+        "New Barrackpore"
+      ]
+    },
+    {
+      "name": "Barrackpore–Sodepur corridor",
+      "areas": [
+        "Barrackpore",
+        "Sodepur",
+        "Khardaha",
+        "Panihati",
+        "Sukchar",
+        "Ghola",
+        "Mohanpur",
+        "Palta",
+        "Anandapuri",
+        "Nona Chandanpukur"
+      ]
+    },
+    {
+      "name": "Airport-side neighbourhoods",
+      "areas": [
+        "Dum Dum",
+        "North Dum Dum",
+        "Birati",
+        "Baguiati",
+        "Teghoria",
+        "Kaikhali",
+        "Raghunathpur",
+        "Dum Dum Park",
+        "Hatiara"
+      ]
+    },
+    {
+      "name": "Rajarhat, New Town and Salt Lake side",
+      "areas": [
+        "Kolkata",
+        "Rajarhat",
+        "New Town",
+        "Bablatala",
+        "Kalipark",
+        "Reckjoani",
+        "Salt Lake",
+        "Bidhannagar",
+        "Lake Town"
+      ]
+    },
+    {
+      "name": "Northern enquiry areas",
+      "areas": [
+        "Ashoknagar",
+        "Habra",
+        "Halisahar",
+        "Kanchrapara",
+        "Kalyani"
+      ]
+    },
+    {
+      "name": "Eastern enquiry areas",
+      "areas": [
+        "Basirhat",
+        "Baro Jirakpur",
+        "Sitalia"
+      ]
+    },
+    {
+      "name": "Across-river enquiry areas — route confirmation required",
+      "areas": [
+        "Howrah",
+        "Shibpur",
+        "Naora"
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "name": "R A Banquet",
+      "category": "Festival hall",
+      "area": "Bijaylakshmi Colony, Chkravartipara, Nabapally",
+      "latitude": 22.726601499999997,
+      "longitude": 88.47615019999999,
+      "straightLineKm": 0.3,
+      "mapUrl": "https://www.google.com/maps?cid=9713526787652328044",
+      "sourceQuery": "banquet halls Barasat Madhyamgram"
+    },
+    {
+      "name": "Mridha Banquet",
+      "category": "Wedding venue",
+      "area": "Pioneer Park, Noapara",
+      "latitude": 22.724712099999998,
+      "longitude": 88.4792157,
+      "straightLineKm": 0.7,
+      "mapUrl": "https://www.google.com/maps?cid=10603766476072796278",
+      "sourceQuery": "banquet halls Barasat Madhyamgram"
+    },
+    {
+      "name": "Royal Pavilion Lawn & Banquet",
+      "category": "Banquet hall",
+      "area": "South, Madhyamgram",
+      "latitude": 22.6897701,
+      "longitude": 88.46467109999999,
+      "straightLineKm": 4.4,
+      "mapUrl": "https://www.google.com/maps?cid=5785943315494792187",
+      "sourceQuery": "banquet halls Barasat Madhyamgram"
+    },
+    {
+      "name": "MAYA LAWN & BANQUET",
+      "category": "Banquet hall",
+      "area": "SAJIRHAT, Madhyamgram",
+      "latitude": 22.6979136,
+      "longitude": 88.4392494,
+      "straightLineKm": 4.9,
+      "mapUrl": "https://www.google.com/maps?cid=1516849339039800032",
+      "sourceQuery": "banquet halls Barasat Madhyamgram"
+    },
+    {
+      "name": "Tandra Garden",
+      "category": "Banquet hall",
+      "area": "Fortune City, Madhyamgram",
+      "latitude": 22.679776999999998,
+      "longitude": 88.460447,
+      "straightLineKm": 5.6,
+      "mapUrl": "https://www.google.com/maps?cid=5877620109573644176",
+      "sourceQuery": "banquet halls Barasat Madhyamgram"
+    },
+    {
+      "name": "HRS Bhawan",
+      "category": "Banquet hall",
+      "area": "Cantonment",
+      "latitude": 22.764191999999998,
+      "longitude": 88.3621216,
+      "straightLineKm": 12.1,
+      "mapUrl": "https://www.google.com/maps?cid=2023630291933647910",
+      "sourceQuery": "wedding lawns Barrackpore Sodepur"
+    },
+    {
+      "name": "AQUA BANQUET",
+      "category": "Banquet hall",
+      "area": "Mohan Pur",
+      "latitude": 22.7735104,
+      "longitude": 88.39042359999999,
+      "straightLineKm": 9.9,
+      "mapUrl": "https://www.google.com/maps?cid=2672711873386987574",
+      "sourceQuery": "wedding lawns Barrackpore Sodepur"
+    },
+    {
+      "name": "Kundu Garden & Lawn",
+      "category": "Event venue",
+      "area": "Jaffarpur Panchanantala",
+      "latitude": 22.7770622,
+      "longitude": 88.38939479999999,
+      "straightLineKm": 10.2,
+      "mapUrl": "https://www.google.com/maps?cid=1902064603102761482",
+      "sourceQuery": "wedding lawns Barrackpore Sodepur"
+    },
+    {
+      "name": "Smriti Banquets",
+      "category": "Banquet hall",
+      "area": "Action Area II, Action Area IID, Rajarhat",
+      "latitude": 22.6220653,
+      "longitude": 88.455756,
+      "straightLineKm": 12.0,
+      "mapUrl": "https://www.google.com/maps?cid=17353914679121469620",
+      "sourceQuery": "banquet halls New Town Rajarhat"
+    },
+    {
+      "name": "Kanha Banquet & Lawn",
+      "category": "Banquet hall",
+      "area": "Action Area I, New Town",
+      "latitude": 22.599985099999998,
+      "longitude": 88.4723629,
+      "straightLineKm": 14.3,
+      "mapUrl": "https://www.google.com/maps?cid=2443049295428861796",
+      "sourceQuery": "banquet halls New Town Rajarhat"
+    },
+    {
+      "name": "Royal Aura",
+      "category": "Banquet hall",
+      "area": "Kankpul",
+      "latitude": 22.8520131,
+      "longitude": 88.6301889,
+      "straightLineKm": 21.1,
+      "mapUrl": "https://www.google.com/maps?cid=423281596487632601",
+      "sourceQuery": "banquet halls Habra Ashoknagar Kalyani"
+    },
+    {
+      "name": "Sai Garden Ceremony House",
+      "category": "Banquet hall",
+      "area": "Banbania",
+      "latitude": 22.860637699999998,
+      "longitude": 88.65488309999999,
+      "straightLineKm": 23.7,
+      "mapUrl": "https://www.google.com/maps?cid=12817552497791813429",
+      "sourceQuery": "banquet halls Habra Ashoknagar Kalyani"
+    },
+    {
+      "name": "ROYAL HALL",
+      "category": "Banquet hall",
+      "area": "Kalyani, B8, Block B",
+      "latitude": 22.9778207,
+      "longitude": 88.43614749999999,
+      "straightLineKm": 28.0,
+      "mapUrl": "https://www.google.com/maps?cid=5478979091272761960",
+      "sourceQuery": "banquet halls Kalyani"
+    },
+    {
+      "name": "Megh Brishti Banquet Hall",
+      "category": "Banquet hall",
+      "area": "Opposite to, B1, Picnic garden",
+      "latitude": 22.9831203,
+      "longitude": 88.42512459999999,
+      "straightLineKm": 28.7,
+      "mapUrl": "https://www.google.com/maps?cid=12800265565181433542",
+      "sourceQuery": "banquet halls Kalyani"
+    },
+    {
+      "name": "Ashar Alo",
+      "category": "Banquet hall",
+      "area": "Chowmatha",
+      "latitude": 22.6577557,
+      "longitude": 88.8585191,
+      "straightLineKm": 40.2,
+      "mapUrl": "https://www.google.com/maps?cid=7847243322889147504",
+      "sourceQuery": "banquet halls Basirhat"
+    },
+    {
+      "name": "Garden Palace",
+      "category": "Banquet hall",
+      "area": "Baruipara, Shibpur",
+      "latitude": 22.5825109,
+      "longitude": 88.3062298,
+      "straightLineKm": 23.7,
+      "mapUrl": "https://www.google.com/maps?cid=9436417280682346655",
+      "sourceQuery": "banquet halls Howrah Shibpur"
+    },
+    {
+      "name": "Netaji Subhas Maidan",
+      "category": "Fairground",
+      "area": "Basunagar, Madhyamgram",
+      "latitude": 22.6930536,
+      "longitude": 88.46544279999999,
+      "straightLineKm": 4.0,
+      "mapUrl": "https://www.google.com/maps?cid=8621447634263061544",
+      "sourceQuery": "open grounds Barasat Madhyamgram Barrackpore"
+    },
+    {
+      "name": "Netaji Maidan",
+      "category": "Playground",
+      "area": "Laxmi Narayan Colony, Chkravartipara, Nabapally",
+      "latitude": 22.7236206,
+      "longitude": 88.47604489999999,
+      "straightLineKm": 0.6,
+      "mapUrl": "https://www.google.com/maps?cid=11950508122218676331",
+      "sourceQuery": "open grounds Barasat Madhyamgram Barrackpore"
+    },
+    {
+      "name": "Brati Maidan",
+      "category": "Playground",
+      "area": "Hridaypur, Madhyamgram",
+      "latitude": 22.7069047,
+      "longitude": 88.46922649999999,
+      "straightLineKm": 2.5,
+      "mapUrl": "https://www.google.com/maps?cid=15994067278448041247",
+      "sourceQuery": "open grounds Barasat Madhyamgram Barrackpore"
+    },
+    {
+      "name": "Barabaria Young Star Football Camp Ground",
+      "category": "Playground",
+      "area": "Barbaria",
+      "latitude": 22.7465378,
+      "longitude": 88.4573454,
+      "straightLineKm": 2.6,
+      "mapUrl": "https://www.google.com/maps?cid=16456679878393282708",
+      "sourceQuery": "open grounds Barasat Madhyamgram Barrackpore"
+    },
+    {
+      "name": "Sodepur Club Ground",
+      "category": "Playground",
+      "area": "West Arunachal, Arunachal, Sodepur",
+      "latitude": 22.6969195,
+      "longitude": 88.38747,
+      "straightLineKm": 9.5,
+      "mapUrl": "https://www.google.com/maps?cid=8802416466381749048",
+      "sourceQuery": "open grounds Barasat Madhyamgram Barrackpore"
+    },
+    {
+      "name": "Vivekananda Krirangan",
+      "category": "Playground",
+      "area": "Bhattacharya Pada, Chandra Pally, New Barrackpur",
+      "latitude": 22.6851973,
+      "longitude": 88.4457377,
+      "straightLineKm": 5.6,
+      "mapUrl": "https://www.google.com/maps?cid=7021351944992773181",
+      "sourceQuery": "open grounds Barasat Madhyamgram Barrackpore"
+    },
+    {
+      "name": "CK-CL Pandal",
+      "category": "Playground",
+      "area": "CL Block, Block CL, Sector 2",
+      "latitude": 22.583981299999998,
+      "longitude": 88.4273042,
+      "straightLineKm": 16.8,
+      "mapUrl": "https://www.google.com/maps?cid=17089658060229574804",
+      "sourceQuery": "open grounds Kolkata Salt Lake"
+    },
+    {
+      "name": "Sreebhumi Sporting Club Play Ground",
+      "category": "Playground",
+      "area": "Sreebhumi, Lake Town",
+      "latitude": 22.6003853,
+      "longitude": 88.4026153,
+      "straightLineKm": 16.0,
+      "mapUrl": "https://www.google.com/maps?cid=2996824283600895746",
+      "sourceQuery": "open grounds Kolkata Salt Lake"
+    },
+    {
+      "name": "Varmala Banquet",
+      "category": "Banquet hall",
+      "area": "Pearabagan, Tegharia, Baguiati",
+      "latitude": 22.6211281,
+      "longitude": 88.4386293,
+      "straightLineKm": 12.5,
+      "mapUrl": "https://www.google.com/maps?cid=3105724416930675204",
+      "sourceQuery": "banquet halls Dum Dum Birati Baguiati"
+    },
+    {
+      "name": "Dream Garden Banquet",
+      "category": "Banquet hall",
+      "area": "Khalisha Kota, Birati",
+      "latitude": 22.6537077,
+      "longitude": 88.433178,
+      "straightLineKm": 9.3,
+      "mapUrl": "https://www.google.com/maps?cid=17234280459023978431",
+      "sourceQuery": "banquet halls Dum Dum Birati Baguiati"
+    },
+    {
+      "name": "Shreeram Garden & Banquets",
+      "category": "Banquet hall",
+      "area": "Raghunathpur, Tegharia, Kaikhali",
+      "latitude": 22.6234255,
+      "longitude": 88.43256269999999,
+      "straightLineKm": 12.4,
+      "mapUrl": "https://www.google.com/maps?cid=17945473081637255048",
+      "sourceQuery": "banquet halls Dum Dum Birati Baguiati"
+    }
+  ],
+  "references": [
+    {
+      "name": "Krishna Kabery Garden — Barasat–Barrackpore Road hall and lawn",
+      "url": "https://krishnakaberygarden.com/contact-us"
+    },
+    {
+      "name": "New Town Eco Park — banquet information",
+      "url": "https://ecoparknewtown.com/thematic/FoodCourt"
+    },
+    {
+      "name": "Barasat Police District — puja guide map",
+      "url": "https://www.kalipujabarasat.in/dashboards/guidemap"
+    }
+  ],
+  "services": [
+    {
+      "name": "Temporary guards within approximately 50 km of Barasat",
+      "url": "/locations/kolkata/temporary-security/"
+    },
+    {
+      "name": "Wedding guards, darwan and bouncers",
+      "url": "/services/wedding-security-barasat-kolkata/"
+    },
+    {
+      "name": "Puja and pandal guards",
+      "url": "/services/puja-pandal-security-barasat-kolkata/"
+    },
+    {
+      "name": "Home guards during family trips",
+      "url": "/services/home-security-barasat-kolkata/"
+    },
+    {
+      "name": "Banquet halls, lawns and open-ground security",
+      "url": "/services/banquet-event-security-barasat-kolkata/"
+    }
+  ],
+  "areas": [
+    "Barasat",
+    "Panna Jhill",
+    "Nabapally",
+    "Noapara",
+    "Hridaypur",
+    "Champadali",
+    "Nandagarh",
+    "Digberia",
+    "Barbaria",
+    "Madhyamgram",
+    "Basunagar",
+    "Kora",
+    "Badu Road",
+    "Michael Nagar",
+    "Sajirhat",
+    "Bidhanpally",
+    "South Bankimpally",
+    "New Barrackpore",
+    "Barrackpore",
+    "Sodepur",
+    "Khardaha",
+    "Panihati",
+    "Sukchar",
+    "Ghola",
+    "Mohanpur",
+    "Palta",
+    "Anandapuri",
+    "Nona Chandanpukur",
+    "Dum Dum",
+    "North Dum Dum",
+    "Birati",
+    "Baguiati",
+    "Teghoria",
+    "Kaikhali",
+    "Raghunathpur",
+    "Dum Dum Park",
+    "Hatiara",
+    "Kolkata",
+    "Rajarhat",
+    "New Town",
+    "Bablatala",
+    "Kalipark",
+    "Reckjoani",
+    "Salt Lake",
+    "Bidhannagar",
+    "Lake Town",
+    "Ashoknagar",
+    "Habra",
+    "Halisahar",
+    "Kanchrapara",
+    "Kalyani",
+    "Basirhat",
+    "Baro Jirakpur",
+    "Sitalia",
+    "Howrah",
+    "Shibpur",
+    "Naora"
+  ]
+}

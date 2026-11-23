@@ -1,0 +1,84 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/banquet-event-security-barasat-kolkata/index.html",
+  "title": "Banquet, Lawn and Open-Ground Guards near Barasat and Kolkata",
+  "description": "Request event guards around Barasat, Madhyamgram, Barrackpore and New Town. Map-linked banquet halls and grounds within a 50 km branch radius, with venue quotes.",
+  "temporaryQuote": true,
+  "barasatQuote": true,
+  "temporaryService": "Barasat Branch — Banquet, Lawn and Open-Ground Security",
+  "hero": {
+    "title": "Banquet halls, wedding lawns and open-ground security — Barasat",
+    "subtitle": "Use local map references to identify your venue and entrance, then request a short-term guard plan through the Barasat branch.",
+    "cta": {
+      "label": "Request a Barasat branch quote",
+      "url": "#barasat-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Kolkata branch",
+      "url": "/locations/kolkata/"
+    },
+    {
+      "label": "Banquet, Lawn and Open-Ground Security",
+      "url": "/services/banquet-event-security-barasat-kolkata/"
+    }
+  ],
+  "quotePersonnel": [
+    "Event security guard / darwan",
+    "Event bouncers",
+    "Guards and bouncers",
+    "Supervisor and event security team"
+  ]
+}
+---
+
+<section>
+  <h2>Guard planning for your hall, lawn or ground</h2>
+  <p>For an event near Barasat–Barrackpore Road, Jessore Road, Sodepur Road, the Kalyani Expressway corridor or Rajarhat–New Town, share the actual venue name and entrance pin. Halls, lawns and open fields need different guard posts, especially when guests, vehicles and vendors use separate entrances.</p>
+  <p>Request cover for 1, 2, 3, 4 or a few days, including setup or overnight shifts where needed. Confirm the owner's or organiser's permission for the event and for bringing outside security before booking personnel.</p>
+</section>
+<section>
+  <h2>Nearby banquet and ground map references</h2>
+  <p>The following Google Maps listings were checked on {{ barasatSecurity.checkedOn | readableDate }}. Each selected pin falls within 50 km straight-line distance of the supplied Barasat branch coordinates. They are geographical references, not SSS clients or partners, and do not confirm venue availability or permission to host an event. Road journeys can be longer.</p>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th>Map reference</th><th>Local area</th><th>Listed type</th><th>Map</th></tr></thead><tbody>
+  {% for venue in barasatSecurity.venues %}<tr><td>{{ venue.name }}</td><td>{{ venue.area }}</td><td>{{ venue.category }}</td><td><a href="{{ venue.mapUrl }}" target="_blank" rel="noopener" aria-label="Find {{ venue.name }} on Google Maps">Google Maps</a></td></tr>{% endfor %}
+  </tbody></table></div>
+</section>
+<section>
+  <h2>Tailor the security brief to the event space</h2>
+  <ul><li><strong>Banquet hall:</strong> specify guest-list checks, family-only rooms and the service gate.</li><li><strong>Hall and lawn:</strong> identify both entrances, the open perimeter and movement between spaces.</li><li><strong>Open ground or pandal:</strong> provide the permitted layout, entry and exit plan, committee contact and night handover.</li><li><strong>Outer-area venue:</strong> confirm reporting time, travel, relief and any overnight requirements.</li></ul>
+  <p>A playground, club ground or park listing is a location reference; it is not a claim that the site can be hired for a private function. The ground owner or relevant authority must confirm access and use.</p>
+</section>
+<section>
+  <h2>Additional venue and organiser sources</h2>
+  <ul>{% for source in barasatSecurity.references %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.name }}</a></li>{% endfor %}</ul>
+  <p>Discuss security availability with SSS and venue rules directly with the venue or committee. Send the dates, guest count, entrance pin and reporting instructions for a written quote.</p>
+</section>
+<section lang="bn"><h2>বারাসাত শাখা থেকে অস্থায়ী নিরাপত্তার বিষয়ে যোগাযোগ</h2><p>বারাসাত, মধ্যমগ্রাম, ব্যারাকপুর, রাজারহাট ও নিউ টাউনের হল, লন বা অনুমতিপ্রাপ্ত খোলা মাঠে অনুষ্ঠানের জন্য গার্ড বা বাউন্সারের বিষয়ে যোগাযোগ করুন। ভেন্যুর নাম, প্রকৃত প্রবেশপথের ম্যাপ পিন, তারিখ ও ডিউটির সময় দিন। ম্যাপের তালিকাগুলি এলাকার পরিচিতির জন্য, আমাদের ক্লায়েন্ট বা অংশীদারের তালিকা নয়।</p></section>
+
+{% include "partials/barasat-security-coverage.njk" %}
+
+<section id="barasat-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Barasat and this service are selected below; change the deployment locality if your site is elsewhere. Include the actual guard dates, locality, entrance pin and daily duty hours in the notes. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + '. Locality: __. Venue/property entrance pin: __. Guarding dates and number of days: __. Daily duty times: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">WhatsApp the Barasat branch requirement</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>Service enquiries are handled as client quote requests. For jobs, use <a href="/careers/security-guard-jobs-barasat/">Barasat careers</a>. Read our <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#kolkata-branch" },
+  "areaServed": [{ "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": {{ barasatSecurity.center.latitude }}, "longitude": {{ barasatSecurity.center.longitude }} }, "geoRadius": {{ barasatSecurity.radiusKm * 1000 }} },{% for area in barasatSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

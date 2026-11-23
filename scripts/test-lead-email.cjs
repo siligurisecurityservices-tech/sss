@@ -56,6 +56,18 @@ async function submit(extra, opts = { kind: 'quote', requireLocation: true }) {
     const whatsapp = decodeURIComponent(temporary.res.body.whatsappUrl);
     for (const value of [serviceType, 'Gossainpur', 'Day and night shift team', '4 days', 'https://maps.google.com/?cid=123456']) assert(whatsapp.includes(value));
   }
+  for (const serviceType of ['Barasat Branch — Temporary Guards and Darwan', 'Barasat Branch — Wedding Guards, Darwan and Bouncers', 'Barasat Branch — Puja and Pandal Security', 'Barasat Branch — Home Guarding During Travel', 'Barasat Branch — Banquet, Lawn and Open-Ground Security']) {
+    const local = await submit({ formType: 'quote', serviceType, location: 'Madhyamgram', guardCount: '3', guardTier: 'Wedding bouncers', notes: 'Branch: Kolkata / Barasat. Guarding dates: 2026-12-05. Duration: 2 days. Venue entrance: https://maps.google.com/?cid=123456. Daily start and finish times: 5pm to 11pm.' });
+    assert.equal(local.res.statusCode, 200);
+    assert.match(local.messages[0].subject, /^\[Client Quote\]/);
+    assert.match(local.messages[0].subject, /Madhyamgram/);
+    assert.deepEqual(local.messages[0].to, ['clients@example.test']);
+    for (const value of [serviceType, 'Madhyamgram', '2 days', 'Kolkata / Barasat', 'https://maps.google.com/?cid=123456', '5pm to 11pm']) {
+      assert(local.messages[0].html.includes(value));
+      assert(decodeURIComponent(local.res.body.whatsappUrl).includes(value));
+    }
+    assert(!local.messages[0].subject.includes('Job Application'));
+  }
   const visit = await submit({ location: 'Kolkata', preferredDate: '2026-12-01' }, { kind: 'site-visit', requireLocation: true });
   assert.match(visit.messages[0].subject, /^\[Client Site Visit\]/);
   assert.match(visit.messages[0].html, /Client Enquiry — Site Visit Request/);

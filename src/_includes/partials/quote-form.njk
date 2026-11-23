@@ -26,10 +26,14 @@
       <label for="q-location">Deployment Location <span class="required">*</span></label>
       <select id="q-location" name="location" required>
         <option value="">Select city / region</option>
-        {% if weddingQuote or temporaryQuote %}{% for area in localSecurity.areas %}{% if area != "Siliguri" %}<option value="{{ area }}">{{ area }}</option>{% endif %}{% endfor %}<option value="Barasat">Barasat</option>{% endif %}
+        {% if barasatQuote %}
+        {% for area in barasatSecurity.areas %}<option value="{{ area }}"{% if area == "Barasat" %} selected{% endif %}>{{ area }}</option>{% endfor %}
+        {% elif weddingQuote or temporaryQuote %}{% for area in localSecurity.areas %}{% if area != "Siliguri" %}<option value="{{ area }}">{{ area }}</option>{% endif %}{% endfor %}<option value="Barasat">Barasat</option>{% endif %}
+        {% if not barasatQuote %}
         {%- for loc in locations.catalog -%}
         <option value="{{ loc.name }}"{% if prefillLocation == loc.name %} selected{% endif %}>{{ loc.name }}</option>
         {%- endfor -%}
+        {% endif %}
         <option value="Other">Other (mention in notes)</option>
       </select>
     </div>
@@ -65,7 +69,9 @@
       <select id="q-tier" name="guardTier">
         <option value="">No preference</option>
         {% if weddingQuote or temporaryQuote %}
-        {% if temporaryQuote %}
+        {% if quotePersonnel %}
+        {% for personnel in quotePersonnel %}<option value="{{ personnel }}">{{ personnel }}</option>{% endfor %}
+        {% elif temporaryQuote %}
         <option value="Temporary security guard / darwan">Temporary security guard / darwan</option>
         <option value="Day and night shift team">Day and night shift team</option>
         <option value="Supervisor and guarding team">Supervisor and guarding team</option>
@@ -85,7 +91,8 @@
 
   <div class="form-row">
     <label for="q-notes">Requirements / Notes</label>
-    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="{% if temporaryQuote %}Guarding dates, number of days, locality, venue name or entrance map pin, shift times and duties{% elif weddingQuote %}Wedding dates, 1/2/3/4 or few days, venue address, daily start/finish times, guest count and duties{% else %}Type of site, shifts, special requirements (armed / female / dog handler), expected start date{% endif %}">{% if temporaryQuote %}Guarding dates:
+    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="{% if temporaryQuote %}Guarding dates, number of days, locality, venue name or entrance map pin, shift times and duties{% elif weddingQuote %}Wedding dates, 1/2/3/4 or few days, venue address, daily start/finish times, guest count and duties{% else %}Type of site, shifts, special requirements (armed / female / dog handler), expected start date{% endif %}">{% if temporaryQuote %}{% if barasatQuote %}Branch: Kolkata / Barasat
+{% endif %}Guarding dates:
 Duration (1, 2, 3, 4 or a few days):
 Locality:
 Venue / property landmark or entrance map pin:

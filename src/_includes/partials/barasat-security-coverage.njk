@@ -1,0 +1,12 @@
+<section>
+  <h2>Local security enquiries within approximately {{ barasatSecurity.radiusKm }} km of Barasat</h2>
+  <p>Our enquiry area extends approximately {{ barasatSecurity.radiusKm }} km in any direction from the Panna Jhill branch. The localities below are examples, not a complete boundary list. Send the actual property or venue entrance pin to check travel, staffing and duty times before booking.</p>
+  {% for group in barasatSecurity.areaGroups %}
+  <h3>{{ group.name }}</h3>
+  <p>{% for area in group.areas %}{{ area }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  {% endfor %}
+  <p>A radius describes straight-line distance; road journeys, river crossings and shift logistics can be longer. For outer areas and across-river locations, the team must confirm the route and arrangement. A locality listing does not promise immediate deployment.</p>
+  <address><strong>{{ site.kolkataBranch.name }}:</strong> {{ site.kolkataBranch.address }}</address>
+  <p><a href="{{ site.kolkataBranch.mapUrl }}" target="_blank" rel="noopener">Barasat branch directions</a> · <a href="{{ site.phone.tel }}">Call {{ site.phone.display }}</a>. Please arrange a branch visit by phone.</p>
+  <ul>{% for item in barasatSecurity.services %}{% if page.url != item.url %}<li><a href="{{ item.url }}">{{ item.name }}</a></li>{% endif %}{% endfor %}</ul>
+</section>

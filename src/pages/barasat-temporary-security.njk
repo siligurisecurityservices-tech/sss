@@ -1,0 +1,75 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/locations/kolkata/temporary-security/index.html",
+  "title": "Temporary Guards near Barasat, Madhyamgram and Kolkata — 50 km Area",
+  "description": "Request short-term guards around the Barasat branch: weddings, bouncers, puja pandals and home guarding during trips. Local enquiries within approximately 50 km.",
+  "temporaryQuote": true,
+  "barasatQuote": true,
+  "temporaryService": "Barasat Branch — Temporary Guards and Darwan",
+  "hero": {
+    "title": "Temporary guards around Barasat and Kolkata",
+    "subtitle": "Short-term guarding enquiries within approximately 50 km of our Panna Jhill branch, for 1, 2, 3, 4 or a few days.",
+    "cta": {
+      "label": "Request a Barasat branch quote",
+      "url": "#barasat-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Kolkata branch",
+      "url": "/locations/kolkata/"
+    },
+    {
+      "label": "Temporary Guards and Darwan",
+      "url": "/locations/kolkata/temporary-security/"
+    }
+  ]
+}
+---
+
+<section>
+  <h2>Book local security for your event or property</h2>
+  <p>Families, puja committees, venues and organisers can contact {{ site.name }} through the Barasat branch for temporary guards, darwan or event bouncers. Request a single-day duty, several wedding or puja days, or home guarding while your family travels.</p>
+  <p>The branch is at Panna Jhill on Barasat–Barrackpore Road near Satya Bharati School. Tell us your actual site location, the required dates and each day's start and finish times. HR and employment enquiries have a separate <a href="/careers/security-guard-jobs-barasat/">Barasat careers page</a>.</p>
+</section>
+<section>
+  <h2>Short-term services through the Barasat branch</h2>
+  <div class="card-grid">
+    <div class="card"><h3>Wedding guards and bouncers</h3><p>Discuss gate darwan, guest-list access, bouncers and vendor-entry duties for receptions or family functions in Barasat, Madhyamgram and surrounding venue areas.</p><a href="/services/wedding-security-barasat-kolkata/">Wedding security →</a></div>
+    <div class="card"><h3>Puja and pandal guards</h3><p>Request separate visitor-hour, night and setup shifts for Kali Puja, Durga Puja or another committee or family programme.</p><a href="/services/puja-pandal-security-barasat-kolkata/">Pandal guarding →</a></div>
+    <div class="card"><h3>Home guards during trips</h3><p>Agree a guard post, shift roster and nominated contact for the period your family is away.</p><a href="/services/home-security-barasat-kolkata/">Home guarding →</a></div>
+    <div class="card"><h3>Halls, lawns and open grounds</h3><p>Use our local map references to identify your venue, then share the actual entrance pin and the organiser's instructions.</p><a href="/services/banquet-event-security-barasat-kolkata/">Venue-security guide →</a></div>
+  </div>
+</section>
+<section>
+  <h2>What a booking should confirm</h2>
+  <p>For each date, agree the number and type of staff, duty hours, reporting location, handovers and supervisor contact. Include travel, overnight requirements and additional-hours terms in the written quote. A one-day booking is for agreed hours; continuous cover requires relief and a roster.</p>
+  <p>Outer areas such as Basirhat or Kalyani and across-river enquiries around Howrah need a specific route and staffing check. The 50 km enquiry radius does not mean a fixed road distance or guaranteed response time.</p>
+</section>
+<section lang="bn"><h2>বারাসাত শাখা থেকে অস্থায়ী নিরাপত্তার বিষয়ে যোগাযোগ</h2><p>বারাসাত, মধ্যমগ্রাম ও কলকাতার আশেপাশে বিয়ে, পুজোর প্যান্ডেল বা পরিবারের ভ্রমণের সময় বাড়ি পাহারার জন্য অস্থায়ী গার্ডের বিষয়ে যোগাযোগ করুন। ১, ২, ৩, ৪ দিন বা কয়েক দিনের তারিখ, ঠিকানা ও ডিউটির সময় জানান। বারাসাত শাখা থেকে প্রায় ৫০ কিমি এলাকার প্রকৃত ঠিকানা, যাতায়াত ও কর্মীর উপলব্ধতা দেখে বুকিং নিশ্চিত করা হবে।</p></section>
+
+{% include "partials/barasat-security-coverage.njk" %}
+
+<section id="barasat-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Barasat and this service are selected below; change the deployment locality if your site is elsewhere. Include the actual guard dates, locality, entrance pin and daily duty hours in the notes. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + '. Locality: __. Venue/property entrance pin: __. Guarding dates and number of days: __. Daily duty times: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">WhatsApp the Barasat branch requirement</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>Service enquiries are handled as client quote requests. For jobs, use <a href="/careers/security-guard-jobs-barasat/">Barasat careers</a>. Read our <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#kolkata-branch" },
+  "areaServed": [{ "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": {{ barasatSecurity.center.latitude }}, "longitude": {{ barasatSecurity.center.longitude }} }, "geoRadius": {{ barasatSecurity.radiusKm * 1000 }} },{% for area in barasatSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

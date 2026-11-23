@@ -1,0 +1,77 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/wedding-security-barasat-kolkata/index.html",
+  "title": "Wedding Guards, Darwan and Bouncers in Barasat and Kolkata",
+  "description": "Request wedding guards, gate darwan and bouncers in Barasat, Madhyamgram, Barrackpore, Rajarhat and Kolkata for 1, 2, 3, 4 or a few days. Check availability with SSS.",
+  "temporaryQuote": true,
+  "barasatQuote": true,
+  "temporaryService": "Barasat Branch — Wedding Guards, Darwan and Bouncers",
+  "hero": {
+    "title": "Wedding guards, darwan and bouncers around Barasat",
+    "subtitle": "Security enquiries for wedding ceremonies, receptions and family functions through our Kolkata branch in Barasat.",
+    "cta": {
+      "label": "Request a Barasat branch quote",
+      "url": "#barasat-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Kolkata branch",
+      "url": "/locations/kolkata/"
+    },
+    {
+      "label": "Wedding Guards, Darwan and Bouncers",
+      "url": "/services/wedding-security-barasat-kolkata/"
+    }
+  ],
+  "quotePersonnel": [
+    "Wedding security guards / darwan",
+    "Wedding bouncers",
+    "Guards and bouncers",
+    "Supervisor and wedding security team"
+  ]
+}
+---
+
+<section>
+  <h2>Wedding security for one function or several days</h2>
+  <p>Planning a wedding, reception, engagement, haldi, mehendi or sangeet? Ask our Barasat branch about temporary gate guards, darwan and bouncers. Request 1, 2, 3, 4 or a few days of cover with a separate schedule for each venue and function.</p>
+  <p>Local venue corridors include Barasat–Barrackpore Road, Jessore Road through Madhyamgram, Sodepur Road, the Barrackpore side and Rajarhat–New Town. We also accept wider enquiries within approximately 50 km, subject to the exact entrance, access rules and available staff.</p>
+</section>
+<section>
+  <h2>Agree the wedding guard posts</h2>
+  <ul><li><strong>Gate darwan:</strong> follow the host's guest-list and invitation arrangements at agreed entrances.</li><li><strong>Bouncers:</strong> manage busy entry periods and restricted access with calm communication and de-escalation.</li><li><strong>Family and vendor access:</strong> identify family-only rooms, service entrances and supplier reporting points.</li><li><strong>Venue vehicle entry:</strong> coordinate the venue's agreed drop-off and parking approach with its staff.</li><li><strong>Late or overnight duties:</strong> book separate shifts for late departures, setup or pack-down where required.</li></ul>
+  <p>For a hall-and-lawn property, confirm which space is in use and whether the hall, lawn and service gate need separate posts. Families using more than one venue should share the movement schedule rather than just the wedding date.</p>
+</section>
+<section>
+  <h2>Venue planning around Barasat and Kolkata</h2>
+  <p>Our <a href="/services/banquet-event-security-barasat-kolkata/">map-linked hall, lawn and ground guide</a> includes references around Nabapally, Madhyamgram, Barrackpore, New Town and outer enquiry areas. References are landmarks, not venue partnerships or booking availability.</p>
+  <p>Obtain the venue's agreement to outside security and send its actual entrance pin. The written quote should confirm staff type, count, hours, travel and any extra-hours terms. Catering, decoration, valet driving and wedding planning are separate from the security brief.</p>
+</section>
+<section lang="bn"><h2>বারাসাত শাখা থেকে অস্থায়ী নিরাপত্তার বিষয়ে যোগাযোগ</h2><p>বারাসাত, মধ্যমগ্রাম, ব্যারাকপুর, রাজারহাট বা কলকাতার বিয়ে ও রিসেপশনে দারোয়ান, গার্ড বা বাউন্সার চাইলে অনুষ্ঠানের তারিখ, ভেন্যুর প্রবেশপথের ম্যাপ পিন, অতিথির সংখ্যা ও ডিউটির সময় জানান। এক দিন বা কয়েক দিনের জন্য বুকিংয়ের উপলব্ধতা ও লিখিত কোটেশন নিশ্চিত করুন।</p></section>
+
+{% include "partials/barasat-security-coverage.njk" %}
+
+<section id="barasat-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Barasat and this service are selected below; change the deployment locality if your site is elsewhere. Include the actual guard dates, locality, entrance pin and daily duty hours in the notes. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + '. Locality: __. Venue/property entrance pin: __. Guarding dates and number of days: __. Daily duty times: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">WhatsApp the Barasat branch requirement</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>Service enquiries are handled as client quote requests. For jobs, use <a href="/careers/security-guard-jobs-barasat/">Barasat careers</a>. Read our <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#kolkata-branch" },
+  "areaServed": [{ "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": {{ barasatSecurity.center.latitude }}, "longitude": {{ barasatSecurity.center.longitude }} }, "geoRadius": {{ barasatSecurity.radiusKm * 1000 }} },{% for area in barasatSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

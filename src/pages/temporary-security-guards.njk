@@ -1,0 +1,77 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/temporary-security-guards/index.html",
+  "title": "Temporary Guards near Matigara, Bagdogra, Naxalbari and Siliguri",
+  "description": "Hire temporary guards or darwan for 1, 2, 3, 4 or a few days around Matigara, Gossainpur, Patharghata, Salbari, Naxalbari and Bagdogra. Request a local quote.",
+  "temporaryQuote": true,
+  "temporaryService": "Temporary Security — Guards and Darwan",
+  "hero": {
+    "title": "Temporary security guards and darwan near Matigara",
+    "subtitle": "Local guards for short-term requirements around Matigara: weddings, puja pandals, home guarding during travel and other agreed duties.",
+    "cta": {
+      "label": "Request a short-term guard quote",
+      "url": "#temporary-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Services",
+      "url": "/pages/services/"
+    },
+    {
+      "label": "Temporary Security — Guards and Darwan",
+      "url": "/services/temporary-security-guards/"
+    }
+  ]
+}
+---
+
+<section>
+  <h2>Guards for 1, 2, 3, 4 or a few days</h2>
+  <p>Need a darwan, gate guard or security team for a short period? {{ site.name }} accepts temporary guarding enquiries around Matigara and Siliguri. You can request cover for one function, several puja days, a family trip, or an agreed period of property guarding.</p>
+  <p>Send the required dates, locality and daily duty hours. A short booking can be a day shift, night shift or a planned combination of shifts. Continuous cover needs a roster with rest and handovers; one guard for one day does not automatically mean 24-hour duty.</p>
+</section>
+<section>
+  <h2>Choose the temporary guard service you need</h2>
+  <div class="card-grid">
+    <div class="card"><h3>Weddings and family functions</h3><p>Request entrance guards, darwan or bouncers for ceremonies and receptions. Share the guest count, entrances and function schedule.</p><a href="/services/wedding-security/">Wedding guards and bouncers →</a></div>
+    <div class="card"><h3>Puja and pandal guarding</h3><p>Ask for visitor-entry duties, queue coordination, committee access checks or overnight pandal guarding, with responsibilities agreed with the organisers.</p><a href="/services/puja-pandal-security/">Puja and pandal guards →</a></div>
+    <div class="card"><h3>Home guarding during trips</h3><p>Arrange guarding while your family is away on a tour, holiday, pilgrimage or other trip. Agree the guard's post, access instructions and local contact before departure.</p><a href="/services/home-security-during-travel/">Temporary home security →</a></div>
+  </div>
+</section>
+<section>
+  <h2>How to book a short-term guard</h2>
+  <ol><li>Share your locality, dates, required shifts and duties by phone, WhatsApp or the form below.</li><li>Discuss the property's entrances, event timetable or guard post so we can assess staffing.</li><li>Review a written quote covering personnel, shift length, travel, handovers and any extra-hours terms.</li><li>Confirm the booking and reporting arrangements before the first shift.</li></ol>
+  <p>Temporary work is quoted for the specific requirement. Availability, response time and cost depend on the actual address, schedule and personnel required.</p>
+</section>
+<section lang="bn"><h2>মাটিগাড়ার আশেপাশে কয়েক দিনের জন্য দারোয়ান ও সিকিউরিটি গার্ড</h2><p>গোঁসাইপুর, পাথরঘাটা, শালবাড়ি, নকশালবাড়ি, বাগডোগরা ও আশেপাশের এলাকায় বিয়ে, পুজোর প্যান্ডেল বা পরিবারের বেড়াতে যাওয়ার সময় বাড়ি পাহারার জন্য যোগাযোগ করুন। ১, ২, ৩, ৪ দিন বা কয়েক দিনের ডিউটির তারিখ, এলাকা ও সময় জানান। ঠিকানা ও কর্মীর উপলব্ধতা অনুযায়ী বুকিং নিশ্চিত করা হবে।</p></section>
+
+{% include "partials/local-security-coverage.njk" %}
+
+<section id="temporary-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Share the required guarding dates, number of days, locality, shift hours and duties. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + ' near Matigara. Locality: __. Guarding dates: __. Number of days: __. Duty hours: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">send the requirement on WhatsApp</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>This is a client service enquiry. To apply for work, use our <a href="/pages/careers/">careers page</a>. <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<section><h2>Questions about short-term guarding</h2><dl><dt>Can I book for just one or two days?</dt><dd>You can request a fixed short period. Staff availability, shift times and duties must be confirmed before the booking is accepted.</dd>
+<dt>Do you cover my village or locality?</dt><dd>We accept enquiries around the Matigara office, approximately 20 km in any direction, including Gossainpur, Patharghata, Salbari, Naxalbari and Bagdogra. Share the exact location to confirm the route and arrangements.</dd>
+<dt>Can I request only night duty?</dt><dd>Yes, request the night shift times you need. Discuss reporting, relief and handover arrangements when obtaining the quote.</dd>
+</dl></section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#localbusiness" },
+  "areaServed": [{% for area in localSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

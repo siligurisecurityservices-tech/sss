@@ -1,0 +1,34 @@
+{
+  "radiusKm": 20,
+  "areas": [
+    "Matigara",
+    "Gossainpur",
+    "Patharghata",
+    "Salbari",
+    "Naxalbari",
+    "Bagdogra",
+    "Siliguri",
+    "Shivmandir",
+    "Kawakhali",
+    "Salugara",
+    "Sukna"
+  ],
+  "services": [
+    {
+      "name": "Temporary guards for 1, 2, 3, 4 or a few days",
+      "url": "/services/temporary-security-guards/"
+    },
+    {
+      "name": "Wedding guards, darwan and bouncers",
+      "url": "/services/wedding-security/"
+    },
+    {
+      "name": "Puja and pandal guards",
+      "url": "/services/puja-pandal-security/"
+    },
+    {
+      "name": "Home guards while you travel",
+      "url": "/services/home-security-during-travel/"
+    }
+  ]
+}

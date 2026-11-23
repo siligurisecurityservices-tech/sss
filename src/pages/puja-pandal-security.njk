@@ -1,0 +1,74 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/puja-pandal-security/index.html",
+  "title": "Puja and Pandal Guards near Matigara, Siliguri and Bagdogra",
+  "description": "Request puja pandal guards for day or night duty around Matigara, Gossainpur, Patharghata, Salbari, Naxalbari and Bagdogra. Short-term security quotes from SSS.",
+  "temporaryQuote": true,
+  "temporaryService": "Puja and Pandal Security",
+  "hero": {
+    "title": "Puja and pandal security guards near Matigara",
+    "subtitle": "Short-term guarding for puja committees, community pandals and family pujas around Matigara and Siliguri.",
+    "cta": {
+      "label": "Request a short-term guard quote",
+      "url": "#temporary-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Services",
+      "url": "/pages/services/"
+    },
+    {
+      "label": "Puja and Pandal Security",
+      "url": "/services/puja-pandal-security/"
+    }
+  ]
+}
+---
+
+<section>
+  <h2>Guarding for puja days, evenings and overnight shifts</h2>
+  <p>Organising a Durga Puja, Kali Puja, Saraswati Puja, Lakshmi Puja or another community or family puja? Request guards or darwan for your pandal, venue entrances and agreed visitor-access duties. Bookings can cover 1, 2, 3, 4 or a few days, including separate shifts where required.</p>
+  <p>For committees in Gossainpur, Patharghata, Salbari, Naxalbari, Bagdogra and nearby localities, send the pandal location, busiest visiting hours and committee contact. We will check staffing and travel before confirming availability.</p>
+</section>
+<section>
+  <h2>Agree a clear pandal security brief</h2>
+  <ul><li><strong>Entrance and queue coordination:</strong> guide visitors through the entry and exit plan agreed with the organisers.</li><li><strong>Committee and vendor access:</strong> follow agreed arrangements for volunteers, suppliers, performers and maintenance staff.</li><li><strong>Night guarding:</strong> request a separate overnight post and define the handover after public visiting hours.</li><li><strong>Setup and pack-down:</strong> include guarding before opening or after the puja if required, with dates and property responsibility recorded.</li><li><strong>Incident reporting:</strong> agree the committee contact, supervisor escalation and emergency contact procedure.</li></ul>
+  <p>Private guards coordinate with the committee and venue. They do not replace police permissions, fire-safety arrangements, electrical checks or the organiser's crowd-safety plan. Discuss public-road and procession requirements with the relevant authorities.</p>
+</section>
+<section>
+  <h2>What your puja committee should send</h2>
+  <p>Share the location, number of entrances, expected peak visitor periods, public opening hours, guard dates and any overnight duty. If the programme changes across days, include a day-by-day schedule.</p>
+  <p>The quote should state the number of guards per shift, reporting times, supervisor contact, relief arrangements and travel or additional-hours costs. Confirm availability early for busy puja dates.</p>
+</section>
+<section lang="bn"><h2>পুজোর প্যান্ডেলে দিন ও রাতের পাহারার জন্য গার্ড</h2><p>মাটিগাড়া, গোঁসাইপুর, পাথরঘাটা, শালবাড়ি, নকশালবাড়ি, বাগডোগরা ও আশেপাশে পুজোর প্যান্ডেল পাহারা, প্রবেশপথে ডিউটি ও ভিড়ের সারি নিয়ন্ত্রণে সহায়তার জন্য যোগাযোগ করুন। পুজো কমিটির পক্ষ থেকে তারিখ, প্যান্ডেলের ঠিকানা, প্রবেশপথ ও প্রতিদিনের ডিউটির সময় জানান। রাতের পাহারা লাগলে আলাদা করে উল্লেখ করুন।</p></section>
+
+{% include "partials/local-security-coverage.njk" %}
+
+<section id="temporary-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Share the required guarding dates, number of days, locality, shift hours and duties. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + ' near Matigara. Locality: __. Guarding dates: __. Number of days: __. Duty hours: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">send the requirement on WhatsApp</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>This is a client service enquiry. To apply for work, use our <a href="/pages/careers/">careers page</a>. <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<section><h2>Questions about short-term guarding</h2><dl><dt>Can guards stay after the pandal closes?</dt><dd>Request overnight duty separately with the reporting and finish times. Staffing and relief arrangements are confirmed in the booking.</dd>
+<dt>Can I arrange guards for several puja days?</dt><dd>Yes, request a multi-day schedule and identify which shifts need cover each day. Availability is checked before confirmation.</dd>
+<dt>Do guards manage all puja arrangements?</dt><dd>The service covers the security duties in the written brief. Organising the puja, permissions, electrical work, fire safety and catering remain separate responsibilities.</dd>
+</dl></section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#localbusiness" },
+  "areaServed": [{% for area in localSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

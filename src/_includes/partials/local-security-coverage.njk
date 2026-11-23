@@ -1,0 +1,9 @@
+<section>
+  <h2>Local guard service around Matigara — approximately {{ localSecurity.radiusKm }} km</h2>
+  <p>We accept short-term guarding enquiries within approximately {{ localSecurity.radiusKm }} km of our Matigara head office in any direction, including the localities below. Share the exact venue or property location so we can check the route, duty hours and personnel availability before confirming a booking. Named localities can span a wider area; coverage is confirmed for the actual address.</p>
+  <ul class="chips">{% for area in localSecurity.areas %}<li class="chip">{{ area }}</li>{% endfor %}</ul>
+  <address><strong>Head Office:</strong> {{ site.address.formatted }}</address>
+  <p><a href="{{ site.address.mapUrl }}" target="_blank" rel="noopener">Matigara office on Google Maps</a> · <a href="{{ site.phone.tel }}">Call {{ site.phone.display }}</a></p>
+  <p>Need another type of short-term cover?</p>
+  <ul>{% for item in localSecurity.services %}{% if page.url != item.url %}<li><a href="{{ item.url }}">{{ item.name }}</a></li>{% endif %}{% endfor %}</ul>
+</section>

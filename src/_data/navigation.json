@@ -13,6 +13,9 @@
   ],
   "footer": {
     "services": [
+      { "label": "Temporary Guards Near Matigara", "url": "/services/temporary-security-guards/" },
+      { "label": "Puja & Pandal Guards", "url": "/services/puja-pandal-security/" },
+      { "label": "Home Guards During Travel", "url": "/services/home-security-during-travel/" },
       { "label": "Wedding Guards & Bouncers", "url": "/services/wedding-security/" },
       { "label": "Corporate Security", "url": "/services/corporate-security/" },
       { "label": "Industrial Security", "url": "/services/industrial-security/" },

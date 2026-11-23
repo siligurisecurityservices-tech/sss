@@ -1,0 +1,74 @@
+---
+{
+  "layout": "layouts/page.njk",
+  "permalink": "/services/home-security-during-travel/index.html",
+  "title": "Home Guards During Travel near Matigara, Bagdogra and Siliguri",
+  "description": "Going on a family trip? Request temporary home guards or darwan near Matigara, Gossainpur, Patharghata, Salbari, Naxalbari and Bagdogra for a few days.",
+  "temporaryQuote": true,
+  "temporaryService": "Temporary Home Guarding During Travel",
+  "hero": {
+    "title": "Temporary home guards while your family travels",
+    "subtitle": "Request a guard or darwan for your home while you are away on a trip, tour, holiday or pilgrimage.",
+    "cta": {
+      "label": "Request a short-term guard quote",
+      "url": "#temporary-quote"
+    }
+  },
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Services",
+      "url": "/pages/services/"
+    },
+    {
+      "label": "Temporary Home Guarding During Travel",
+      "url": "/services/home-security-during-travel/"
+    }
+  ]
+}
+---
+
+<section>
+  <h2>Home guarding for a few days away</h2>
+  <p>Leaving home for a family holiday, tour, pilgrimage or an outstation visit? Request temporary guarding through our Matigara office. We accept enquiries for homes in Matigara, Gossainpur, Patharghata, Salbari, Naxalbari, Bagdogra and the surrounding local area.</p>
+  <p>Ask for 1, 2, 3, 4 or a few days of cover, or a custom period. You can request a day post, night guarding or a roster for continuous coverage. The number of guards and shifts depends on the property and duty hours.</p>
+</section>
+<section>
+  <h2>Agree the home guard's responsibilities</h2>
+  <ul><li><strong>Guard post:</strong> identify the gate, entrance or other agreed area where the guard will be stationed.</li><li><strong>Visitor access:</strong> agree how the guard checks authorised visitors and contacts your nominated representative.</li><li><strong>Property observations:</strong> define the checks and reporting required for doors, gates or visible concerns within the agreed guarding area.</li><li><strong>Shift handover:</strong> record reporting times, relief and who confirms attendance.</li><li><strong>Local contact:</strong> arrange a nominated person for practical decisions and incident escalation while you are away.</li></ul>
+  <p>Agree access and handover arrangements directly with the team before the first duty. Guarding does not automatically include domestic work, pet care, maintenance or responsibility for valuables; the written scope sets the duties.</p>
+</section>
+<section>
+  <h2>Plan the cover before departure</h2>
+  <p>Send your locality and required guarding dates and hours. The team can discuss the guard post and staffing arrangement, then issue a quote. Confirm the roster, supervisor contact and first-shift reporting before relying on the booking for your trip.</p>
+  <p>One person cannot provide continuous duty without breaks and relief. If you need both day and night coverage, request a shift plan. Availability and pricing depend on the actual address, schedule and agreed work.</p>
+</section>
+<section lang="bn"><h2>পরিবার বেড়াতে গেলে বাড়ি পাহারার জন্য অস্থায়ী গার্ড</h2><p>পরিবার নিয়ে ভ্রমণ, ট্যুর বা তীর্থযাত্রায় যাচ্ছেন? মাটিগাড়া, গোঁসাইপুর, পাথরঘাটা, শালবাড়ি, নকশালবাড়ি, বাগডোগরা ও আশেপাশে কয়েক দিনের জন্য বাড়ির গেট বা নির্ধারিত জায়গায় দারোয়ান বা সিকিউরিটি গার্ডের ডিউটির বিষয়ে যোগাযোগ করুন। প্রয়োজনীয় তারিখ, দিন বা রাতের শিফট এবং কাজের দায়িত্ব আগে নিশ্চিত করুন।</p></section>
+
+{% include "partials/local-security-coverage.njk" %}
+
+<section id="temporary-quote">
+  <h2>Request a quote: {{ temporaryService }}</h2>
+  <p>Share the required guarding dates, number of days, locality, shift hours and duties. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ ('Hello, I need ' + temporaryService + ' near Matigara. Locality: __. Guarding dates: __. Number of days: __. Duty hours: __. Please confirm availability and quote.') | urlencode }}" target="_blank" rel="noopener">send the requirement on WhatsApp</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>This is a client service enquiry. To apply for work, use our <a href="/pages/careers/">careers page</a>. <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+<section><h2>Questions about short-term guarding</h2><dl><dt>Can I request a guard while the whole family is away?</dt><dd>Yes, enquire with the required dates and shifts. Agree access instructions, a nominated contact and reporting arrangements before departure.</dd>
+<dt>Can I book only nights while travelling?</dt><dd>Yes, request the specific night-duty hours. State whether anyone else covers the property during the day.</dd>
+<dt>Does one guard provide 24-hour home security?</dt><dd>Continuous cover requires a planned roster, breaks and relief. Ask the team to quote for the actual hours you need rather than assuming one guard can work continuously.</dd>
+</dl></section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#localbusiness" },
+  "areaServed": [{% for area in localSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

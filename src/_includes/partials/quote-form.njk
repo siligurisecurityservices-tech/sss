@@ -5,7 +5,7 @@
       <input type="text" id="q-name" name="name" required autocomplete="name" minlength="2" maxlength="80">
     </div>
     <div>
-      <label for="q-company">{% if weddingQuote %}Family / Planner / Company (optional){% else %}Company Name{% endif %}</label>
+      <label for="q-company">{% if weddingQuote or temporaryQuote %}Family / Organiser / Company (optional){% else %}Company Name{% endif %}</label>
       <input type="text" id="q-company" name="company" autocomplete="organization" maxlength="120">
     </div>
   </div>
@@ -26,7 +26,7 @@
       <label for="q-location">Deployment Location <span class="required">*</span></label>
       <select id="q-location" name="location" required>
         <option value="">Select city / region</option>
-        {% if weddingQuote %}<option value="Barasat">Barasat</option><option value="Matigara">Matigara</option><option value="Bagdogra">Bagdogra</option>{% endif %}
+        {% if weddingQuote or temporaryQuote %}{% for area in localSecurity.areas %}{% if area != "Siliguri" %}<option value="{{ area }}">{{ area }}</option>{% endif %}{% endfor %}<option value="Barasat">Barasat</option>{% endif %}
         {%- for loc in locations.catalog -%}
         <option value="{{ loc.name }}"{% if prefillLocation == loc.name %} selected{% endif %}>{{ loc.name }}</option>
         {%- endfor -%}
@@ -37,7 +37,7 @@
       <label for="q-service">Service Required</label>
       <select id="q-service" name="serviceType">
         <option value="">Select a service</option>
-        {% if weddingQuote %}<option value="Wedding Security — Guards, Darwan and Bouncers" selected>Wedding Security — Guards, Darwan and Bouncers</option>{% endif %}
+        {% if temporaryQuote %}<option value="{{ temporaryService }}" selected>{{ temporaryService }}</option>{% elif weddingQuote %}<option value="Wedding Security — Guards, Darwan and Bouncers" selected>Wedding Security — Guards, Darwan and Bouncers</option>{% endif %}
         {%- for svc in services.catalog -%}
         <option value="{{ svc.title }}"{% if prefillService == svc.slug %} selected{% endif %}>{{ svc.title }}</option>
         {%- endfor -%}
@@ -51,7 +51,7 @@
       <label for="q-guards">Number of Guards Needed</label>
       <select id="q-guards" name="guardCount">
         <option value="">Estimate</option>
-        {% if weddingQuote %}
+        {% if weddingQuote or temporaryQuote %}
         <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
         {% else %}<option value="1-5">1–5</option>{% endif %}
         <option value="6-15">6–15</option>
@@ -61,13 +61,19 @@
       </select>
     </div>
     <div>
-      <label for="q-tier">{% if weddingQuote %}Personnel Requested{% else %}Guard Tier{% endif %}</label>
+      <label for="q-tier">{% if weddingQuote or temporaryQuote %}Personnel Requested{% else %}Guard Tier{% endif %}</label>
       <select id="q-tier" name="guardTier">
         <option value="">No preference</option>
-        {% if weddingQuote %}
+        {% if weddingQuote or temporaryQuote %}
+        {% if temporaryQuote %}
+        <option value="Temporary security guard / darwan">Temporary security guard / darwan</option>
+        <option value="Day and night shift team">Day and night shift team</option>
+        <option value="Supervisor and guarding team">Supervisor and guarding team</option>
+        {% else %}
         <option value="Wedding security guards / darwan">Wedding security guards / darwan</option>
         <option value="Wedding bouncers">Wedding bouncers</option>
         <option value="Mixed wedding security team">Guards and bouncers</option>
+        {% endif %}
         {% else %}
         {%- for tier in site.guardTiers -%}
         <option value="{{ tier.name }}">{{ tier.name }} — {{ tier.priceRange }}</option>
@@ -79,7 +85,12 @@
 
   <div class="form-row">
     <label for="q-notes">Requirements / Notes</label>
-    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="{% if weddingQuote %}Wedding dates, 1/2/3/4 or few days, venue address, daily start/finish times, guest count and duties{% else %}Type of site, shifts, special requirements (armed / female / dog handler), expected start date{% endif %}">{% if weddingQuote %}Event dates:
+    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="{% if temporaryQuote %}Guarding dates, number of days, locality, shift times and duties{% elif weddingQuote %}Wedding dates, 1/2/3/4 or few days, venue address, daily start/finish times, guest count and duties{% else %}Type of site, shifts, special requirements (armed / female / dog handler), expected start date{% endif %}">{% if temporaryQuote %}Guarding dates:
+Duration (1, 2, 3, 4 or a few days):
+Locality:
+Daily start and finish times:
+Duties required:
+{% elif weddingQuote %}Event dates:
 Duration (1, 2, 3, 4 or a few days):
 Venue / locality:
 Daily start and finish times:
@@ -91,7 +102,7 @@ Duties required: {% endif %}</textarea>
   {%- if site.turnstileSitekey -%}<div class="cf-turnstile" data-sitekey="{{ site.turnstileSitekey }}"></div>{%- endif -%}
 
   <div class="form-actions">
-    <button type="submit" class="cta-button cta-button-primary">{% if weddingQuote %}Request Wedding Security Quote{% else %}Request Corporate Quote{% endif %}</button>
+    <button type="submit" class="cta-button cta-button-primary">{% if temporaryQuote %}Request Short-Term Guard Quote{% elif weddingQuote %}Request Wedding Security Quote{% else %}Request Corporate Quote{% endif %}</button>
     <p class="form-help">Phone is required. After submitting, WhatsApp will open with a summary you can edit before sending.</p>
     <p class="form-status" role="status" aria-live="polite"></p>
   </div>

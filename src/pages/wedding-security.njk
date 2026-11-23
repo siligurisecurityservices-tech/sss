@@ -1,8 +1,8 @@
 ---
 layout: layouts/page.njk
 permalink: /services/wedding-security/index.html
-title: Wedding Guards, Darwan and Bouncers in Siliguri, Kolkata, Barasat
-description: Hire wedding security guards, darwan and bouncers for 1, 2, 3, 4 or a few days in Siliguri, Matigara, Barasat and Kolkata. Ask SSS for dates and venue availability.
+title: Wedding Guards and Bouncers near Matigara, Siliguri and Kolkata
+description: Wedding guards and bouncers for a few days around Matigara, Gossainpur, Patharghata, Salbari, Naxalbari and Bagdogra, plus Barasat and Kolkata enquiries.
 hero:
   title: Wedding security guards, darwan and bouncers
   subtitle: Temporary security for one wedding day or several functions in Siliguri, Matigara, Barasat and Kolkata. Share your dates, venue and guest count for a written quote.
@@ -54,6 +54,8 @@ breadcrumbs:
   <p><a href="{{ site.address.mapUrl }}" target="_blank" rel="noopener">Head-office directions</a> · <a href="/locations/siliguri/">Siliguri service information</a></p>
 </section>
 
+{% include "partials/local-security-coverage.njk" %}
+
 <section>
   <h2>Wedding bouncers and darwan in Barasat and Kolkata</h2>
   <p>Families and event planners in Barasat, Panna Jhill and along Barrackpore Road can enquire through our Kolkata branch. For venues in Kolkata, Salt Lake, New Town or Rajarhat, send the venue location and function timings so the team can check availability and logistics.</p>
@@ -102,7 +104,7 @@ breadcrumbs:
   "description": {{ description | jsonify | safe }},
   "url": "{{ site.url }}{{ page.url }}",
   "provider": { "@id": "{{ site.url }}#localbusiness" },
-  "areaServed": [{ "@type": "City", "name": "Siliguri" }, { "@type": "Place", "name": "Matigara" }, { "@type": "Place", "name": "Barasat" }, { "@type": "City", "name": "Kolkata" }],
+  "areaServed": [{% for area in localSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} },{% endfor %}{ "@type": "Place", "name": "Barasat" }, { "@type": "City", "name": "Kolkata" }],
   "availableChannel": { "@type": "ServiceChannel", "servicePhone": { "@type": "ContactPoint", "telephone": {{ site.phone.display | jsonify | safe }} } }
 }
 </script>

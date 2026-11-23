@@ -1,0 +1,94 @@
+---
+layout: layouts/page.njk
+permalink: /services/banquet-lawn-event-security/index.html
+title: Banquet Hall, Wedding Lawn and Open-Ground Security near Siliguri
+description: Request guards, darwan and bouncers for banquet halls, wedding lawns and open grounds around Matigara, Dagapur, Bagdogra and Siliguri. Local map references and quotes.
+temporaryQuote: true
+temporaryService: Banquet, Lawn and Open-Ground Security
+hero:
+  title: Guards for banquet halls, wedding lawns and open grounds
+  subtitle: Short-term event security around Matigara and Siliguri. Share the venue entrance pin, event dates and duty hours for a staffing plan and quote.
+  cta:
+    label: Request venue security
+    url: "#venue-quote"
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Services", url: "/pages/services/" }
+  - { label: "Banquet, lawn and ground security", url: "/services/banquet-lawn-event-security/" }
+---
+
+<section>
+  <h2>Event guards around halls, lawns and local grounds</h2>
+  <p>A banquet reception, an open-air wedding and a puja on a community ground need different guard posts. {{ site.name }} accepts enquiries for gate guards, darwan, bouncers and agreed event-security duties around the Matigara office, approximately 20 km in any direction.</p>
+  <p>Request cover for 1, 2, 3, 4 or a few days, including separate setup, event and overnight shifts. Share the exact location even if the neighbourhood is not listed: the actual address, approach road, schedule and personnel availability determine the booking.</p>
+</section>
+
+<section>
+  <h2>Plan the duties for your type of venue</h2>
+  <div class="card-grid">
+    <div class="card"><h3>Banquet halls and reception entrances</h3><p>Agree invitation or guest-list checks, family-only access, vendor reporting, separate guest and service entrances, and when guards hand over to venue staff.</p></div>
+    <div class="card"><h3>Wedding lawns and resort events</h3><p>Identify the actual lawn entrance, open perimeter, family rooms, vehicle drop-off and lighting arrangements. Discuss bouncers or additional guards for busy entry periods.</p></div>
+    <div class="card"><h3>Open fields and community grounds</h3><p>Provide an entrance and exit layout, boundary arrangements, vendor access and the organiser's contact. Include setup and pack-down dates and any agreed night guarding.</p></div>
+  </div>
+  <p>Agree outside-security access with the venue or ground organiser before booking. Public or sports grounds are location references here; use of a ground for an event requires the owner's or relevant authority's permission.</p>
+</section>
+
+<section>
+  <h2>Nearby venue and ground map references</h2>
+  <p>These public Google Maps listings help identify local event areas and meeting points. They are geographical references, not a list of SSS clients or partners. Venue hire, facilities and permission to bring outside security must be confirmed directly with the venue.</p>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Map reference</th><th>Local area</th><th>Listed type</th><th>Map</th></tr></thead>
+      <tbody>{% for venue in eventVenues.venues %}
+        <tr><td>{{ venue.name }}</td><td>{{ venue.area }}</td><td>{{ venue.category }}</td><td><a href="{{ venue.mapUrl }}" target="_blank" rel="noopener" aria-label="Find {{ venue.name }} on Google Maps">Google Maps</a></td></tr>
+      {% endfor %}</tbody>
+    </table>
+  </div>
+  <p>Map references checked on {{ eventVenues.checkedOn | readableDate }}. A listing does not confirm availability for your date. Tell us which entrance or field you mean if the map pin covers a large property.</p>
+</section>
+
+<section>
+  <h2>Hall and lawn corridors around Matigara</h2>
+  <p>Khaprail Road and the Nimai–Deepnagar side include resort and lawn venues; the Uttorayon area has hotel banquet spaces. Patiram Jote and Tumbajote have local hall references, while the Dagapur–Salbari and Hill Cart Road side includes resort and ground locations.</p>
+  <p>For Bagdogra and Bihar More, or halls in Khalpara, Babupara, Hakim Para, Punjabi Para and Haidar Para, share the venue name and entrance pin. This lets us discuss the approach, reporting point and shift changes rather than relying only on a locality name.</p>
+  <p>Additional public venue references:</p>
+  <ul>{% for source in eventVenues.officialReferences %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.name }}</a></li>{% endfor %}</ul>
+</section>
+
+<section>
+  <h2>Send a useful event-security brief</h2>
+  <ol>
+    <li>Give the venue name, locality and a Google Maps pin for the entrance or field.</li>
+    <li>List event dates, guest arrival and departure times, plus any setup or overnight cover.</li>
+    <li>Share expected attendance, entrances, restricted areas and vehicle arrangements.</li>
+    <li>Agree guard numbers, supervisor contact, shift relief and a written quote before confirming.</li>
+  </ol>
+  <p>For detailed requirements, see <a href="/services/wedding-security/">wedding guards and bouncers</a>, <a href="/services/puja-pandal-security/">puja and pandal guarding</a>, or <a href="/services/temporary-security-guards/">short-term local guards</a>.</p>
+</section>
+
+<section lang="bn">
+  <h2>ব্যানকোয়েট হল, বিয়ের লন ও খোলা মাঠে অনুষ্ঠানের জন্য গার্ড</h2>
+  <p>মাটিগাড়া ও শিলিগুড়ির আশেপাশে হল, রিসর্ট, লন বা অনুমতিপ্রাপ্ত মাঠে অনুষ্ঠানের জন্য দারোয়ান, গার্ড বা বাউন্সারের প্রয়োজন হলে ভেন্যুর নাম, প্রবেশপথের ম্যাপ পিন, তারিখ ও ডিউটির সময় জানান। তালিকায় আপনার এলাকার নাম না থাকলেও যোগাযোগ করুন। ভেন্যু কর্তৃপক্ষের সঙ্গে বাইরের নিরাপত্তাকর্মী রাখার অনুমতি আগে নিশ্চিত করুন।</p>
+</section>
+
+{% include "partials/local-security-coverage.njk" %}
+
+<section id="venue-quote">
+  <h2>Request guards for your hall, lawn or ground</h2>
+  <p>In the notes, include the venue name or entrance map link, event dates, duty hours and expected attendance. Call <a href="{{ site.phone.tel }}">{{ site.phone.display }}</a> or <a href="{{ site.phone.whatsapp }}?text={{ 'Hello, I need guards, darwan or bouncers for a banquet hall, lawn or open-ground event. Venue name/locality: __. Entrance map pin: __. Dates and duty hours: __. Expected attendance: __. Please confirm availability and quote.' | urlencode }}" target="_blank" rel="noopener">send the venue requirement on WhatsApp</a>.</p>
+  {% include "partials/quote-form.njk" %}
+  <p>This is a client quote request. For jobs, visit <a href="/pages/careers/">careers</a>. Read our <a href="/pages/privacy/">Privacy Policy</a>.</p>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "{{ site.url }}{{ page.url }}#service",
+  "name": {{ temporaryService | jsonify | safe }},
+  "description": {{ description | jsonify | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}#localbusiness" },
+  "areaServed": [{% for area in localSecurity.areas %}{ "@type": "Place", "name": {{ area | jsonify | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+}
+</script>

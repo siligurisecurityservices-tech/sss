@@ -2,16 +2,43 @@
   "radiusKm": 20,
   "areas": [
     "Matigara",
-    "Gossainpur",
-    "Patharghata",
-    "Salbari",
-    "Naxalbari",
-    "Bagdogra",
-    "Siliguri",
+    "Khaprail",
+    "Patiram Jote",
+    "Tumbajote",
+    "Shyam Nagar",
+    "Pradip Nagar",
+    "Uttorayon",
+    "Panchkelguri",
+    "Nimai",
+    "Deepnagar",
     "Shivmandir",
-    "Kawakhali",
+    "Kadamtala",
+    "Medical More",
+    "Gossainpur",
+    "Bagdogra",
+    "Uttar Bagdogra",
+    "Bihar More",
+    "Naxalbari",
+    "Dagapur",
+    "Salbari",
+    "Patharghata",
+    "Devidanga",
+    "Sukna",
+    "Pradhan Nagar",
+    "Gurung Basti",
+    "Siliguri",
+    "Khalpara",
+    "Mahananda Para",
+    "Babupara",
+    "Deshbandhu Para",
+    "Hakim Para",
+    "Ashram Para",
+    "Punjabi Para",
+    "Haidar Para",
+    "Sevoke Road",
+    "Bankim Nagar",
     "Salugara",
-    "Sukna"
+    "Kawakhali"
   ],
   "services": [
     {
@@ -29,6 +56,70 @@
     {
       "name": "Home guards while you travel",
       "url": "/services/home-security-during-travel/"
+    },
+    {
+      "name": "Banquet halls, wedding lawns and open-ground security",
+      "url": "/services/banquet-lawn-event-security/"
+    }
+  ],
+  "areaGroups": [
+    {
+      "name": "Matigara and the Khaprail Road corridor",
+      "areas": [
+        "Matigara",
+        "Khaprail",
+        "Patiram Jote",
+        "Tumbajote",
+        "Shyam Nagar",
+        "Pradip Nagar",
+        "Uttorayon",
+        "Panchkelguri",
+        "Nimai",
+        "Deepnagar"
+      ]
+    },
+    {
+      "name": "Shivmandir, Bagdogra and Naxalbari side",
+      "areas": [
+        "Shivmandir",
+        "Kadamtala",
+        "Medical More",
+        "Gossainpur",
+        "Bagdogra",
+        "Uttar Bagdogra",
+        "Bihar More",
+        "Naxalbari"
+      ]
+    },
+    {
+      "name": "Dagapur, Salbari and the Hill Cart Road side",
+      "areas": [
+        "Dagapur",
+        "Salbari",
+        "Patharghata",
+        "Devidanga",
+        "Sukna",
+        "Pradhan Nagar",
+        "Gurung Basti"
+      ]
+    },
+    {
+      "name": "Siliguri town and nearby event areas",
+      "areas": [
+        "Siliguri",
+        "Khalpara",
+        "Mahananda Para",
+        "Babupara",
+        "Deshbandhu Para",
+        "Hakim Para",
+        "Ashram Para",
+        "Punjabi Para",
+        "Haidar Para",
+        "Sevoke Road",
+        "Bankim Nagar",
+        "Salugara",
+        "Kawakhali"
+      ]
     }
   ]
 }

@@ -85,9 +85,10 @@
 
   <div class="form-row">
     <label for="q-notes">Requirements / Notes</label>
-    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="{% if temporaryQuote %}Guarding dates, number of days, locality, shift times and duties{% elif weddingQuote %}Wedding dates, 1/2/3/4 or few days, venue address, daily start/finish times, guest count and duties{% else %}Type of site, shifts, special requirements (armed / female / dog handler), expected start date{% endif %}">{% if temporaryQuote %}Guarding dates:
+    <textarea id="q-notes" name="notes" rows="4" maxlength="1000" placeholder="{% if temporaryQuote %}Guarding dates, number of days, locality, venue name or entrance map pin, shift times and duties{% elif weddingQuote %}Wedding dates, 1/2/3/4 or few days, venue address, daily start/finish times, guest count and duties{% else %}Type of site, shifts, special requirements (armed / female / dog handler), expected start date{% endif %}">{% if temporaryQuote %}Guarding dates:
 Duration (1, 2, 3, 4 or a few days):
 Locality:
+Venue / property landmark or entrance map pin:
 Daily start and finish times:
 Duties required:
 {% elif weddingQuote %}Event dates:

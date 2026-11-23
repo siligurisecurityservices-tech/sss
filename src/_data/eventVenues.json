@@ -1,0 +1,176 @@
+{
+  "checkedOn": "2026-11-23",
+  "headOfficeMap": "https://maps.app.goo.gl/x9E34iPXt4TkGAF79",
+  "center": {
+    "latitude": 26.7196051,
+    "longitude": 88.3860068
+  },
+  "venues": [
+    {
+      "name": "BANDHAN BANQUET HALL",
+      "category": "Wedding venue",
+      "area": "Shyam Nagar, Patiram Jote",
+      "latitude": 26.7120459,
+      "longitude": 88.4006936,
+      "straightLineKm": 1.7,
+      "mapUrl": "https://www.google.com/maps?cid=10446329368429373460"
+    },
+    {
+      "name": "Sumanglam Palace",
+      "category": "Banquet hall",
+      "area": "Pradip Nagar",
+      "latitude": 26.695651299999998,
+      "longitude": 88.4043112,
+      "straightLineKm": 3.2,
+      "mapUrl": "https://www.google.com/maps?cid=11921055964916600713"
+    },
+    {
+      "name": "Siddhi Vinayak Banquet",
+      "category": "Banquet hall",
+      "area": "Ward 9, Khalpara",
+      "latitude": 26.7028322,
+      "longitude": 88.4176801,
+      "straightLineKm": 3.7,
+      "mapUrl": "https://www.google.com/maps?cid=2097431329407790981"
+    },
+    {
+      "name": "Krishna Kunja Bhawan",
+      "category": "Banquet hall",
+      "area": "Ward 27, Babupara",
+      "latitude": 26.699106399999998,
+      "longitude": 88.42556739999999,
+      "straightLineKm": 4.5,
+      "mapUrl": "https://www.google.com/maps?cid=8229309485029427417"
+    },
+    {
+      "name": "Swapnaneel Banquet Hall",
+      "category": "Banquet hall",
+      "area": "Ward 17, Hakim Para",
+      "latitude": 26.7113887,
+      "longitude": 88.4349089,
+      "straightLineKm": 4.9,
+      "mapUrl": "https://www.google.com/maps?cid=6399658493288143023"
+    },
+    {
+      "name": "Centurion Garden",
+      "category": "Banquet hall",
+      "area": "Ashram Para, Hakim Para",
+      "latitude": 26.7207945,
+      "longitude": 88.430279,
+      "straightLineKm": 4.4,
+      "mapUrl": "https://www.google.com/maps?cid=8021585605684379095"
+    },
+    {
+      "name": "Sachitra Complex",
+      "category": "Banquet hall",
+      "area": "Ward 40, Haidar Para",
+      "latitude": 26.729157999999998,
+      "longitude": 88.4393228,
+      "straightLineKm": 5.4,
+      "mapUrl": "https://www.google.com/maps?cid=7063993463229988316"
+    },
+    {
+      "name": "Maheshwari Seva Sadan",
+      "category": "Wedding venue",
+      "area": "Ward 9, Khalpara",
+      "latitude": 26.703150299999997,
+      "longitude": 88.41664469999999,
+      "straightLineKm": 3.6,
+      "mapUrl": "https://www.google.com/maps?cid=14629956573233823631"
+    },
+    {
+      "name": "The Farmhouse Siliguri",
+      "category": "Wedding venue",
+      "area": "Devidanga",
+      "latitude": 26.767693899999998,
+      "longitude": 88.4340915,
+      "straightLineKm": 7.2,
+      "mapUrl": "https://www.google.com/maps?cid=16073965185020671112"
+    },
+    {
+      "name": "SAMUDRIKA",
+      "category": "Banquet hall",
+      "area": "Uttar Bagdogra",
+      "latitude": 26.7007989,
+      "longitude": 88.31019959999999,
+      "straightLineKm": 7.8,
+      "mapUrl": "https://www.google.com/maps?cid=15562153391990708877"
+    },
+    {
+      "name": "Mittal Gardens, Siliguri",
+      "category": "Hotel",
+      "area": "Ward Number 13, Bankim Nagar",
+      "latitude": 26.730027999999997,
+      "longitude": 88.4330954,
+      "straightLineKm": 4.8,
+      "mapUrl": "https://www.google.com/maps?cid=17469707396068577888"
+    },
+    {
+      "name": "Viramma Resort",
+      "category": "Banquet hall",
+      "area": "Dagapur",
+      "latitude": 26.744406299999998,
+      "longitude": 88.40168609999999,
+      "straightLineKm": 3.2,
+      "mapUrl": "https://www.google.com/maps?cid=8033230959449913016"
+    },
+    {
+      "name": "Dagapur Ground",
+      "category": "Playground",
+      "area": "Dagapur",
+      "latitude": 26.7416198,
+      "longitude": 88.40296819999999,
+      "straightLineKm": 3.0,
+      "mapUrl": "https://www.google.com/maps?cid=3163016962346866950"
+    },
+    {
+      "name": "Kanchanjungha Stadium Fair/Mela Ground",
+      "category": "Fairground",
+      "area": "Ward 12, Hakim Para",
+      "latitude": 26.7141777,
+      "longitude": 88.4265776,
+      "straightLineKm": 4.1,
+      "mapUrl": "https://www.google.com/maps?cid=2569437899316728184"
+    },
+    {
+      "name": "Siliguri Cricket Stadium Ground",
+      "category": "Cricket ground",
+      "area": "Ujanu P",
+      "latitude": 26.7298469,
+      "longitude": 88.40120809999999,
+      "straightLineKm": 1.9,
+      "mapUrl": "https://www.google.com/maps?cid=9052456441568848923"
+    },
+    {
+      "name": "Kawakhali Central Sporting Playground",
+      "category": "Playground",
+      "area": "Ward 35, Dabgram",
+      "latitude": 26.688591,
+      "longitude": 88.4408936,
+      "straightLineKm": 6.5,
+      "mapUrl": "https://www.google.com/maps?cid=2501437314523275516"
+    }
+  ],
+  "officialReferences": [
+    {
+      "name": "Four Vedas hall and lawn — Panchkelguri, Nimai, Deepnagar",
+      "url": "https://bikabanquets.com/venues/four-vedas"
+    },
+    {
+      "name": "Barsana Hotel & Resort — Khaprail Road",
+      "url": "https://www.barsanahotels.com/contact/"
+    },
+    {
+      "name": "Montana Vista — Uttorayon",
+      "url": "https://www.ambujaneotia.com/our-business/hospitality/hotels-resorts/montana-vista"
+    },
+    {
+      "name": "Marina’s Motel — Bihar More, Bagdogra",
+      "url": "https://www.marinasmotel.com/contact"
+    },
+    {
+      "name": "SJDA public notices — Kawakhali and stadium mela grounds",
+      "url": "https://sjda.org/"
+    }
+  ]
+}

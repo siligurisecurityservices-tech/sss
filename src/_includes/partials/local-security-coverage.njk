@@ -1,7 +1,11 @@
 <section>
   <h2>Local guard service around Matigara — approximately {{ localSecurity.radiusKm }} km</h2>
   <p>We accept short-term guarding enquiries within approximately {{ localSecurity.radiusKm }} km of our Matigara head office in any direction, including the localities below. Share the exact venue or property location so we can check the route, duty hours and personnel availability before confirming a booking. Named localities can span a wider area; coverage is confirmed for the actual address.</p>
-  <ul class="chips">{% for area in localSecurity.areas %}<li class="chip">{{ area }}</li>{% endfor %}</ul>
+  {% for group in localSecurity.areaGroups %}
+  <h3>{{ group.name }}</h3>
+  <p>{% for area in group.areas %}{{ area }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  {% endfor %}
+  <p>These are examples of nearby areas, not an exhaustive boundary list. For a banquet hall, wedding lawn, private open field or community ground, <a href="/services/banquet-lawn-event-security/">see our venue-security guide and map references</a>. Send the actual entrance pin so we can confirm the route and guard post.</p>
   <address><strong>Head Office:</strong> {{ site.address.formatted }}</address>
   <p><a href="{{ site.address.mapUrl }}" target="_blank" rel="noopener">Matigara office on Google Maps</a> · <a href="{{ site.phone.tel }}">Call {{ site.phone.display }}</a></p>
   <p>Need another type of short-term cover?</p>

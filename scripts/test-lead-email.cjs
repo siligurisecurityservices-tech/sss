@@ -47,14 +47,14 @@ async function submit(extra, opts = { kind: 'quote', requireLocation: true }) {
     assert(wedding.messages[0].html.includes(value));
     assert(decodeURIComponent(wedding.res.body.whatsappUrl).includes(value));
   }
-  for (const serviceType of ['Temporary Security — Guards and Darwan', 'Puja and Pandal Security', 'Temporary Home Guarding During Travel']) {
-    const temporary = await submit({ formType: 'quote', serviceType, location: 'Gossainpur', guardCount: '2', guardTier: 'Day and night shift team', notes: 'Guarding dates: 2026-12-05 to 2026-12-08. Duration: 4 days. Daily start and finish times: 6pm to 6am.' });
+  for (const serviceType of ['Temporary Security — Guards and Darwan', 'Puja and Pandal Security', 'Temporary Home Guarding During Travel', 'Banquet, Lawn and Open-Ground Security']) {
+    const temporary = await submit({ formType: 'quote', serviceType, location: 'Gossainpur', guardCount: '2', guardTier: 'Day and night shift team', notes: 'Guarding dates: 2026-12-05 to 2026-12-08. Duration: 4 days. Venue entrance: https://maps.google.com/?cid=123456. Daily start and finish times: 6pm to 6am.' });
     assert.equal(temporary.res.statusCode, 200);
     assert.match(temporary.messages[0].subject, /^\[Client Quote\]/);
     assert.deepEqual(temporary.messages[0].to, ['clients@example.test']);
     for (const value of [serviceType.replace('&', '&amp;'), 'Gossainpur', '4 days', '6pm to 6am']) assert(temporary.messages[0].html.includes(value));
     const whatsapp = decodeURIComponent(temporary.res.body.whatsappUrl);
-    for (const value of [serviceType, 'Gossainpur', 'Day and night shift team', '4 days']) assert(whatsapp.includes(value));
+    for (const value of [serviceType, 'Gossainpur', 'Day and night shift team', '4 days', 'https://maps.google.com/?cid=123456']) assert(whatsapp.includes(value));
   }
   const visit = await submit({ location: 'Kolkata', preferredDate: '2026-12-01' }, { kind: 'site-visit', requireLocation: true });
   assert.match(visit.messages[0].subject, /^\[Client Site Visit\]/);

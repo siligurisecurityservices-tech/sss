@@ -14,29 +14,4 @@
   </div>
 </section>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "{{ site.name }}",
-  "url": "{{ site.url }}",
-  "review": [
-    {%- for t in testimonials.items -%}
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Client" },
-      "reviewBody": {{ t.quote | jsonify }},
-      "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 },
-      "itemReviewed": { "@type": "Organization", "name": "{{ site.name }}" }
-    }{% if not loop.last %},{% endif %}
-    {%- endfor -%}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "{{ testimonials.items.length }}",
-    "bestRating": 5
-  }
-}
-</script>
 {%- endif -%}

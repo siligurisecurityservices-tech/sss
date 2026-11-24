@@ -81,6 +81,7 @@
     "addressCountry": "{{ site.address.country }}"
   },
   "hasMap": {{ site.address.mapUrl | jsonify | safe }},
+  "geo": { "@type": "GeoCoordinates", "latitude": 26.7196051, "longitude": 88.3860068 },
   "department": {
     "@type": "LocalBusiness",
     "@id": "{{ site.url }}#kolkata-branch",

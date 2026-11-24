@@ -38,6 +38,7 @@
     ],
     "company": [
       { "label": "About Us", "url": "/pages/about/" },
+      { "label": "Guide to Hiring Local Guards", "url": "/pages/hiring-security-guards/" },
       { "label": "Compliance & Licences", "url": "/pages/compliance/" },
       { "label": "Coverage", "url": "/pages/coverage/" },
       { "label": "Careers", "url": "/pages/careers/" },
